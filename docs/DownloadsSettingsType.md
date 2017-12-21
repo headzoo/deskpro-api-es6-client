@@ -1,4 +1,4 @@
-# DeskProApi.DownloadsSettingsType
+# DeskproApi.DownloadsSettingsType
 
 ## Properties
 Name | Type | Description | Notes

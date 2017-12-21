@@ -1,4 +1,4 @@
-# DeskProApi.ChatsApi
+# DeskproApi.ChatsApi
 
 All URIs are relative to *http://deskpro-dev.com/api/v2*
 
@@ -41,27 +41,21 @@ Delete a resource
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let id = 56; // Number | The id of the resource
+const id = 56; // Number | The id of the resource
 
-
-apiInstance.deleteAgentChatById(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.deleteAgentChatById(id).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -93,27 +87,21 @@ delete group
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let id = 56; // Number | a chat id
+const id = 56; // Number | a chat id
 
-
-apiInstance.deleteAgentChatByIdDelete(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.deleteAgentChatByIdDelete(id).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -145,27 +133,21 @@ leave group
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let id = 56; // Number | a chat id
+const id = 56; // Number | a chat id
 
-
-apiInstance.deleteAgentChatByIdLeave(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.deleteAgentChatByIdLeave(id).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -197,29 +179,23 @@ Delete a resource
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let id = 56; // Number | The id of the resource
+const id = 56; // Number | The id of the resource
 
-let parentId = "parentId_example"; // String | 
+const parentId = "parentId_example"; // String | 
 
-
-apiInstance.deleteAgentChatByParentIdMessageById(id, parentId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.deleteAgentChatByParentIdMessageById(id, parentId).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -252,27 +228,21 @@ Delete a resource
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let id = 56; // Number | The id of the resource
+const id = 56; // Number | The id of the resource
 
-
-apiInstance.deleteUserChatById(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.deleteUserChatById(id).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -304,27 +274,21 @@ Delete a resource
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let id = 56; // Number | The id of the resource
+const id = 56; // Number | The id of the resource
 
-
-apiInstance.deleteUserChatCustomFieldById(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.deleteUserChatCustomFieldById(id).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -356,27 +320,21 @@ Get a resource
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let id = 56; // Number | The id of the resource
+const id = 56; // Number | The id of the resource
 
-
-apiInstance.getAgentChatById(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getAgentChatById(id).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -408,20 +366,16 @@ Get collection of resources
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let parentId = "parentId_example"; // String | 
+const parentId = "parentId_example"; // String | 
 
-let opts = { 
+const opts = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
@@ -429,14 +383,12 @@ let opts = {
   'search': "search_example", // String | 
   'order': "order_example" // String | 
 };
-
-apiInstance.getAgentChatByParentIdMessage(parentId, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getAgentChatByParentIdMessage(parentId, opts).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -474,29 +426,23 @@ Get a resource
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let id = 56; // Number | The id of the resource
+const id = 56; // Number | The id of the resource
 
-let parentId = "parentId_example"; // String | 
+const parentId = "parentId_example"; // String | 
 
-
-apiInstance.getAgentChatByParentIdMessageById(id, parentId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getAgentChatByParentIdMessageById(id, parentId).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -529,29 +475,23 @@ get page where this message is
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let parentId = "parentId_example"; // String | 
+const parentId = "parentId_example"; // String | 
 
-let id = "id_example"; // String | 
+const id = "id_example"; // String | 
 
-
-apiInstance.getAgentChatByParentIdMessageByIdPage(parentId, id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getAgentChatByParentIdMessageByIdPage(parentId, id).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -584,27 +524,21 @@ Count list
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let parentId = "parentId_example"; // String | 
+const parentId = "parentId_example"; // String | 
 
-
-apiInstance.getAgentChatByParentIdMessageCount(parentId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getAgentChatByParentIdMessageCount(parentId).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -636,24 +570,18 @@ Count list
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
-
-apiInstance.getAgentChatCount((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+const apiInstance = new DeskproApi.ChatsApi();
+apiInstance.getAgentChatCount().then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -682,24 +610,18 @@ get agent chat groups
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
-
-apiInstance.getAgentChatGroup((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+const apiInstance = new DeskproApi.ChatsApi();
+apiInstance.getAgentChatGroup().then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -728,24 +650,18 @@ Count list
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
-
-apiInstance.getAgentChatMessageCount((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+const apiInstance = new DeskproApi.ChatsApi();
+apiInstance.getAgentChatMessageCount().then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -774,31 +690,25 @@ Get collection of resources
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let opts = { 
+const opts = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-
-apiInstance.getAgentChats(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getAgentChats(opts).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -833,20 +743,16 @@ Get collection of resources
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let conversationId = "conversationId_example"; // String | 
+const conversationId = "conversationId_example"; // String | 
 
-let opts = { 
+const opts = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
@@ -854,14 +760,12 @@ let opts = {
   'lastMessageId': 56, // Number | 
   'agentOnly': 56 // Number | 
 };
-
-apiInstance.getUserChatByConversationIdMessage(conversationId, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getUserChatByConversationIdMessage(conversationId, opts).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -899,31 +803,25 @@ Count list
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let conversationId = "conversationId_example"; // String | 
+const conversationId = "conversationId_example"; // String | 
 
-let opts = { 
+const opts = { 
   'lastMessageId': 56, // Number | 
   'agentOnly': 56 // Number | 
 };
-
-apiInstance.getUserChatByConversationIdMessageCount(conversationId, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getUserChatByConversationIdMessageCount(conversationId, opts).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -957,27 +855,21 @@ Get a resource
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let id = 56; // Number | The id of the resource
+const id = 56; // Number | The id of the resource
 
-
-apiInstance.getUserChatById(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getUserChatById(id).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -1009,18 +901,14 @@ Count list
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let opts = { 
+const opts = { 
   'dateCreated': "dateCreated_example", // String | 
   'datePeriod': "datePeriod_example", // String | 
   'agent': 56, // Number | 
@@ -1028,14 +916,12 @@ let opts = {
   'chatFieldId': "chatFieldId_example", // String |   *                  Custom chat field filter. To filter by a custom field with ID=1 you need to add  *                  ?chat_field.1=value to the query string
   'groupBy': true // Boolean | how to group counts
 };
-
-apiInstance.getUserChatCount(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getUserChatCount(opts).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -1072,27 +958,21 @@ Get a resource
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let id = 56; // Number | The id of the resource
+const id = 56; // Number | The id of the resource
 
-
-apiInstance.getUserChatCustomFieldById(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getUserChatCustomFieldById(id).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -1124,31 +1004,25 @@ Get collection of resources
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let opts = { 
+const opts = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-
-apiInstance.getUserChatCustomFields(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getUserChatCustomFields(opts).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -1183,18 +1057,14 @@ Get collection of resources
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let opts = { 
+const opts = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
@@ -1205,14 +1075,12 @@ let opts = {
   'department': 56, // Number | 
   'chatFieldId': "chatFieldId_example" // String |   *                  Custom chat field filter. To filter by a custom field with ID=1 you need to add  *                  ?chat_field.1=value to the query string
 };
-
-apiInstance.getUserChats(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getUserChats(opts).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -1252,27 +1120,21 @@ mark message as sent/read
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let parentId = "parentId_example"; // String | 
+const parentId = "parentId_example"; // String | 
 
-
-apiInstance.updateAgentChatByParentIdMessageMarkAll(parentId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.updateAgentChatByParentIdMessageMarkAll(parentId).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -1304,29 +1166,23 @@ Assign chat to agent
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let id = 56; // Number | 
+const id = 56; // Number | 
 
-let agentId = 56; // Number | 
+const agentId = 56; // Number | 
 
-
-apiInstance.updateUserChatByIdAssignByAgentId(id, agentId, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.updateUserChatByIdAssignByAgentId(id, agentId).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -1359,27 +1215,21 @@ End a chat conversation
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.ChatsApi();
+const apiInstance = new DeskproApi.ChatsApi();
 
-let id = 56; // Number | 
+const id = 56; // Number | 
 
-
-apiInstance.updateUserChatByIdEnd(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.updateUserChatByIdEnd(id).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters

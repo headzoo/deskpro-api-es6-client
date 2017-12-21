@@ -1,4 +1,4 @@
-# DeskProApi.TaskType
+# DeskproApi.TaskType
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# DeskProApi.TicketLinkType
+# DeskproApi.TicketLinkType
 
 ## Properties
 Name | Type | Description | Notes

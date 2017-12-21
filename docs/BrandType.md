@@ -1,4 +1,4 @@
-# DeskProApi.BrandType
+# DeskproApi.BrandType
 
 ## Properties
 Name | Type | Description | Notes

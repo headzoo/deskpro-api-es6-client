@@ -1,4 +1,4 @@
-# DeskProApi.TriggerAction
+# DeskproApi.TriggerAction
 
 ## Properties
 Name | Type | Description | Notes

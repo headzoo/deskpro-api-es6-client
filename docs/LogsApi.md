@@ -1,4 +1,4 @@
-# DeskProApi.LogsApi
+# DeskproApi.LogsApi
 
 All URIs are relative to *http://deskpro-dev.com/api/v2*
 
@@ -21,30 +21,24 @@ get api log
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.LogsApi();
+const apiInstance = new DeskproApi.LogsApi();
 
-let id = "id_example"; // String | 
+const id = "id_example"; // String | 
 
-let opts = { 
+const opts = { 
   'page': "page_example" // String | 
 };
-
-apiInstance.getApiLogById(id, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getApiLogById(id, opts).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -77,24 +71,18 @@ get api logs collection
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.LogsApi();
-
-apiInstance.getApiLogs((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+const apiInstance = new DeskproApi.LogsApi();
+apiInstance.getApiLogs().then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -123,24 +111,18 @@ get logging options
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.LogsApi();
-
-apiInstance.getApiLogsOptions((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+const apiInstance = new DeskproApi.LogsApi();
+apiInstance.getApiLogsOptions().then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -169,30 +151,24 @@ update logging options
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.LogsApi();
+const apiInstance = new DeskproApi.LogsApi();
 
-let id = 56; // Number | id of entry to replay
+const id = 56; // Number | id of entry to replay
 
-let opts = { 
+const opts = { 
   'mode': "mode_example" // String | how to replay
 };
-
-apiInstance.setApiLogByIdReplay(id, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.setApiLogByIdReplay(id, opts).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -225,33 +201,27 @@ update logging options
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.LogsApi();
+const apiInstance = new DeskproApi.LogsApi();
 
-let requestLength = 56; // Number | 
+const requestLength = 56; // Number | 
 
-let responseLength = 56; // Number | 
+const responseLength = 56; // Number | 
 
-let opts = { 
+const opts = { 
   'enabled': true, // Boolean | provide 1 if you want to enable logging
   'modes': ["modes_example"] // [String] | strings array, values are session, key, token
 };
-
-apiInstance.updateApiLogsOptions(requestLength, responseLength, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.updateApiLogsOptions(requestLength, responseLength, opts).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters

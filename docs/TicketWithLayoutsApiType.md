@@ -1,4 +1,4 @@
-# DeskProApi.TicketWithLayoutsApiType
+# DeskproApi.TicketWithLayoutsApiType
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# DeskProApi.PortalSettingsApi
+# DeskproApi.PortalSettingsApi
 
 All URIs are relative to *http://deskpro-dev.com/api/v2*
 
@@ -22,27 +22,21 @@ Get portal general settings
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.PortalSettingsApi();
+const apiInstance = new DeskproApi.PortalSettingsApi();
 
-let brand = "brand_example"; // String | 
+const brand = "brand_example"; // String | 
 
-
-apiInstance.getSettingBrandByBrandPortalDownload(brand, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getSettingBrandByBrandPortalDownload(brand).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -74,27 +68,21 @@ Get portal general settings
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.PortalSettingsApi();
+const apiInstance = new DeskproApi.PortalSettingsApi();
 
-let brand = "brand_example"; // String | 
+const brand = "brand_example"; // String | 
 
-
-apiInstance.getSettingBrandByBrandPortalFeedback(brand, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getSettingBrandByBrandPortalFeedback(brand).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -126,27 +114,21 @@ Get portal general settings
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.PortalSettingsApi();
+const apiInstance = new DeskproApi.PortalSettingsApi();
 
-let brand = "brand_example"; // String | 
+const brand = "brand_example"; // String | 
 
-
-apiInstance.getSettingBrandByBrandPortalGeneral(brand, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getSettingBrandByBrandPortalGeneral(brand).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -178,27 +160,21 @@ Get portal general settings
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.PortalSettingsApi();
+const apiInstance = new DeskproApi.PortalSettingsApi();
 
-let brand = "brand_example"; // String | 
+const brand = "brand_example"; // String | 
 
-
-apiInstance.getSettingBrandByBrandPortalGuide(brand, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getSettingBrandByBrandPortalGuide(brand).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -230,27 +206,21 @@ Get portal general settings
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.PortalSettingsApi();
+const apiInstance = new DeskproApi.PortalSettingsApi();
 
-let brand = "brand_example"; // String | 
+const brand = "brand_example"; // String | 
 
-
-apiInstance.getSettingBrandByBrandPortalKb(brand, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getSettingBrandByBrandPortalKb(brand).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -282,27 +252,21 @@ Get portal general settings
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.PortalSettingsApi();
+const apiInstance = new DeskproApi.PortalSettingsApi();
 
-let brand = "brand_example"; // String | 
+const brand = "brand_example"; // String | 
 
-
-apiInstance.getSettingBrandByBrandPortalNews(brand, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getSettingBrandByBrandPortalNews(brand).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters

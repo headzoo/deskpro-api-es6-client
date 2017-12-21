@@ -1,4 +1,4 @@
-# DeskProApi.ChatMessageType
+# DeskproApi.ChatMessageType
 
 ## Properties
 Name | Type | Description | Notes

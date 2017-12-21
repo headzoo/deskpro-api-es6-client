@@ -1,4 +1,4 @@
-# DeskProApi.FeedbackApi
+# DeskproApi.FeedbackApi
 
 All URIs are relative to *http://deskpro-dev.com/api/v2*
 
@@ -28,27 +28,21 @@ Delete a resource
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.FeedbackApi();
+const apiInstance = new DeskproApi.FeedbackApi();
 
-let id = 56; // Number | The id of the resource
+const id = 56; // Number | The id of the resource
 
-
-apiInstance.deleteFeedbackById(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.deleteFeedbackById(id).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -80,27 +74,21 @@ Delete a resource
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.FeedbackApi();
+const apiInstance = new DeskproApi.FeedbackApi();
 
-let id = 56; // Number | The id of the resource
+const id = 56; // Number | The id of the resource
 
-
-apiInstance.deleteFeedbackCommentById(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.deleteFeedbackCommentById(id).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -132,18 +120,14 @@ Get collection of resources
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.FeedbackApi();
+const apiInstance = new DeskproApi.FeedbackApi();
 
-let opts = { 
+const opts = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
@@ -163,14 +147,12 @@ let opts = {
   'orderBy': "orderBy_example", // String | how to order result
   'orderDir': "orderDir_example" // String | order direction
 };
-
-apiInstance.getFeedback(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getFeedback(opts).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -219,27 +201,21 @@ Get a resource
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.FeedbackApi();
+const apiInstance = new DeskproApi.FeedbackApi();
 
-let id = 56; // Number | The id of the resource
+const id = 56; // Number | The id of the resource
 
-
-apiInstance.getFeedbackById(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getFeedbackById(id).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -271,24 +247,18 @@ get list of feedback categories
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.FeedbackApi();
-
-apiInstance.getFeedbackCategories((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+const apiInstance = new DeskproApi.FeedbackApi();
+apiInstance.getFeedbackCategories().then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -317,27 +287,21 @@ Get a resource
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.FeedbackApi();
+const apiInstance = new DeskproApi.FeedbackApi();
 
-let id = 56; // Number | The id of the resource
+const id = 56; // Number | The id of the resource
 
-
-apiInstance.getFeedbackCommentById(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getFeedbackCommentById(id).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -369,24 +333,18 @@ Count list
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.FeedbackApi();
-
-apiInstance.getFeedbackCommentCount((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+const apiInstance = new DeskproApi.FeedbackApi();
+apiInstance.getFeedbackCommentCount().then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -415,18 +373,14 @@ get list of feedback comments
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.FeedbackApi();
+const apiInstance = new DeskproApi.FeedbackApi();
 
-let opts = { 
+const opts = { 
   'page': "page_example", // String | current page
   'count': "count_example", // String | per page comments quantity
   'limit': 56, // Number | Max number of resources to return
@@ -443,14 +397,12 @@ let opts = {
   'createdTo': "createdTo_example", // String | a datetime string to search comments until
   'feedbackFieldId': "feedbackFieldId_example" // String |   *                  Custom feedback field filter. To filter by a custom field with ID=1 you need to add  *                  ?feedback_field.1=value to the query string
 };
-
-apiInstance.getFeedbackComments(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getFeedbackComments(opts).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -496,18 +448,14 @@ Count list
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.FeedbackApi();
+const apiInstance = new DeskproApi.FeedbackApi();
 
-let opts = { 
+const opts = { 
   'awaitingValidation': true, // Boolean | select feedback awaiting validation only
   'status': "status_example", // String | filter by status
   'hiddenStatus': 56, // Number | limit with hidden_status
@@ -523,14 +471,12 @@ let opts = {
   'feedbackFieldId': "feedbackFieldId_example", // String |   *                  Custom feedback field filter. To filter by a custom field with ID=1 you need to add  *                  ?feedback_field.1=value to the query string
   'groupBy': true // Boolean | how to group counts
 };
-
-apiInstance.getFeedbackCount(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getFeedbackCount(opts).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -575,27 +521,21 @@ Get a resource
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.FeedbackApi();
+const apiInstance = new DeskproApi.FeedbackApi();
 
-let id = 56; // Number | The id of the resource
+const id = 56; // Number | The id of the resource
 
-
-apiInstance.getFeedbackTypeById(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getFeedbackTypeById(id).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -627,24 +567,18 @@ Count list
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.FeedbackApi();
-
-apiInstance.getFeedbackTypeCount((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+const apiInstance = new DeskproApi.FeedbackApi();
+apiInstance.getFeedbackTypeCount().then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -673,31 +607,25 @@ Get collection of resources
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.FeedbackApi();
+const apiInstance = new DeskproApi.FeedbackApi();
 
-let opts = { 
+const opts = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-
-apiInstance.getFeedbackTypes(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getFeedbackTypes(opts).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters

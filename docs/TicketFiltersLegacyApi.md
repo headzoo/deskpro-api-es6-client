@@ -1,4 +1,4 @@
-# DeskProApi.TicketFiltersLegacyApi
+# DeskproApi.TicketFiltersLegacyApi
 
 All URIs are relative to *http://deskpro-dev.com/api/v2*
 
@@ -27,20 +27,16 @@ Get filter&#39;s tickets. See /tickets endpoint docs for the parameter details.
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.TicketFiltersLegacyApi();
+const apiInstance = new DeskproApi.TicketFiltersLegacyApi();
 
-let filter = "filter_example"; // String | 
+const filter = "filter_example"; // String | 
 
-let opts = { 
+const opts = { 
   'sort': "sort_example", // String | tickets list sort
   'order': "order_example", // String | tickets list sort order
   'page': 56, // Number | pagination page parameter
@@ -57,14 +53,12 @@ let opts = {
   'dateCreated': 56, // Number | date created filter
   'ticketFieldId': "ticketFieldId_example" // String |       *                 Custom ticket field filter. To filter by a custom field with ID=1 you need to add      *                 ?ticket_field.1=value to the query string
 };
-
-apiInstance.getTicketFilterByFilterTicket(filter, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getTicketFilterByFilterTicket(filter, opts).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -111,27 +105,21 @@ Get a resource
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.TicketFiltersLegacyApi();
+const apiInstance = new DeskproApi.TicketFiltersLegacyApi();
 
-let id = 56; // Number | The id of the resource
+const id = 56; // Number | The id of the resource
 
-
-apiInstance.getTicketFilterById(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getTicketFilterById(id).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -163,30 +151,24 @@ Get a filter&#39;s count
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.TicketFiltersLegacyApi();
+const apiInstance = new DeskproApi.TicketFiltersLegacyApi();
 
-let id = 56; // Number | the id of the filter
+const id = 56; // Number | the id of the filter
 
-let opts = { 
+const opts = { 
   'groupBy': "groupBy_example" // String | the grouping order you want
 };
-
-apiInstance.getTicketFilterByIdCount(id, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getTicketFilterByIdCount(id, opts).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -219,24 +201,18 @@ Count list
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.TicketFiltersLegacyApi();
-
-apiInstance.getTicketFilterCount((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+const apiInstance = new DeskproApi.TicketFiltersLegacyApi();
+apiInstance.getTicketFilterCount().then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -265,28 +241,22 @@ Get all filter set counts
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.TicketFiltersLegacyApi();
+const apiInstance = new DeskproApi.TicketFiltersLegacyApi();
 
-let opts = { 
+const opts = { 
   'groupBy': ["groupBy_example"] // [String] | [Ticket filter ID => group_by] map
 };
-
-apiInstance.getTicketFilterSetAllCount(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getTicketFilterSetAllCount(opts).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -318,27 +288,21 @@ get a filter set
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.TicketFiltersLegacyApi();
+const apiInstance = new DeskproApi.TicketFiltersLegacyApi();
 
-let id = 56; // Number | the id of the filter set
+const id = 56; // Number | the id of the filter set
 
-
-apiInstance.getTicketFilterSetById(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getTicketFilterSetById(id).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -370,30 +334,24 @@ Get a filter set count
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.TicketFiltersLegacyApi();
+const apiInstance = new DeskproApi.TicketFiltersLegacyApi();
 
-let id = 56; // Number | the id of the filter
+const id = 56; // Number | the id of the filter
 
-let opts = { 
+const opts = { 
   'groupBy': ["groupBy_example"] // [String] | [Ticket filter ID => group_by] map
 };
-
-apiInstance.getTicketFilterSetByIdCount(id, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getTicketFilterSetByIdCount(id, opts).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -426,27 +384,21 @@ get filters belong to filter set
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.TicketFiltersLegacyApi();
+const apiInstance = new DeskproApi.TicketFiltersLegacyApi();
 
-let id = 56; // Number | the id of the filter set
+const id = 56; // Number | the id of the filter set
 
-
-apiInstance.getTicketFilterSetByIdFilter(id, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getTicketFilterSetByIdFilter(id).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -478,24 +430,18 @@ get filter sets
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.TicketFiltersLegacyApi();
-
-apiInstance.getTicketFilterSets((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+const apiInstance = new DeskproApi.TicketFiltersLegacyApi();
+apiInstance.getTicketFilterSets().then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -524,31 +470,25 @@ Get collection of resources
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.TicketFiltersLegacyApi();
+const apiInstance = new DeskproApi.TicketFiltersLegacyApi();
 
-let opts = { 
+const opts = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-
-apiInstance.getTicketFilters(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getTicketFilters(opts).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -583,28 +523,22 @@ Get all filters counts
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.TicketFiltersLegacyApi();
+const apiInstance = new DeskproApi.TicketFiltersLegacyApi();
 
-let opts = { 
+const opts = { 
   'groupBy': "groupBy_example" // String | [Ticket filter ID => group_by] map
 };
-
-apiInstance.getTicketFiltersCounts(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getTicketFiltersCounts(opts).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters

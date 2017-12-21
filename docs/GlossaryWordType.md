@@ -1,4 +1,4 @@
-# DeskProApi.GlossaryWordType
+# DeskproApi.GlossaryWordType
 
 ## Properties
 Name | Type | Description | Notes

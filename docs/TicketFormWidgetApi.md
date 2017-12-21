@@ -1,4 +1,4 @@
-# DeskProApi.TicketFormWidgetApi
+# DeskproApi.TicketFormWidgetApi
 
 All URIs are relative to *http://deskpro-dev.com/api/v2*
 
@@ -17,24 +17,18 @@ Get ticket form widget JS code
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.TicketFormWidgetApi();
-
-apiInstance.getTicketFormWidgetCode((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+const apiInstance = new DeskproApi.TicketFormWidgetApi();
+apiInstance.getTicketFormWidgetCode().then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters

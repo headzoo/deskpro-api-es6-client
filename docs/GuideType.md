@@ -1,4 +1,4 @@
-# DeskProApi.GuideType
+# DeskproApi.GuideType
 
 ## Properties
 Name | Type | Description | Notes

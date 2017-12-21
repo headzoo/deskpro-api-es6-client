@@ -1,4 +1,4 @@
-# DeskProApi.TicketFollowUpType
+# DeskproApi.TicketFollowUpType
 
 ## Properties
 Name | Type | Description | Notes

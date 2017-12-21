@@ -1,4 +1,4 @@
-# DeskProApi.DefaultDepartmentSettingsType
+# DeskproApi.DefaultDepartmentSettingsType
 
 ## Properties
 Name | Type | Description | Notes

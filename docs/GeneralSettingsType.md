@@ -1,4 +1,4 @@
-# DeskProApi.GeneralSettingsType
+# DeskproApi.GeneralSettingsType
 
 ## Properties
 Name | Type | Description | Notes

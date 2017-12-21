@@ -1,4 +1,4 @@
-# DeskProApi.Response
+# DeskproApi.Response
 
 ## Properties
 Name | Type | Description | Notes

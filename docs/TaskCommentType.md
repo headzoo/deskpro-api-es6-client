@@ -1,4 +1,4 @@
-# DeskProApi.TaskCommentType
+# DeskproApi.TaskCommentType
 
 ## Properties
 Name | Type | Description | Notes

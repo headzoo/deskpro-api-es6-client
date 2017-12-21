@@ -1,4 +1,4 @@
-# DeskProApi.CaptchaAntiAbuseType
+# DeskproApi.CaptchaAntiAbuseType
 
 ## Properties
 Name | Type | Description | Notes

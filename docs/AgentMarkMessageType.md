@@ -1,4 +1,4 @@
-# DeskProApi.AgentMarkMessageType
+# DeskproApi.AgentMarkMessageType
 
 ## Properties
 Name | Type | Description | Notes

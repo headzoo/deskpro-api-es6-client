@@ -1,4 +1,4 @@
-# DeskProApi.PortalAntiAbuseSettingsType
+# DeskproApi.PortalAntiAbuseSettingsType
 
 ## Properties
 Name | Type | Description | Notes

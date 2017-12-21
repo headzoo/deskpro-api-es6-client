@@ -1,4 +1,4 @@
-# DeskProApi.Error
+# DeskproApi.Error
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# DeskProApi.MagicLinkEmailType
+# DeskproApi.MagicLinkEmailType
 
 ## Properties
 Name | Type | Description | Notes

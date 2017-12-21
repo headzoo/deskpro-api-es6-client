@@ -1,4 +1,4 @@
-# DeskProApi.FeedbackType
+# DeskproApi.FeedbackType
 
 ## Properties
 Name | Type | Description | Notes

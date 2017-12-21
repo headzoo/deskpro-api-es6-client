@@ -1,4 +1,4 @@
-# DeskProApi.UpdaterSettingsType
+# DeskproApi.UpdaterSettingsType
 
 ## Properties
 Name | Type | Description | Notes

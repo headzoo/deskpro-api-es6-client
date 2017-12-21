@@ -1,4 +1,4 @@
-# DeskProApi.TicketLogType
+# DeskproApi.TicketLogType
 
 ## Properties
 Name | Type | Description | Notes

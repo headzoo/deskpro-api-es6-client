@@ -1,4 +1,4 @@
-# DeskProApi.ProblemType
+# DeskproApi.ProblemType
 
 ## Properties
 Name | Type | Description | Notes

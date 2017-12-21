@@ -1,4 +1,4 @@
-# DeskProApi.PersonType
+# DeskproApi.PersonType
 
 ## Properties
 Name | Type | Description | Notes

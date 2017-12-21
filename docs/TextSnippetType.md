@@ -1,4 +1,4 @@
-# DeskProApi.TextSnippetType
+# DeskproApi.TextSnippetType
 
 ## Properties
 Name | Type | Description | Notes

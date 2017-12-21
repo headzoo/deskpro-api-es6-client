@@ -1,4 +1,4 @@
-# DeskProApi.TicketSlaType
+# DeskproApi.TicketSlaType
 
 ## Properties
 Name | Type | Description | Notes

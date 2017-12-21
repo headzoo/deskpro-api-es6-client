@@ -1,4 +1,4 @@
-# DeskProApi.KbSettingsType
+# DeskproApi.KbSettingsType
 
 ## Properties
 Name | Type | Description | Notes

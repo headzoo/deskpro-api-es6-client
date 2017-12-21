@@ -1,4 +1,4 @@
-# DeskProApi.WidgetSampleOnlineAgentsApi
+# DeskproApi.WidgetSampleOnlineAgentsApi
 
 All URIs are relative to *http://deskpro-dev.com/api/v2*
 
@@ -18,24 +18,18 @@ get widget sample online agent
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.WidgetSampleOnlineAgentsApi();
-
-apiInstance.getWidgetLiveDemoSampleState((error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+const apiInstance = new DeskproApi.WidgetSampleOnlineAgentsApi();
+apiInstance.getWidgetLiveDemoSampleState().then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters
@@ -64,29 +58,23 @@ get widget sample online agent
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.WidgetSampleOnlineAgentsApi();
+const apiInstance = new DeskproApi.WidgetSampleOnlineAgentsApi();
 
-let brand = "brand_example"; // String | 
+const brand = "brand_example"; // String | 
 
-let email = "email_example"; // String | Email address
+const email = "email_example"; // String | Email address
 
-
-apiInstance.setSettingBrandByBrandWidgetSendInstruction(brand, email, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.setSettingBrandByBrandWidgetSendInstruction(brand, email).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters

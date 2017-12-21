@@ -1,4 +1,4 @@
-# DeskProApi.AgentTeamType
+# DeskproApi.AgentTeamType
 
 ## Properties
 Name | Type | Description | Notes

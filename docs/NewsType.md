@@ -1,4 +1,4 @@
-# DeskProApi.NewsType
+# DeskproApi.NewsType
 
 ## Properties
 Name | Type | Description | Notes

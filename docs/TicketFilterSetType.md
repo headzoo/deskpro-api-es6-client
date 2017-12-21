@@ -1,4 +1,4 @@
-# DeskProApi.TicketFilterSetType
+# DeskproApi.TicketFilterSetType
 
 ## Properties
 Name | Type | Description | Notes

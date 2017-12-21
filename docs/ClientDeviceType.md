@@ -1,4 +1,4 @@
-# DeskProApi.ClientDeviceType
+# DeskproApi.ClientDeviceType
 
 ## Properties
 Name | Type | Description | Notes

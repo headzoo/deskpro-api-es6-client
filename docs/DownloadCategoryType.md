@@ -1,4 +1,4 @@
-# DeskProApi.DownloadCategoryType
+# DeskproApi.DownloadCategoryType
 
 ## Properties
 Name | Type | Description | Notes

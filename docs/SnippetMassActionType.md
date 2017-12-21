@@ -1,4 +1,4 @@
-# DeskProApi.SnippetMassActionType
+# DeskproApi.SnippetMassActionType
 
 ## Properties
 Name | Type | Description | Notes

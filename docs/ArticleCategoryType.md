@@ -1,4 +1,4 @@
-# DeskProApi.ArticleCategoryType
+# DeskproApi.ArticleCategoryType
 
 ## Properties
 Name | Type | Description | Notes

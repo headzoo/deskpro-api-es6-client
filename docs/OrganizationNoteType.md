@@ -1,4 +1,4 @@
-# DeskProApi.OrganizationNoteType
+# DeskproApi.OrganizationNoteType
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# DeskProApi.TriggerTerm
+# DeskproApi.TriggerTerm
 
 ## Properties
 Name | Type | Description | Notes

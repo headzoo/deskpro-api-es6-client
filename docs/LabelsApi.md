@@ -1,4 +1,4 @@
-# DeskProApi.LabelsApi
+# DeskproApi.LabelsApi
 
 All URIs are relative to *http://deskpro-dev.com/api/v2*
 
@@ -17,30 +17,24 @@ Get all labels by types
 
 ### Example
 ```javascript
-import DeskProApi from 'desk_pro_api';
-let defaultClient = DeskProApi.ApiClient.instance;
+import DeskproApi from 'deskpro-api';
 
-// Configure API key authorization: KeyAuthentication
-let KeyAuthentication = defaultClient.authentications['KeyAuthentication'];
-KeyAuthentication.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//KeyAuthentication.apiKeyPrefix = 'Token';
+const defaultClient = DeskproApi.ApiClient.instance;
+defaultClient.setApiKey('YOUR_API_KEY');
 
-let apiInstance = new DeskProApi.LabelsApi();
+const apiInstance = new DeskproApi.LabelsApi();
 
-let type = "type_example"; // String | Which entity type labels we are searching?
+const type = "type_example"; // String | Which entity type labels we are searching?
 
-let opts = { 
+const opts = { 
   'term': "term_example" // String | Filter label by given word
 };
-
-apiInstance.getTypeLabels(type, opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
+apiInstance.getTypeLabels(type, opts).then((response) => {
+  console.log(response.data);
+}, (error) => {
+  console.error(error);
 });
+
 ```
 
 ### Parameters

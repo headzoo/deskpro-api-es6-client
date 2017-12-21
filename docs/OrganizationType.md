@@ -1,4 +1,4 @@
-# DeskProApi.OrganizationType
+# DeskproApi.OrganizationType
 
 ## Properties
 Name | Type | Description | Notes

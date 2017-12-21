@@ -1,4 +1,4 @@
-# DeskProApi.WidgetSettingsType
+# DeskproApi.WidgetSettingsType
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# DeskProApi.AgentProfileType
+# DeskproApi.AgentProfileType
 
 ## Properties
 Name | Type | Description | Notes

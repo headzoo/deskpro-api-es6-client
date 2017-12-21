@@ -1,4 +1,4 @@
-# DeskProApi.AppInstance
+# DeskproApi.AppInstance
 
 ## Properties
 Name | Type | Description | Notes

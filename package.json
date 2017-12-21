@@ -1,9 +1,9 @@
 {
-  "name": "desk_pro_api",
+  "name": "deskpro-api",
   "version": "2.0.0",
   "description": "DeskPRO_API",
   "license": "Unlicense",
-  "main": "src/DeskPRO\API/index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --recursive"
   },

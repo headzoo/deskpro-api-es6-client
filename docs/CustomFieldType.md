@@ -1,4 +1,4 @@
-# DeskProApi.CustomFieldType
+# DeskproApi.CustomFieldType
 
 ## Properties
 Name | Type | Description | Notes

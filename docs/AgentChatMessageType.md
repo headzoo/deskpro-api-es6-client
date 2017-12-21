@@ -1,4 +1,4 @@
-# DeskProApi.AgentChatMessageType
+# DeskproApi.AgentChatMessageType
 
 ## Properties
 Name | Type | Description | Notes

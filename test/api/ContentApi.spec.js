@@ -46,7 +46,18 @@
     else
       object[property] = value;
   }
-
+  
+  describe('getArticles', function() {
+    it('should call getArticles successfully', function(done) {
+      //uncomment below and update the code to test getArticles
+      instance.getArticles({ limit: 2 }, function(error, response) {
+        if (error) throw error;
+        expect(response.data.length).to.be(2);
+        console.log(response.data);
+        done();
+      });
+    });
+  });
   describe('ContentApi', function() {
     describe('deleteArticleById', function() {
       it('should call deleteArticleById successfully', function(done) {
@@ -272,16 +283,6 @@
       it('should call getArticlePendingCreates successfully', function(done) {
         //uncomment below and update the code to test getArticlePendingCreates
         //instance.getArticlePendingCreates(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('getArticles', function() {
-      it('should call getArticles successfully', function(done) {
-        //uncomment below and update the code to test getArticles
-        //instance.getArticles(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

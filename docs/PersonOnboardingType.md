@@ -1,4 +1,4 @@
-# DeskProApi.PersonOnboardingType
+# DeskproApi.PersonOnboardingType
 
 ## Properties
 Name | Type | Description | Notes

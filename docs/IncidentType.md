@@ -1,4 +1,4 @@
-# DeskProApi.IncidentType
+# DeskproApi.IncidentType
 
 ## Properties
 Name | Type | Description | Notes

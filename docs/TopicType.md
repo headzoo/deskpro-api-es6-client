@@ -1,4 +1,4 @@
-# DeskProApi.TopicType
+# DeskproApi.TopicType
 
 ## Properties
 Name | Type | Description | Notes

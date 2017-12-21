@@ -1,4 +1,4 @@
-# DeskProApi.OAuthClientType
+# DeskproApi.OAuthClientType
 
 ## Properties
 Name | Type | Description | Notes
