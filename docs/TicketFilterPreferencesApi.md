@@ -41,10 +41,15 @@ apiInstance.deleteNewTicketFilterByParentIdPrefById(id, parentId).then((response
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **parentId** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -61,7 +66,7 @@ Name | Type | Description  | Notes
 
 <a name="getNewTicketFilterByParentIdPref"></a>
 # **getNewTicketFilterByParentIdPref**
-> Response getNewTicketFilterByParentIdPref(parentId, opts)
+> Response getNewTicketFilterByParentIdPref(parentId, filters)
 
 
 
@@ -78,13 +83,13 @@ const apiInstance = new DeskproApi.TicketFilterPreferencesApi();
 
 const parentId = "parentId_example"; // String | 
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getNewTicketFilterByParentIdPref(parentId, opts).then((response) => {
+apiInstance.getNewTicketFilterByParentIdPref(parentId, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -94,13 +99,20 @@ apiInstance.getNewTicketFilterByParentIdPref(parentId, opts).then((response) => 
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+ **parentId** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -146,10 +158,15 @@ apiInstance.getNewTicketFilterByParentIdPrefById(id, parentId).then((response) =
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **parentId** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -193,9 +210,14 @@ apiInstance.getNewTicketFilterByParentIdPrefCount(parentId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 

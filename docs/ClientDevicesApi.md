@@ -41,10 +41,15 @@ apiInstance.deleteClientDeviceByAppTypeById(id, appType).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id or device_id of the resource | 
- **appType** | **String**|  | 
+ **id** | **Number**| The id or device_id of the resource |
+ **appType** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -61,7 +66,7 @@ Name | Type | Description  | Notes
 
 <a name="getClientDeviceByAppType"></a>
 # **getClientDeviceByAppType**
-> Response getClientDeviceByAppType(appType, opts)
+> Response getClientDeviceByAppType(appType, filters)
 
 
 
@@ -78,13 +83,13 @@ const apiInstance = new DeskproApi.ClientDevicesApi();
 
 const appType = "appType_example"; // String | 
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getClientDeviceByAppType(appType, opts).then((response) => {
+apiInstance.getClientDeviceByAppType(appType, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -94,13 +99,20 @@ apiInstance.getClientDeviceByAppType(appType, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **appType** | **String**|  | 
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+ **appType** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -146,10 +158,15 @@ apiInstance.getClientDeviceByAppTypeById(id, appType).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id or device_id of the resource | 
- **appType** | **String**|  | 
+ **id** | **Number**| The id or device_id of the resource |
+ **appType** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -193,9 +210,14 @@ apiInstance.getClientDeviceByAppTypeCount(appType).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **appType** | **String**|  | 
+ **appType** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 

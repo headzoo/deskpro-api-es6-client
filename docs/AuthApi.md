@@ -48,9 +48,14 @@ apiInstance.deleteOauthClientById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -94,9 +99,14 @@ apiInstance.getApiTokenDeviceSetupByAuth(auth).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **auth** | **String**|  | 
+ **auth** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -136,7 +146,12 @@ apiInstance.getApiTokenSession().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -182,10 +197,15 @@ apiInstance.getApiTokenUserSourceByUsersourceCallbackByFormat(format, usersource
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **String**|  | 
- **usersource** | **String**|  | 
+ **format** | **String**|  |
+ **usersource** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -229,9 +249,14 @@ apiInstance.getApiTokenUserSourceByUsersourceLogin(usersource).then(() => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **usersource** | **String**|  | 
+ **usersource** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -277,10 +302,15 @@ apiInstance.getApiTokenUserSourceContextFormat(context, format).then(() => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **context** | **String**|  | 
- **format** | **String**|  | 
+ **context** | **String**|  |
+ **format** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -320,7 +350,12 @@ apiInstance.getMe().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -360,7 +395,12 @@ apiInstance.getMeDeviceSetupToken().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -400,7 +440,12 @@ apiInstance.getMeProfile().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -444,9 +489,14 @@ apiInstance.getOauthClientById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -486,7 +536,12 @@ apiInstance.getOauthClientCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -503,7 +558,7 @@ This endpoint does not need any parameter.
 
 <a name="getOauthClients"></a>
 # **getOauthClients**
-> Response getOauthClients(opts)
+> Response getOauthClients(filters)
 
 
 
@@ -518,13 +573,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.AuthApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getOauthClients(opts).then((response) => {
+apiInstance.getOauthClients(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -534,12 +589,19 @@ apiInstance.getOauthClients(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -585,10 +647,15 @@ apiInstance.setApiTokenUserSourceByUsersourceCallbackByFormat(format, usersource
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **format** | **String**|  | 
- **usersource** | **String**|  | 
+ **format** | **String**|  |
+ **usersource** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 

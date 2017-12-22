@@ -47,10 +47,15 @@ apiInstance.deleteContextSnippetById(id, context).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **context** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **context** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -96,10 +101,15 @@ apiInstance.deleteContextSnippetCategoryById(id, context).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **context** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **context** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -145,10 +155,15 @@ apiInstance.getContextSnippetById(id, context).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **context** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **context** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -165,7 +180,7 @@ Name | Type | Description  | Notes
 
 <a name="getContextSnippetByIdContent"></a>
 # **getContextSnippetByIdContent**
-> Response getContextSnippetByIdContent(id, context, opts)
+> Response getContextSnippetByIdContent(id, context, filters)
 
 
 
@@ -184,10 +199,10 @@ const id = 56; // Number | the id of the snippet
 
 const context = "context_example"; // String | 
 
-const opts = { 
+const filters = { 
   'snippet': "snippet_example" // String | the context of the category
 };
-apiInstance.getContextSnippetByIdContent(id, context, opts).then((response) => {
+apiInstance.getContextSnippetByIdContent(id, context, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -197,11 +212,18 @@ apiInstance.getContextSnippetByIdContent(id, context, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| the id of the snippet | 
- **context** | **String**|  | 
- **snippet** | **String**| the context of the category | [optional] 
+ **id** | **Number**| the id of the snippet |
+ **context** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **snippet** | **String**| the context of the category | [optional]
 
 ### Return type
 
@@ -218,7 +240,7 @@ Name | Type | Description  | Notes
 
 <a name="getContextSnippetCategories"></a>
 # **getContextSnippetCategories**
-> Response getContextSnippetCategories(context, opts)
+> Response getContextSnippetCategories(context, filters)
 
 
 
@@ -235,13 +257,13 @@ const apiInstance = new DeskproApi.TextSnippetsApi();
 
 const context = "context_example"; // String | 
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getContextSnippetCategories(context, opts).then((response) => {
+apiInstance.getContextSnippetCategories(context, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -251,13 +273,20 @@ apiInstance.getContextSnippetCategories(context, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **context** | **String**|  | 
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+ **context** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -303,10 +332,15 @@ apiInstance.getContextSnippetCategoryById(id, context).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **context** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **context** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -323,7 +357,7 @@ Name | Type | Description  | Notes
 
 <a name="getContextSnippetCategoryByIdSnippet"></a>
 # **getContextSnippetCategoryByIdSnippet**
-> Response getContextSnippetCategoryByIdSnippet(id, context, opts)
+> Response getContextSnippetCategoryByIdSnippet(id, context, filters)
 
 
 
@@ -342,10 +376,10 @@ const id = 56; // Number | the id of the category
 
 const context = "context_example"; // String | 
 
-const opts = { 
+const filters = { 
   'snippet': "snippet_example" // String | the context of the category
 };
-apiInstance.getContextSnippetCategoryByIdSnippet(id, context, opts).then((response) => {
+apiInstance.getContextSnippetCategoryByIdSnippet(id, context, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -355,11 +389,18 @@ apiInstance.getContextSnippetCategoryByIdSnippet(id, context, opts).then((respon
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| the id of the category | 
- **context** | **String**|  | 
- **snippet** | **String**| the context of the category | [optional] 
+ **id** | **Number**| the id of the category |
+ **context** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **snippet** | **String**| the context of the category | [optional]
 
 ### Return type
 
@@ -403,9 +444,14 @@ apiInstance.getContextSnippetCategoryCount(context).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **context** | **String**|  | 
+ **context** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -449,9 +495,14 @@ apiInstance.getContextSnippetCount(context).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **context** | **String**|  | 
+ **context** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -468,7 +519,7 @@ Name | Type | Description  | Notes
 
 <a name="getContextSnippets"></a>
 # **getContextSnippets**
-> Response getContextSnippets(context, opts)
+> Response getContextSnippets(context, filters)
 
 
 
@@ -485,13 +536,13 @@ const apiInstance = new DeskproApi.TextSnippetsApi();
 
 const context = "context_example"; // String | 
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getContextSnippets(context, opts).then((response) => {
+apiInstance.getContextSnippets(context, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -501,13 +552,20 @@ apiInstance.getContextSnippets(context, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **context** | **String**|  | 
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+ **context** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 

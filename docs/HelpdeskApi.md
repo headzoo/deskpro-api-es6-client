@@ -37,7 +37,12 @@ apiInstance.getHelpdeskAgentClientInfo().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -77,7 +82,12 @@ apiInstance.getHelpdeskAgentClientSetting().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -117,7 +127,12 @@ apiInstance.getHelpdeskDiscover().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -157,7 +172,12 @@ apiInstance.getHelpdeskUpdaterSetting().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -197,7 +217,12 @@ apiInstance.getHelpdeskUpdaterStatu().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -241,9 +266,17 @@ apiInstance.setHelpdeskUpdaterManualSchedule(delay).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **delay** | **Number**| delay before start | 
+ **delay** | **Number**| delay before start |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **delay** | **Number**| delay before start |
 
 ### Return type
 

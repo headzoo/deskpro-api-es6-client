@@ -38,9 +38,14 @@ apiInstance.deleteWebhookTicketById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -57,7 +62,7 @@ Name | Type | Description  | Notes
 
 <a name="getWebhookTicket"></a>
 # **getWebhookTicket**
-> Response getWebhookTicket(opts)
+> Response getWebhookTicket(filters)
 
 
 
@@ -72,13 +77,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.WebhooksApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getWebhookTicket(opts).then((response) => {
+apiInstance.getWebhookTicket(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -88,12 +93,19 @@ apiInstance.getWebhookTicket(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -137,9 +149,14 @@ apiInstance.getWebhookTicketById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 

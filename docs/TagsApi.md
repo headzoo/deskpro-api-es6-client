@@ -38,9 +38,14 @@ apiInstance.getApiTagById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of key | 
+ **id** | **Number**| The id of key |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -84,9 +89,14 @@ apiInstance.getApiTagByIdFlatten(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of key | 
+ **id** | **Number**| The id of key |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -103,7 +113,7 @@ Name | Type | Description  | Notes
 
 <a name="updateApiTagById"></a>
 # **updateApiTagById**
-> Response updateApiTagById(id, opts)
+> Response updateApiTagById(id, filters)
 
 
 
@@ -120,11 +130,11 @@ const apiInstance = new DeskproApi.TagsApi();
 
 const id = 56; // Number | The id of key
 
-const opts = { 
+const filters = { 
   'action': "action_example", // String | Tag name
   'value': true // Boolean | Allow|deny
 };
-apiInstance.updateApiTagById(id, opts).then((response) => {
+apiInstance.updateApiTagById(id, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -134,11 +144,18 @@ apiInstance.updateApiTagById(id, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of key | 
- **action** | **String**| Tag name | [optional] 
- **value** | **Boolean**| Allow|deny | [optional] 
+ **id** | **Number**| The id of key |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **action** | **String**| Tag name | [optional]
+ **value** | **Boolean**| Allow|deny | [optional]
 
 ### Return type
 

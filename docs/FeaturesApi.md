@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 <a name="getFeatureByFeature"></a>
 # **getFeatureByFeature**
-> Response getFeatureByFeature(feature, opts)
+> Response getFeatureByFeature(feature, filters)
 
 
 
@@ -29,10 +29,10 @@ const apiInstance = new DeskproApi.FeaturesApi();
 
 const feature = "feature_example"; // String | 
 
-const opts = { 
+const filters = { 
   'id': "id_example" // String | id of the feature
 };
-apiInstance.getFeatureByFeature(feature, opts).then((response) => {
+apiInstance.getFeatureByFeature(feature, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -42,10 +42,17 @@ apiInstance.getFeatureByFeature(feature, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **feature** | **String**|  | 
- **id** | **String**| id of the feature | [optional] 
+ **feature** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**| id of the feature | [optional]
 
 ### Return type
 
@@ -85,7 +92,12 @@ apiInstance.getFeatures().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -102,7 +114,7 @@ This endpoint does not need any parameter.
 
 <a name="updateFeatureByFeatureDisable"></a>
 # **updateFeatureByFeatureDisable**
-> Response updateFeatureByFeatureDisable(feature, opts)
+> Response updateFeatureByFeatureDisable(feature, filters)
 
 
 
@@ -119,10 +131,10 @@ const apiInstance = new DeskproApi.FeaturesApi();
 
 const feature = "feature_example"; // String | 
 
-const opts = { 
+const filters = { 
   'id': "id_example" // String | id of the feature
 };
-apiInstance.updateFeatureByFeatureDisable(feature, opts).then((response) => {
+apiInstance.updateFeatureByFeatureDisable(feature, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -132,10 +144,17 @@ apiInstance.updateFeatureByFeatureDisable(feature, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **feature** | **String**|  | 
- **id** | **String**| id of the feature | [optional] 
+ **feature** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**| id of the feature | [optional]
 
 ### Return type
 
@@ -152,7 +171,7 @@ Name | Type | Description  | Notes
 
 <a name="updateFeatureByFeatureEnable"></a>
 # **updateFeatureByFeatureEnable**
-> Response updateFeatureByFeatureEnable(feature, opts)
+> Response updateFeatureByFeatureEnable(feature, filters)
 
 
 
@@ -169,10 +188,10 @@ const apiInstance = new DeskproApi.FeaturesApi();
 
 const feature = "feature_example"; // String | 
 
-const opts = { 
+const filters = { 
   'id': "id_example" // String | id of the feature
 };
-apiInstance.updateFeatureByFeatureEnable(feature, opts).then((response) => {
+apiInstance.updateFeatureByFeatureEnable(feature, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -182,10 +201,17 @@ apiInstance.updateFeatureByFeatureEnable(feature, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **feature** | **String**|  | 
- **id** | **String**| id of the feature | [optional] 
+ **feature** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**| id of the feature | [optional]
 
 ### Return type
 

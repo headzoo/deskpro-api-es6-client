@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="getSearch"></a>
 # **getSearch**
-> Response getSearch(opts)
+> Response getSearch(filters)
 
 
 
@@ -26,12 +26,12 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.SearchApi();
 
-const opts = { 
+const filters = { 
   'q': "q_example", // String | search term
   'sort': "sort_example", // String | how to sort
   'types': "types_example" // String | comma separated list of types
 };
-apiInstance.getSearch(opts).then((response) => {
+apiInstance.getSearch(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -41,11 +41,18 @@ apiInstance.getSearch(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **q** | **String**| search term | [optional] 
- **sort** | **String**| how to sort | [optional] 
- **types** | **String**| comma separated list of types | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **q** | **String**| search term | [optional]
+ **sort** | **String**| how to sort | [optional]
+ **types** | **String**| comma separated list of types | [optional]
 
 ### Return type
 
@@ -62,7 +69,7 @@ Name | Type | Description  | Notes
 
 <a name="getSearchByType"></a>
 # **getSearchByType**
-> Response getSearchByType(type, opts)
+> Response getSearchByType(type, filters)
 
 
 
@@ -79,11 +86,11 @@ const apiInstance = new DeskproApi.SearchApi();
 
 const type = "type_example"; // String | 
 
-const opts = { 
+const filters = { 
   'q': "q_example", // String | search term
   'sort': "sort_example" // String | how to sort
 };
-apiInstance.getSearchByType(type, opts).then((response) => {
+apiInstance.getSearchByType(type, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -93,11 +100,18 @@ apiInstance.getSearchByType(type, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **type** | **String**|  | 
- **q** | **String**| search term | [optional] 
- **sort** | **String**| how to sort | [optional] 
+ **type** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **q** | **String**| search term | [optional]
+ **sort** | **String**| how to sort | [optional]
 
 ### Return type
 
@@ -114,7 +128,7 @@ Name | Type | Description  | Notes
 
 <a name="getSearchPeopleAndOrg"></a>
 # **getSearchPeopleAndOrg**
-> Response getSearchPeopleAndOrg(opts)
+> Response getSearchPeopleAndOrg(filters)
 
 
 
@@ -129,11 +143,11 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.SearchApi();
 
-const opts = { 
+const filters = { 
   'q': "q_example", // String | search term
   'sort': "sort_example" // String | how to sort
 };
-apiInstance.getSearchPeopleAndOrg(opts).then((response) => {
+apiInstance.getSearchPeopleAndOrg(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -143,10 +157,17 @@ apiInstance.getSearchPeopleAndOrg(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **q** | **String**| search term | [optional] 
- **sort** | **String**| how to sort | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **q** | **String**| search term | [optional]
+ **sort** | **String**| how to sort | [optional]
 
 ### Return type
 

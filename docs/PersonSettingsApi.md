@@ -35,7 +35,12 @@ apiInstance.getPersonSetting().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -79,9 +84,14 @@ apiInstance.getPersonSettingByName(name).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **String**| the name of the setting | 
+ **name** | **String**| the name of the setting |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -127,10 +137,19 @@ apiInstance.setPersonSetting(name, value).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **String**| setting name | 
- **value** | **String**| setting value | 
+ **name** | **String**| setting name |
+ **value** | **String**| setting value |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **String**| setting name |
+ **value** | **String**| setting value |
 
 ### Return type
 
@@ -176,10 +195,19 @@ apiInstance.updatePersonSetting(name, value).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **String**| setting name | 
- **value** | **String**| setting value | 
+ **name** | **String**| setting name |
+ **value** | **String**| setting value |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **String**| setting name |
+ **value** | **String**| setting value |
 
 ### Return type
 

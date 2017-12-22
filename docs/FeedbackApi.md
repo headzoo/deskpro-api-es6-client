@@ -47,9 +47,14 @@ apiInstance.deleteFeedbackById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -93,9 +98,14 @@ apiInstance.deleteFeedbackCommentById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -112,7 +122,7 @@ Name | Type | Description  | Notes
 
 <a name="getFeedback"></a>
 # **getFeedback**
-> Response getFeedback(opts)
+> Response getFeedback(filters)
 
 
 
@@ -127,7 +137,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.FeedbackApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
@@ -147,7 +157,7 @@ const opts = {
   'orderBy': "orderBy_example", // String | how to order result
   'orderDir': "orderDir_example" // String | order direction
 };
-apiInstance.getFeedback(opts).then((response) => {
+apiInstance.getFeedback(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -157,26 +167,33 @@ apiInstance.getFeedback(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| comma separated ids list | [optional] 
- **awaitingValidation** | **Boolean**| select feedback awaiting validation only | [optional] 
- **status** | **String**| filter by status | [optional] 
- **hiddenStatus** | **Number**| limit with hidden_status | [optional] 
- **statusCategory** | **String**| filter by status category | [optional] 
- **category** | **String**| category title, or titles array | [optional] 
- **customCategory** | **String**| filter by custom category | [optional] 
- **labelsMode** | **String**| how to load labels | [optional] 
- **label** | **String**| select feedback with given lables | [optional] 
- **noLabels** | **Boolean**| select feedback have no label | [optional] 
- **createdFrom** | **String**| limit by date, interval&#x60;s start | [optional] 
- **createdTo** | **String**| limit by date, interval&#x60;s end | [optional] 
- **feedbackFieldId** | **String**|   *                  Custom feedback field filter. To filter by a custom field with ID&#x3D;1 you need to add  *                  ?feedback_field.1&#x3D;value to the query string | [optional] 
- **orderBy** | **String**| how to order result | [optional] 
- **orderDir** | **String**| order direction | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| comma separated ids list | [optional]
+ **awaitingValidation** | **Boolean**| select feedback awaiting validation only | [optional]
+ **status** | **String**| filter by status | [optional]
+ **hiddenStatus** | **Number**| limit with hidden_status | [optional]
+ **statusCategory** | **String**| filter by status category | [optional]
+ **category** | **String**| category title, or titles array | [optional]
+ **customCategory** | **String**| filter by custom category | [optional]
+ **labelsMode** | **String**| how to load labels | [optional]
+ **label** | **String**| select feedback with given lables | [optional]
+ **noLabels** | **Boolean**| select feedback have no label | [optional]
+ **createdFrom** | **String**| limit by date, interval&#x60;s start | [optional]
+ **createdTo** | **String**| limit by date, interval&#x60;s end | [optional]
+ **feedbackFieldId** | **String**|   *                  Custom feedback field filter. To filter by a custom field with ID&#x3D;1 you need to add  *                  ?feedback_field.1&#x3D;value to the query string | [optional]
+ **orderBy** | **String**| how to order result | [optional]
+ **orderDir** | **String**| order direction | [optional]
 
 ### Return type
 
@@ -220,9 +237,14 @@ apiInstance.getFeedbackById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -262,7 +284,12 @@ apiInstance.getFeedbackCategories().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -306,9 +333,14 @@ apiInstance.getFeedbackCommentById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -348,7 +380,12 @@ apiInstance.getFeedbackCommentCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -365,7 +402,7 @@ This endpoint does not need any parameter.
 
 <a name="getFeedbackComments"></a>
 # **getFeedbackComments**
-> Response getFeedbackComments(opts)
+> Response getFeedbackComments(filters)
 
 
 
@@ -380,7 +417,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.FeedbackApi();
 
-const opts = { 
+const filters = { 
   'page': "page_example", // String | current page
   'count': "count_example", // String | per page comments quantity
   'limit': 56, // Number | Max number of resources to return
@@ -397,7 +434,7 @@ const opts = {
   'createdTo': "createdTo_example", // String | a datetime string to search comments until
   'feedbackFieldId': "feedbackFieldId_example" // String |   *                  Custom feedback field filter. To filter by a custom field with ID=1 you need to add  *                  ?feedback_field.1=value to the query string
 };
-apiInstance.getFeedbackComments(opts).then((response) => {
+apiInstance.getFeedbackComments(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -407,23 +444,30 @@ apiInstance.getFeedbackComments(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **String**| current page | [optional] 
- **count** | **String**| per page comments quantity | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| a comma separated list of comment&#x60;s ids | [optional] 
- **awaitingValidation** | **String**| set it if you want to fetch new comments | [optional] 
- **category** | **String**| category to search, exact name | [optional] 
- **statusCategory** | **Number**| integer represents status category | [optional] 
- **label** | **String**| a comma separated list of exact label names | [optional] 
- **noLabels** | **Boolean**| boolean value | [optional] 
- **customCategory** | **String**| an array of exact custom categories names | [optional] 
- **status** | **Number**| an integer value represents current status | [optional] 
- **hiddenStatus** | **String**| an integer value represents current hidden_status | [optional] 
- **createdFrom** | **String**| a datetime string to search comments since | [optional] 
- **createdTo** | **String**| a datetime string to search comments until | [optional] 
- **feedbackFieldId** | **String**|   *                  Custom feedback field filter. To filter by a custom field with ID&#x3D;1 you need to add  *                  ?feedback_field.1&#x3D;value to the query string | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **String**| current page | [optional]
+ **count** | **String**| per page comments quantity | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| a comma separated list of comment&#x60;s ids | [optional]
+ **awaitingValidation** | **String**| set it if you want to fetch new comments | [optional]
+ **category** | **String**| category to search, exact name | [optional]
+ **statusCategory** | **Number**| integer represents status category | [optional]
+ **label** | **String**| a comma separated list of exact label names | [optional]
+ **noLabels** | **Boolean**| boolean value | [optional]
+ **customCategory** | **String**| an array of exact custom categories names | [optional]
+ **status** | **Number**| an integer value represents current status | [optional]
+ **hiddenStatus** | **String**| an integer value represents current hidden_status | [optional]
+ **createdFrom** | **String**| a datetime string to search comments since | [optional]
+ **createdTo** | **String**| a datetime string to search comments until | [optional]
+ **feedbackFieldId** | **String**|   *                  Custom feedback field filter. To filter by a custom field with ID&#x3D;1 you need to add  *                  ?feedback_field.1&#x3D;value to the query string | [optional]
 
 ### Return type
 
@@ -440,7 +484,7 @@ Name | Type | Description  | Notes
 
 <a name="getFeedbackCount"></a>
 # **getFeedbackCount**
-> Response getFeedbackCount(opts)
+> Response getFeedbackCount(filters)
 
 
 
@@ -455,7 +499,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.FeedbackApi();
 
-const opts = { 
+const filters = { 
   'awaitingValidation': true, // Boolean | select feedback awaiting validation only
   'status': "status_example", // String | filter by status
   'hiddenStatus': 56, // Number | limit with hidden_status
@@ -471,7 +515,7 @@ const opts = {
   'feedbackFieldId': "feedbackFieldId_example", // String |   *                  Custom feedback field filter. To filter by a custom field with ID=1 you need to add  *                  ?feedback_field.1=value to the query string
   'groupBy': true // Boolean | how to group counts
 };
-apiInstance.getFeedbackCount(opts).then((response) => {
+apiInstance.getFeedbackCount(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -481,22 +525,29 @@ apiInstance.getFeedbackCount(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **awaitingValidation** | **Boolean**| select feedback awaiting validation only | [optional] 
- **status** | **String**| filter by status | [optional] 
- **hiddenStatus** | **Number**| limit with hidden_status | [optional] 
- **statusCategory** | **String**| filter by status category | [optional] 
- **category** | **String**| category title, or titles array | [optional] 
- **customCategory** | **String**| filter by custom category | [optional] 
- **labelsMode** | **String**| how to load labels | [optional] 
- **label** | **String**| select feedback with given lables | [optional] 
- **noLabels** | **Boolean**| select feedback have no label | [optional] 
- **ids** | **String**| comma separated ids list | [optional] 
- **createdFrom** | **String**| limit by date, interval&#x60;s start | [optional] 
- **createdTo** | **String**| limit by date, interval&#x60;s end | [optional] 
- **feedbackFieldId** | **String**|   *                  Custom feedback field filter. To filter by a custom field with ID&#x3D;1 you need to add  *                  ?feedback_field.1&#x3D;value to the query string | [optional] 
- **groupBy** | **Boolean**| how to group counts | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **awaitingValidation** | **Boolean**| select feedback awaiting validation only | [optional]
+ **status** | **String**| filter by status | [optional]
+ **hiddenStatus** | **Number**| limit with hidden_status | [optional]
+ **statusCategory** | **String**| filter by status category | [optional]
+ **category** | **String**| category title, or titles array | [optional]
+ **customCategory** | **String**| filter by custom category | [optional]
+ **labelsMode** | **String**| how to load labels | [optional]
+ **label** | **String**| select feedback with given lables | [optional]
+ **noLabels** | **Boolean**| select feedback have no label | [optional]
+ **ids** | **String**| comma separated ids list | [optional]
+ **createdFrom** | **String**| limit by date, interval&#x60;s start | [optional]
+ **createdTo** | **String**| limit by date, interval&#x60;s end | [optional]
+ **feedbackFieldId** | **String**|   *                  Custom feedback field filter. To filter by a custom field with ID&#x3D;1 you need to add  *                  ?feedback_field.1&#x3D;value to the query string | [optional]
+ **groupBy** | **Boolean**| how to group counts | [optional]
 
 ### Return type
 
@@ -540,9 +591,14 @@ apiInstance.getFeedbackTypeById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -582,7 +638,12 @@ apiInstance.getFeedbackTypeCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -599,7 +660,7 @@ This endpoint does not need any parameter.
 
 <a name="getFeedbackTypes"></a>
 # **getFeedbackTypes**
-> Response getFeedbackTypes(opts)
+> Response getFeedbackTypes(filters)
 
 
 
@@ -614,13 +675,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.FeedbackApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getFeedbackTypes(opts).then((response) => {
+apiInstance.getFeedbackTypes(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -630,12 +691,19 @@ apiInstance.getFeedbackTypes(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 

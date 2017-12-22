@@ -41,9 +41,14 @@ apiInstance.deleteGlossaryById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -60,7 +65,7 @@ Name | Type | Description  | Notes
 
 <a name="getGlossary"></a>
 # **getGlossary**
-> Response getGlossary(opts)
+> Response getGlossary(filters)
 
 
 
@@ -75,13 +80,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.GlossaryApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getGlossary(opts).then((response) => {
+apiInstance.getGlossary(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -91,12 +96,19 @@ apiInstance.getGlossary(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -140,9 +152,14 @@ apiInstance.getGlossaryById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -182,7 +199,12 @@ apiInstance.getGlossaryCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -199,7 +221,7 @@ This endpoint does not need any parameter.
 
 <a name="getGlossaryWord"></a>
 # **getGlossaryWord**
-> Response getGlossaryWord(opts)
+> Response getGlossaryWord(filters)
 
 
 
@@ -214,13 +236,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.GlossaryApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getGlossaryWord(opts).then((response) => {
+apiInstance.getGlossaryWord(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -230,12 +252,19 @@ apiInstance.getGlossaryWord(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -279,9 +308,14 @@ apiInstance.getGlossaryWordByWord(word).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **word** | **String**| The word | 
+ **word** | **String**| The word |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 

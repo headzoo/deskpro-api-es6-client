@@ -41,9 +41,14 @@ apiInstance.getSettingBrandByBrandPortalDownload(brand).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **brand** | **String**|  | 
+ **brand** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -87,9 +92,14 @@ apiInstance.getSettingBrandByBrandPortalFeedback(brand).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **brand** | **String**|  | 
+ **brand** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -133,9 +143,14 @@ apiInstance.getSettingBrandByBrandPortalGeneral(brand).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **brand** | **String**|  | 
+ **brand** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -179,9 +194,14 @@ apiInstance.getSettingBrandByBrandPortalGuide(brand).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **brand** | **String**|  | 
+ **brand** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -225,9 +245,14 @@ apiInstance.getSettingBrandByBrandPortalKb(brand).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **brand** | **String**|  | 
+ **brand** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -271,9 +296,14 @@ apiInstance.getSettingBrandByBrandPortalNews(brand).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **brand** | **String**|  | 
+ **brand** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 

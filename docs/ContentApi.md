@@ -87,9 +87,14 @@ apiInstance.deleteArticleById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -133,9 +138,14 @@ apiInstance.deleteArticleCategoryById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -179,9 +189,14 @@ apiInstance.deleteArticleCommentById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -225,9 +240,14 @@ apiInstance.deleteArticlePendingCreateById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -271,9 +291,14 @@ apiInstance.deleteDownloadById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -317,9 +342,14 @@ apiInstance.deleteDownloadCategoryById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -363,9 +393,14 @@ apiInstance.deleteDownloadCommentById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -409,9 +444,14 @@ apiInstance.deleteGuideById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -455,9 +495,14 @@ apiInstance.deleteNewsById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -501,9 +546,14 @@ apiInstance.deleteNewsCategoryById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -547,9 +597,14 @@ apiInstance.deleteNewsCommentById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -593,9 +648,14 @@ apiInstance.deleteTopicById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -639,9 +699,14 @@ apiInstance.getArticleById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -658,7 +723,7 @@ Name | Type | Description  | Notes
 
 <a name="getArticleCategories"></a>
 # **getArticleCategories**
-> Response getArticleCategories(opts)
+> Response getArticleCategories(filters)
 
 
 
@@ -673,13 +738,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ContentApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getArticleCategories(opts).then((response) => {
+apiInstance.getArticleCategories(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -689,12 +754,19 @@ apiInstance.getArticleCategories(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -738,9 +810,14 @@ apiInstance.getArticleCategoryById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -780,7 +857,12 @@ apiInstance.getArticleCategoryCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -824,9 +906,14 @@ apiInstance.getArticleCommentById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -843,7 +930,7 @@ Name | Type | Description  | Notes
 
 <a name="getArticleCommentCount"></a>
 # **getArticleCommentCount**
-> Response getArticleCommentCount(opts)
+> Response getArticleCommentCount(filters)
 
 
 
@@ -858,7 +945,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ContentApi();
 
-const opts = { 
+const filters = { 
   'status': "status_example", // String | filter by status
   'isReviewed': 56, // Number | filter by reviewed status
   'periodCreated': "periodCreated_example", // String | filter by period
@@ -867,7 +954,7 @@ const opts = {
   'news': 56, // Number | select comments for news with given id
   'groupBy': "groupBy_example" // String | how to groups comments
 };
-apiInstance.getArticleCommentCount(opts).then((response) => {
+apiInstance.getArticleCommentCount(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -877,15 +964,22 @@ apiInstance.getArticleCommentCount(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **status** | **String**| filter by status | [optional] 
- **isReviewed** | **Number**| filter by reviewed status | [optional] 
- **periodCreated** | **String**| filter by period | [optional] 
- **article** | **Number**| select comments for article with given id | [optional] 
- **download** | **Number**| select comments for download with given id | [optional] 
- **news** | **Number**| select comments for news with given id | [optional] 
- **groupBy** | **String**| how to groups comments | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **status** | **String**| filter by status | [optional]
+ **isReviewed** | **Number**| filter by reviewed status | [optional]
+ **periodCreated** | **String**| filter by period | [optional]
+ **article** | **Number**| select comments for article with given id | [optional]
+ **download** | **Number**| select comments for download with given id | [optional]
+ **news** | **Number**| select comments for news with given id | [optional]
+ **groupBy** | **String**| how to groups comments | [optional]
 
 ### Return type
 
@@ -902,7 +996,7 @@ Name | Type | Description  | Notes
 
 <a name="getArticleComments"></a>
 # **getArticleComments**
-> Response getArticleComments(opts)
+> Response getArticleComments(filters)
 
 
 
@@ -917,7 +1011,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ContentApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
@@ -930,7 +1024,7 @@ const opts = {
   'news': 56, // Number | select comments for news with given id
   'orderBy': "orderBy_example" // String | how to order comments
 };
-apiInstance.getArticleComments(opts).then((response) => {
+apiInstance.getArticleComments(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -940,19 +1034,26 @@ apiInstance.getArticleComments(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
- **status** | **String**| filter by status | [optional] 
- **isReviewed** | **Number**| filter by reviewed status | [optional] 
- **periodCreated** | **String**| filter by period | [optional] 
- **article** | **Number**| select comments for article with given id | [optional] 
- **download** | **Number**| select comments for download with given id | [optional] 
- **news** | **Number**| select comments for news with given id | [optional] 
- **orderBy** | **String**| how to order comments | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
+ **status** | **String**| filter by status | [optional]
+ **isReviewed** | **Number**| filter by reviewed status | [optional]
+ **periodCreated** | **String**| filter by period | [optional]
+ **article** | **Number**| select comments for article with given id | [optional]
+ **download** | **Number**| select comments for download with given id | [optional]
+ **news** | **Number**| select comments for news with given id | [optional]
+ **orderBy** | **String**| how to order comments | [optional]
 
 ### Return type
 
@@ -969,7 +1070,7 @@ Name | Type | Description  | Notes
 
 <a name="getArticleCount"></a>
 # **getArticleCount**
-> Response getArticleCount(opts)
+> Response getArticleCount(filters)
 
 
 
@@ -984,7 +1085,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ContentApi();
 
-const opts = { 
+const filters = { 
   'author': "author_example", // String | filter by author, provide an id or 'me' for current user
   'category': 56, // Number | filter category, could be an array or just digit
   'groupBy': "groupBy_example", // String | how to group counters
@@ -995,7 +1096,7 @@ const opts = {
   'periodPublished': 56, // Number | filter by py period when content was published
   'periodUpdated': 56 // Number | filter by py period when content was updated
 };
-apiInstance.getArticleCount(opts).then((response) => {
+apiInstance.getArticleCount(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -1005,17 +1106,24 @@ apiInstance.getArticleCount(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **author** | **String**| filter by author, provide an id or &#39;me&#39; for current user | [optional] 
- **category** | **Number**| filter category, could be an array or just digit | [optional] 
- **groupBy** | **String**| how to group counters | [optional] 
- **status** | **String**| filter by status | [optional] 
- **hiddenStatus** | **Number**| select for article with given id | [optional] 
- **periodCreated** | **Number**| filter by period when content was created | [optional] 
- **periodLastComment** | **Number**| filter by period when content was last commented | [optional] 
- **periodPublished** | **Number**| filter by py period when content was published | [optional] 
- **periodUpdated** | **Number**| filter by py period when content was updated | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **author** | **String**| filter by author, provide an id or &#39;me&#39; for current user | [optional]
+ **category** | **Number**| filter category, could be an array or just digit | [optional]
+ **groupBy** | **String**| how to group counters | [optional]
+ **status** | **String**| filter by status | [optional]
+ **hiddenStatus** | **Number**| select for article with given id | [optional]
+ **periodCreated** | **Number**| filter by period when content was created | [optional]
+ **periodLastComment** | **Number**| filter by period when content was last commented | [optional]
+ **periodPublished** | **Number**| filter by py period when content was published | [optional]
+ **periodUpdated** | **Number**| filter by py period when content was updated | [optional]
 
 ### Return type
 
@@ -1059,9 +1167,14 @@ apiInstance.getArticlePendingCreateById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1078,7 +1191,7 @@ Name | Type | Description  | Notes
 
 <a name="getArticlePendingCreateCount"></a>
 # **getArticlePendingCreateCount**
-> Response getArticlePendingCreateCount(opts)
+> Response getArticlePendingCreateCount(filters)
 
 
 
@@ -1093,10 +1206,10 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ContentApi();
 
-const opts = { 
+const filters = { 
   'assignedPerson': "assignedPerson_example" // String | 
 };
-apiInstance.getArticlePendingCreateCount(opts).then((response) => {
+apiInstance.getArticlePendingCreateCount(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -1106,9 +1219,16 @@ apiInstance.getArticlePendingCreateCount(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **assignedPerson** | **String**|  | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **assignedPerson** | **String**|  | [optional]
 
 ### Return type
 
@@ -1125,7 +1245,7 @@ Name | Type | Description  | Notes
 
 <a name="getArticlePendingCreates"></a>
 # **getArticlePendingCreates**
-> Response getArticlePendingCreates(opts)
+> Response getArticlePendingCreates(filters)
 
 
 
@@ -1140,7 +1260,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ContentApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
@@ -1149,7 +1269,7 @@ const opts = {
   'orderBy': "orderBy_example", // String | how to order result
   'orderDir': "orderDir_example" // String | order direction
 };
-apiInstance.getArticlePendingCreates(opts).then((response) => {
+apiInstance.getArticlePendingCreates(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -1159,15 +1279,22 @@ apiInstance.getArticlePendingCreates(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
- **assignedPerson** | **String**|  | [optional] 
- **orderBy** | **String**| how to order result | [optional] 
- **orderDir** | **String**| order direction | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
+ **assignedPerson** | **String**|  | [optional]
+ **orderBy** | **String**| how to order result | [optional]
+ **orderDir** | **String**| order direction | [optional]
 
 ### Return type
 
@@ -1184,7 +1311,7 @@ Name | Type | Description  | Notes
 
 <a name="getArticles"></a>
 # **getArticles**
-> Response getArticles(opts)
+> Response getArticles(filters)
 
 
 
@@ -1199,7 +1326,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ContentApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
@@ -1215,7 +1342,7 @@ const opts = {
   'periodUpdated': 56, // Number | filter by py period when content was updated
   'orderBy': 56 // Number | how to order
 };
-apiInstance.getArticles(opts).then((response) => {
+apiInstance.getArticles(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -1225,22 +1352,29 @@ apiInstance.getArticles(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
- **author** | **String**| filter by author, provide an id or &#39;me&#39; for current user | [optional] 
- **category** | **Number**| filter category, could be an array or just digit | [optional] 
- **groupBy** | **String**| how to group downloads | [optional] 
- **status** | **String**| filter by status | [optional] 
- **hiddenStatus** | **Number**| select for article with given id | [optional] 
- **periodCreated** | **Number**| filter by period when content was created | [optional] 
- **periodLastComment** | **Number**| filter by period when content was last commented | [optional] 
- **periodPublished** | **Number**| filter by py period when content was published | [optional] 
- **periodUpdated** | **Number**| filter by py period when content was updated | [optional] 
- **orderBy** | **Number**| how to order | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
+ **author** | **String**| filter by author, provide an id or &#39;me&#39; for current user | [optional]
+ **category** | **Number**| filter category, could be an array or just digit | [optional]
+ **groupBy** | **String**| how to group downloads | [optional]
+ **status** | **String**| filter by status | [optional]
+ **hiddenStatus** | **Number**| select for article with given id | [optional]
+ **periodCreated** | **Number**| filter by period when content was created | [optional]
+ **periodLastComment** | **Number**| filter by period when content was last commented | [optional]
+ **periodPublished** | **Number**| filter by py period when content was published | [optional]
+ **periodUpdated** | **Number**| filter by py period when content was updated | [optional]
+ **orderBy** | **Number**| how to order | [optional]
 
 ### Return type
 
@@ -1280,7 +1414,12 @@ apiInstance.getContentCategories().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1324,9 +1463,14 @@ apiInstance.getDownloadById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1343,7 +1487,7 @@ Name | Type | Description  | Notes
 
 <a name="getDownloadCategories"></a>
 # **getDownloadCategories**
-> Response getDownloadCategories(opts)
+> Response getDownloadCategories(filters)
 
 
 
@@ -1358,13 +1502,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ContentApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getDownloadCategories(opts).then((response) => {
+apiInstance.getDownloadCategories(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -1374,12 +1518,19 @@ apiInstance.getDownloadCategories(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -1423,9 +1574,14 @@ apiInstance.getDownloadCategoryById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1465,7 +1621,12 @@ apiInstance.getDownloadCategoryCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1509,9 +1670,14 @@ apiInstance.getDownloadCommentById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1528,7 +1694,7 @@ Name | Type | Description  | Notes
 
 <a name="getDownloadCommentCount"></a>
 # **getDownloadCommentCount**
-> Response getDownloadCommentCount(opts)
+> Response getDownloadCommentCount(filters)
 
 
 
@@ -1543,7 +1709,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ContentApi();
 
-const opts = { 
+const filters = { 
   'status': "status_example", // String | filter by status
   'isReviewed': 56, // Number | filter by reviewed status
   'periodCreated': "periodCreated_example", // String | filter by period
@@ -1552,7 +1718,7 @@ const opts = {
   'news': 56, // Number | select comments for news with given id
   'groupBy': "groupBy_example" // String | how to groups comments
 };
-apiInstance.getDownloadCommentCount(opts).then((response) => {
+apiInstance.getDownloadCommentCount(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -1562,15 +1728,22 @@ apiInstance.getDownloadCommentCount(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **status** | **String**| filter by status | [optional] 
- **isReviewed** | **Number**| filter by reviewed status | [optional] 
- **periodCreated** | **String**| filter by period | [optional] 
- **article** | **Number**| select comments for article with given id | [optional] 
- **download** | **Number**| select comments for download with given id | [optional] 
- **news** | **Number**| select comments for news with given id | [optional] 
- **groupBy** | **String**| how to groups comments | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **status** | **String**| filter by status | [optional]
+ **isReviewed** | **Number**| filter by reviewed status | [optional]
+ **periodCreated** | **String**| filter by period | [optional]
+ **article** | **Number**| select comments for article with given id | [optional]
+ **download** | **Number**| select comments for download with given id | [optional]
+ **news** | **Number**| select comments for news with given id | [optional]
+ **groupBy** | **String**| how to groups comments | [optional]
 
 ### Return type
 
@@ -1587,7 +1760,7 @@ Name | Type | Description  | Notes
 
 <a name="getDownloadComments"></a>
 # **getDownloadComments**
-> Response getDownloadComments(opts)
+> Response getDownloadComments(filters)
 
 
 
@@ -1602,7 +1775,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ContentApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
@@ -1615,7 +1788,7 @@ const opts = {
   'news': 56, // Number | select comments for news with given id
   'orderBy': "orderBy_example" // String | how to order comments
 };
-apiInstance.getDownloadComments(opts).then((response) => {
+apiInstance.getDownloadComments(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -1625,19 +1798,26 @@ apiInstance.getDownloadComments(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
- **status** | **String**| filter by status | [optional] 
- **isReviewed** | **Number**| filter by reviewed status | [optional] 
- **periodCreated** | **String**| filter by period | [optional] 
- **article** | **Number**| select comments for article with given id | [optional] 
- **download** | **Number**| select comments for download with given id | [optional] 
- **news** | **Number**| select comments for news with given id | [optional] 
- **orderBy** | **String**| how to order comments | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
+ **status** | **String**| filter by status | [optional]
+ **isReviewed** | **Number**| filter by reviewed status | [optional]
+ **periodCreated** | **String**| filter by period | [optional]
+ **article** | **Number**| select comments for article with given id | [optional]
+ **download** | **Number**| select comments for download with given id | [optional]
+ **news** | **Number**| select comments for news with given id | [optional]
+ **orderBy** | **String**| how to order comments | [optional]
 
 ### Return type
 
@@ -1654,7 +1834,7 @@ Name | Type | Description  | Notes
 
 <a name="getDownloadCount"></a>
 # **getDownloadCount**
-> Response getDownloadCount(opts)
+> Response getDownloadCount(filters)
 
 
 
@@ -1669,7 +1849,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ContentApi();
 
-const opts = { 
+const filters = { 
   'author': "author_example", // String | filter by author, provide an id or 'me' for current user
   'category': 56, // Number | filter category, could be an array or just digit
   'groupBy': "groupBy_example", // String | how to group counters
@@ -1680,7 +1860,7 @@ const opts = {
   'periodPublished': 56, // Number | filter by py period when content was published
   'periodUpdated': 56 // Number | filter by py period when content was updated
 };
-apiInstance.getDownloadCount(opts).then((response) => {
+apiInstance.getDownloadCount(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -1690,17 +1870,24 @@ apiInstance.getDownloadCount(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **author** | **String**| filter by author, provide an id or &#39;me&#39; for current user | [optional] 
- **category** | **Number**| filter category, could be an array or just digit | [optional] 
- **groupBy** | **String**| how to group counters | [optional] 
- **status** | **String**| filter by status | [optional] 
- **hiddenStatus** | **Number**| select for article with given id | [optional] 
- **periodCreated** | **Number**| filter by period when content was created | [optional] 
- **periodLastComment** | **Number**| filter by period when content was last commented | [optional] 
- **periodPublished** | **Number**| filter by py period when content was published | [optional] 
- **periodUpdated** | **Number**| filter by py period when content was updated | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **author** | **String**| filter by author, provide an id or &#39;me&#39; for current user | [optional]
+ **category** | **Number**| filter category, could be an array or just digit | [optional]
+ **groupBy** | **String**| how to group counters | [optional]
+ **status** | **String**| filter by status | [optional]
+ **hiddenStatus** | **Number**| select for article with given id | [optional]
+ **periodCreated** | **Number**| filter by period when content was created | [optional]
+ **periodLastComment** | **Number**| filter by period when content was last commented | [optional]
+ **periodPublished** | **Number**| filter by py period when content was published | [optional]
+ **periodUpdated** | **Number**| filter by py period when content was updated | [optional]
 
 ### Return type
 
@@ -1717,7 +1904,7 @@ Name | Type | Description  | Notes
 
 <a name="getDownloads"></a>
 # **getDownloads**
-> Response getDownloads(opts)
+> Response getDownloads(filters)
 
 
 
@@ -1732,7 +1919,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ContentApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
@@ -1748,7 +1935,7 @@ const opts = {
   'periodUpdated': 56, // Number | filter by py period when content was updated
   'orderBy': 56 // Number | how to order
 };
-apiInstance.getDownloads(opts).then((response) => {
+apiInstance.getDownloads(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -1758,22 +1945,29 @@ apiInstance.getDownloads(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
- **author** | **String**| filter by author, provide an id or &#39;me&#39; for current user | [optional] 
- **category** | **Number**| filter category, could be an array or just digit | [optional] 
- **groupBy** | **String**| how to group downloads | [optional] 
- **status** | **String**| filter by status | [optional] 
- **hiddenStatus** | **Number**| select for article with given id | [optional] 
- **periodCreated** | **Number**| filter by period when content was created | [optional] 
- **periodLastComment** | **Number**| filter by period when content was last commented | [optional] 
- **periodPublished** | **Number**| filter by py period when content was published | [optional] 
- **periodUpdated** | **Number**| filter by py period when content was updated | [optional] 
- **orderBy** | **Number**| how to order | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
+ **author** | **String**| filter by author, provide an id or &#39;me&#39; for current user | [optional]
+ **category** | **Number**| filter category, could be an array or just digit | [optional]
+ **groupBy** | **String**| how to group downloads | [optional]
+ **status** | **String**| filter by status | [optional]
+ **hiddenStatus** | **Number**| select for article with given id | [optional]
+ **periodCreated** | **Number**| filter by period when content was created | [optional]
+ **periodLastComment** | **Number**| filter by period when content was last commented | [optional]
+ **periodPublished** | **Number**| filter by py period when content was published | [optional]
+ **periodUpdated** | **Number**| filter by py period when content was updated | [optional]
+ **orderBy** | **Number**| how to order | [optional]
 
 ### Return type
 
@@ -1817,9 +2011,14 @@ apiInstance.getGuideByGuideIdExport(guideId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **guideId** | **String**|  | 
+ **guideId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1863,9 +2062,14 @@ apiInstance.getGuideByGuideIdTree(guideId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **guideId** | **String**|  | 
+ **guideId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1909,9 +2113,14 @@ apiInstance.getGuideById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1951,7 +2160,12 @@ apiInstance.getGuideCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1968,7 +2182,7 @@ This endpoint does not need any parameter.
 
 <a name="getGuides"></a>
 # **getGuides**
-> Response getGuides(opts)
+> Response getGuides(filters)
 
 
 
@@ -1983,13 +2197,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ContentApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getGuides(opts).then((response) => {
+apiInstance.getGuides(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -1999,12 +2213,19 @@ apiInstance.getGuides(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -2021,7 +2242,7 @@ Name | Type | Description  | Notes
 
 <a name="getNews"></a>
 # **getNews**
-> Response getNews(opts)
+> Response getNews(filters)
 
 
 
@@ -2036,7 +2257,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ContentApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
@@ -2052,7 +2273,7 @@ const opts = {
   'periodUpdated': 56, // Number | filter by py period when content was updated
   'orderBy': 56 // Number | how to order
 };
-apiInstance.getNews(opts).then((response) => {
+apiInstance.getNews(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -2062,22 +2283,29 @@ apiInstance.getNews(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
- **author** | **String**| filter by author, provide an id or &#39;me&#39; for current user | [optional] 
- **category** | **Number**| filter category, could be an array or just digit | [optional] 
- **groupBy** | **String**| how to group downloads | [optional] 
- **status** | **String**| filter by status | [optional] 
- **hiddenStatus** | **Number**| select for article with given id | [optional] 
- **periodCreated** | **Number**| filter by period when content was created | [optional] 
- **periodLastComment** | **Number**| filter by period when content was last commented | [optional] 
- **periodPublished** | **Number**| filter by py period when content was published | [optional] 
- **periodUpdated** | **Number**| filter by py period when content was updated | [optional] 
- **orderBy** | **Number**| how to order | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
+ **author** | **String**| filter by author, provide an id or &#39;me&#39; for current user | [optional]
+ **category** | **Number**| filter category, could be an array or just digit | [optional]
+ **groupBy** | **String**| how to group downloads | [optional]
+ **status** | **String**| filter by status | [optional]
+ **hiddenStatus** | **Number**| select for article with given id | [optional]
+ **periodCreated** | **Number**| filter by period when content was created | [optional]
+ **periodLastComment** | **Number**| filter by period when content was last commented | [optional]
+ **periodPublished** | **Number**| filter by py period when content was published | [optional]
+ **periodUpdated** | **Number**| filter by py period when content was updated | [optional]
+ **orderBy** | **Number**| how to order | [optional]
 
 ### Return type
 
@@ -2121,9 +2349,14 @@ apiInstance.getNewsById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2140,7 +2373,7 @@ Name | Type | Description  | Notes
 
 <a name="getNewsCategories"></a>
 # **getNewsCategories**
-> Response getNewsCategories(opts)
+> Response getNewsCategories(filters)
 
 
 
@@ -2155,13 +2388,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ContentApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getNewsCategories(opts).then((response) => {
+apiInstance.getNewsCategories(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -2171,12 +2404,19 @@ apiInstance.getNewsCategories(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -2220,9 +2460,14 @@ apiInstance.getNewsCategoryById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2262,7 +2507,12 @@ apiInstance.getNewsCategoryCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2306,9 +2556,14 @@ apiInstance.getNewsCommentById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2325,7 +2580,7 @@ Name | Type | Description  | Notes
 
 <a name="getNewsCommentCount"></a>
 # **getNewsCommentCount**
-> Response getNewsCommentCount(opts)
+> Response getNewsCommentCount(filters)
 
 
 
@@ -2340,7 +2595,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ContentApi();
 
-const opts = { 
+const filters = { 
   'status': "status_example", // String | filter by status
   'isReviewed': 56, // Number | filter by reviewed status
   'periodCreated': "periodCreated_example", // String | filter by period
@@ -2349,7 +2604,7 @@ const opts = {
   'news': 56, // Number | select comments for news with given id
   'groupBy': "groupBy_example" // String | how to groups comments
 };
-apiInstance.getNewsCommentCount(opts).then((response) => {
+apiInstance.getNewsCommentCount(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -2359,15 +2614,22 @@ apiInstance.getNewsCommentCount(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **status** | **String**| filter by status | [optional] 
- **isReviewed** | **Number**| filter by reviewed status | [optional] 
- **periodCreated** | **String**| filter by period | [optional] 
- **article** | **Number**| select comments for article with given id | [optional] 
- **download** | **Number**| select comments for download with given id | [optional] 
- **news** | **Number**| select comments for news with given id | [optional] 
- **groupBy** | **String**| how to groups comments | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **status** | **String**| filter by status | [optional]
+ **isReviewed** | **Number**| filter by reviewed status | [optional]
+ **periodCreated** | **String**| filter by period | [optional]
+ **article** | **Number**| select comments for article with given id | [optional]
+ **download** | **Number**| select comments for download with given id | [optional]
+ **news** | **Number**| select comments for news with given id | [optional]
+ **groupBy** | **String**| how to groups comments | [optional]
 
 ### Return type
 
@@ -2384,7 +2646,7 @@ Name | Type | Description  | Notes
 
 <a name="getNewsComments"></a>
 # **getNewsComments**
-> Response getNewsComments(opts)
+> Response getNewsComments(filters)
 
 
 
@@ -2399,7 +2661,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ContentApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
@@ -2412,7 +2674,7 @@ const opts = {
   'news': 56, // Number | select comments for news with given id
   'orderBy': "orderBy_example" // String | how to order comments
 };
-apiInstance.getNewsComments(opts).then((response) => {
+apiInstance.getNewsComments(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -2422,19 +2684,26 @@ apiInstance.getNewsComments(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
- **status** | **String**| filter by status | [optional] 
- **isReviewed** | **Number**| filter by reviewed status | [optional] 
- **periodCreated** | **String**| filter by period | [optional] 
- **article** | **Number**| select comments for article with given id | [optional] 
- **download** | **Number**| select comments for download with given id | [optional] 
- **news** | **Number**| select comments for news with given id | [optional] 
- **orderBy** | **String**| how to order comments | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
+ **status** | **String**| filter by status | [optional]
+ **isReviewed** | **Number**| filter by reviewed status | [optional]
+ **periodCreated** | **String**| filter by period | [optional]
+ **article** | **Number**| select comments for article with given id | [optional]
+ **download** | **Number**| select comments for download with given id | [optional]
+ **news** | **Number**| select comments for news with given id | [optional]
+ **orderBy** | **String**| how to order comments | [optional]
 
 ### Return type
 
@@ -2451,7 +2720,7 @@ Name | Type | Description  | Notes
 
 <a name="getNewsCount"></a>
 # **getNewsCount**
-> Response getNewsCount(opts)
+> Response getNewsCount(filters)
 
 
 
@@ -2466,7 +2735,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ContentApi();
 
-const opts = { 
+const filters = { 
   'author': "author_example", // String | filter by author, provide an id or 'me' for current user
   'category': 56, // Number | filter category, could be an array or just digit
   'groupBy': "groupBy_example", // String | how to group counters
@@ -2477,7 +2746,7 @@ const opts = {
   'periodPublished': 56, // Number | filter by py period when content was published
   'periodUpdated': 56 // Number | filter by py period when content was updated
 };
-apiInstance.getNewsCount(opts).then((response) => {
+apiInstance.getNewsCount(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -2487,17 +2756,24 @@ apiInstance.getNewsCount(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **author** | **String**| filter by author, provide an id or &#39;me&#39; for current user | [optional] 
- **category** | **Number**| filter category, could be an array or just digit | [optional] 
- **groupBy** | **String**| how to group counters | [optional] 
- **status** | **String**| filter by status | [optional] 
- **hiddenStatus** | **Number**| select for article with given id | [optional] 
- **periodCreated** | **Number**| filter by period when content was created | [optional] 
- **periodLastComment** | **Number**| filter by period when content was last commented | [optional] 
- **periodPublished** | **Number**| filter by py period when content was published | [optional] 
- **periodUpdated** | **Number**| filter by py period when content was updated | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **author** | **String**| filter by author, provide an id or &#39;me&#39; for current user | [optional]
+ **category** | **Number**| filter category, could be an array or just digit | [optional]
+ **groupBy** | **String**| how to group counters | [optional]
+ **status** | **String**| filter by status | [optional]
+ **hiddenStatus** | **Number**| select for article with given id | [optional]
+ **periodCreated** | **Number**| filter by period when content was created | [optional]
+ **periodLastComment** | **Number**| filter by period when content was last commented | [optional]
+ **periodPublished** | **Number**| filter by py period when content was published | [optional]
+ **periodUpdated** | **Number**| filter by py period when content was updated | [optional]
 
 ### Return type
 
@@ -2541,9 +2817,14 @@ apiInstance.getTopicById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2560,7 +2841,7 @@ Name | Type | Description  | Notes
 
 <a name="getTopicCount"></a>
 # **getTopicCount**
-> Response getTopicCount(opts)
+> Response getTopicCount(filters)
 
 
 
@@ -2575,7 +2856,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ContentApi();
 
-const opts = { 
+const filters = { 
   'author': "author_example", // String | filter by author, provide an id or 'me' for current user
   'guide': 56, // Number | filter category, could be an array or just digit
   'groupBy': "groupBy_example", // String | how to group counters
@@ -2586,7 +2867,7 @@ const opts = {
   'periodPublished': 56, // Number | filter by py period when content was published
   'periodUpdated': 56 // Number | filter by py period when content was updated
 };
-apiInstance.getTopicCount(opts).then((response) => {
+apiInstance.getTopicCount(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -2596,17 +2877,24 @@ apiInstance.getTopicCount(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **author** | **String**| filter by author, provide an id or &#39;me&#39; for current user | [optional] 
- **guide** | **Number**| filter category, could be an array or just digit | [optional] 
- **groupBy** | **String**| how to group counters | [optional] 
- **status** | **String**| filter by status | [optional] 
- **hiddenStatus** | **Number**| select for article with given id | [optional] 
- **periodCreated** | **Number**| filter by period when content was created | [optional] 
- **periodLastComment** | **Number**| filter by period when content was last commented | [optional] 
- **periodPublished** | **Number**| filter by py period when content was published | [optional] 
- **periodUpdated** | **Number**| filter by py period when content was updated | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **author** | **String**| filter by author, provide an id or &#39;me&#39; for current user | [optional]
+ **guide** | **Number**| filter category, could be an array or just digit | [optional]
+ **groupBy** | **String**| how to group counters | [optional]
+ **status** | **String**| filter by status | [optional]
+ **hiddenStatus** | **Number**| select for article with given id | [optional]
+ **periodCreated** | **Number**| filter by period when content was created | [optional]
+ **periodLastComment** | **Number**| filter by period when content was last commented | [optional]
+ **periodPublished** | **Number**| filter by py period when content was published | [optional]
+ **periodUpdated** | **Number**| filter by py period when content was updated | [optional]
 
 ### Return type
 
@@ -2623,7 +2911,7 @@ Name | Type | Description  | Notes
 
 <a name="getTopics"></a>
 # **getTopics**
-> Response getTopics(opts)
+> Response getTopics(filters)
 
 
 
@@ -2638,7 +2926,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ContentApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
@@ -2654,7 +2942,7 @@ const opts = {
   'periodUpdated': 56, // Number | filter by py period when content was updated
   'orderBy': 56 // Number | how to order
 };
-apiInstance.getTopics(opts).then((response) => {
+apiInstance.getTopics(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -2664,22 +2952,29 @@ apiInstance.getTopics(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
- **author** | **String**| filter by author, provide an id or &#39;me&#39; for current user | [optional] 
- **guide** | **Number**| filter category, could be an array or just digit | [optional] 
- **groupBy** | **String**| how to group downloads | [optional] 
- **status** | **String**| filter by status | [optional] 
- **hiddenStatus** | **Number**| select for article with given id | [optional] 
- **periodCreated** | **Number**| filter by period when content was created | [optional] 
- **periodLastComment** | **Number**| filter by period when content was last commented | [optional] 
- **periodPublished** | **Number**| filter by py period when content was published | [optional] 
- **periodUpdated** | **Number**| filter by py period when content was updated | [optional] 
- **orderBy** | **Number**| how to order | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
+ **author** | **String**| filter by author, provide an id or &#39;me&#39; for current user | [optional]
+ **guide** | **Number**| filter category, could be an array or just digit | [optional]
+ **groupBy** | **String**| how to group downloads | [optional]
+ **status** | **String**| filter by status | [optional]
+ **hiddenStatus** | **Number**| select for article with given id | [optional]
+ **periodCreated** | **Number**| filter by period when content was created | [optional]
+ **periodLastComment** | **Number**| filter by period when content was last commented | [optional]
+ **periodPublished** | **Number**| filter by py period when content was published | [optional]
+ **periodUpdated** | **Number**| filter by py period when content was updated | [optional]
+ **orderBy** | **Number**| how to order | [optional]
 
 ### Return type
 
@@ -2725,10 +3020,18 @@ apiInstance.updateGuideByGuideIdTree(guideId, tree).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **guideId** | **String**|  | 
- **tree** | [**[String]**](String.md)|  | 
+ **guideId** | **String**|  |
+ **tree** | [**[String]**](../Model/String.md)|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tree** | [**[String]**](../Model/String.md)|  |
 
 ### Return type
 

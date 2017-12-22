@@ -45,9 +45,14 @@ apiInstance.deleteMeNotificationById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -64,7 +69,7 @@ Name | Type | Description  | Notes
 
 <a name="getMeNotification"></a>
 # **getMeNotification**
-> Response getMeNotification(opts)
+> Response getMeNotification(filters)
 
 
 
@@ -79,13 +84,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.NotificationsAndAlertsApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getMeNotification(opts).then((response) => {
+apiInstance.getMeNotification(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -95,12 +100,19 @@ apiInstance.getMeNotification(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -144,9 +156,14 @@ apiInstance.getMeNotificationById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -186,7 +203,12 @@ apiInstance.getMeNotificationCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -226,7 +248,12 @@ apiInstance.getNotifySetupActionAlert().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -274,11 +301,21 @@ apiInstance.getNotifySetupActionAlertClient(userId, channelName, socketId).then(
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userId** | **Number**|  | 
- **channelName** | **String**|  | 
- **socketId** | **String**|  | 
+ **userId** | **Number**|  |
+ **channelName** | **String**|  |
+ **socketId** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **Number**|  |
+ **channelName** | **String**|  |
+ **socketId** | **String**|  |
 
 ### Return type
 
@@ -322,9 +359,17 @@ apiInstance.setMeNotificationDismi(alertIds).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **alertIds** | [**[String]**](String.md)|  | 
+ **alertIds** | [**[String]**](../Model/String.md)|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **alertIds** | [**[String]**](../Model/String.md)|  |
 
 ### Return type
 
@@ -364,7 +409,12 @@ apiInstance.setMeNotificationDismiAll().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -412,11 +462,21 @@ apiInstance.setPusherAuth(userId, channelName, socketId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userId** | **Number**|  | 
- **channelName** | **String**|  | 
- **socketId** | **String**|  | 
+ **userId** | **Number**|  |
+ **channelName** | **String**|  |
+ **socketId** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **Number**|  |
+ **channelName** | **String**|  |
+ **socketId** | **String**|  |
 
 ### Return type
 
@@ -470,14 +530,27 @@ apiInstance.updateNotifySetupActionAlertClient(id, key, secret, host, port, mode
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
- **key** | **String**|  | 
- **secret** | **String**|  | 
- **host** | **String**|  | 
- **port** | **String**|  | 
- **mode** | **String**|  | 
+ **id** | **String**|  |
+ **key** | **String**|  |
+ **secret** | **String**|  |
+ **host** | **String**|  |
+ **port** | **String**|  |
+ **mode** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**|  |
+ **key** | **String**|  |
+ **secret** | **String**|  |
+ **host** | **String**|  |
+ **port** | **String**|  |
+ **mode** | **String**|  |
 
 ### Return type
 

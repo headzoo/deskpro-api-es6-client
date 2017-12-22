@@ -41,9 +41,14 @@ apiInstance.deleteBlobByAuthId(authId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **authId** | **Number**| The id of the resource | 
+ **authId** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -87,9 +92,14 @@ apiInstance.getBlobByAuthId(authId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **authId** | **Number**| The id of the resource | 
+ **authId** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -133,9 +143,14 @@ apiInstance.getBlobByAuthIdArchive(authId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **authId** | **Number**| The id of the resource | 
+ **authId** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -181,10 +196,15 @@ apiInstance.getBlobByAuthIdDownloadByPath(authId, path).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **authId** | **Number**| The id of the resource | 
- **path** | **String**| The path of the file | 
+ **authId** | **Number**| The id of the resource |
+ **path** | **String**| The path of the file |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -228,9 +248,14 @@ apiInstance.getBlobByAuthIdFile(authId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **authId** | **Number**| The id of the resource | 
+ **authId** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -247,7 +272,7 @@ Name | Type | Description  | Notes
 
 <a name="getBlobs"></a>
 # **getBlobs**
-> Response getBlobs(opts)
+> Response getBlobs(filters)
 
 
 
@@ -262,13 +287,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.BlobsApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'authIds': "authIds_example" // String | Comma separated list of AuthIDs
 };
-apiInstance.getBlobs(opts).then((response) => {
+apiInstance.getBlobs(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -278,12 +303,19 @@ apiInstance.getBlobs(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **authIds** | **String**| Comma separated list of AuthIDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **authIds** | **String**| Comma separated list of AuthIDs | [optional]
 
 ### Return type
 

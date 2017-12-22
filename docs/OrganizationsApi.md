@@ -52,9 +52,14 @@ apiInstance.deleteOrganizationById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -71,7 +76,7 @@ Name | Type | Description  | Notes
 
 <a name="deleteOrganizationByParentIdMemberByPerson"></a>
 # **deleteOrganizationByParentIdMemberByPerson**
-> Response deleteOrganizationByParentIdMemberByPerson(parentId, person, opts)
+> Response deleteOrganizationByParentIdMemberByPerson(parentId, person, filters)
 
 
 
@@ -90,10 +95,10 @@ const parentId = "parentId_example"; // String |
 
 const person = "person_example"; // String | 
 
-const opts = { 
+const filters = { 
   'id': "id_example" // String | 
 };
-apiInstance.deleteOrganizationByParentIdMemberByPerson(parentId, person, opts).then((response) => {
+apiInstance.deleteOrganizationByParentIdMemberByPerson(parentId, person, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -103,11 +108,18 @@ apiInstance.deleteOrganizationByParentIdMemberByPerson(parentId, person, opts).t
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
- **person** | **String**|  | 
- **id** | **String**|  | [optional] 
+ **parentId** | **String**|  |
+ **person** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **String**|  | [optional]
 
 ### Return type
 
@@ -153,10 +165,15 @@ apiInstance.deleteOrganizationByParentIdNoteById(id, parentId).then((response) =
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **parentId** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -200,9 +217,14 @@ apiInstance.deleteOrganizationCustomFieldById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -246,9 +268,14 @@ apiInstance.getOrganizationById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -292,9 +319,14 @@ apiInstance.getOrganizationByIdTicket(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
+ **id** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -311,7 +343,7 @@ Name | Type | Description  | Notes
 
 <a name="getOrganizationByParentIdContactData"></a>
 # **getOrganizationByParentIdContactData**
-> Response getOrganizationByParentIdContactData(parentId, opts)
+> Response getOrganizationByParentIdContactData(parentId, filters)
 
 
 
@@ -328,13 +360,13 @@ const apiInstance = new DeskproApi.OrganizationsApi();
 
 const parentId = "parentId_example"; // String | 
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getOrganizationByParentIdContactData(parentId, opts).then((response) => {
+apiInstance.getOrganizationByParentIdContactData(parentId, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -344,13 +376,20 @@ apiInstance.getOrganizationByParentIdContactData(parentId, opts).then((response)
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+ **parentId** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -396,10 +435,15 @@ apiInstance.getOrganizationByParentIdContactDataById(id, parentId).then((respons
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **parentId** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -443,9 +487,14 @@ apiInstance.getOrganizationByParentIdContactDataCount(parentId).then((response) 
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -462,7 +511,7 @@ Name | Type | Description  | Notes
 
 <a name="getOrganizationByParentIdMember"></a>
 # **getOrganizationByParentIdMember**
-> Response getOrganizationByParentIdMember(parentId, opts)
+> Response getOrganizationByParentIdMember(parentId, filters)
 
 
 
@@ -479,13 +528,13 @@ const apiInstance = new DeskproApi.OrganizationsApi();
 
 const parentId = "parentId_example"; // String | 
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getOrganizationByParentIdMember(parentId, opts).then((response) => {
+apiInstance.getOrganizationByParentIdMember(parentId, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -495,13 +544,20 @@ apiInstance.getOrganizationByParentIdMember(parentId, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+ **parentId** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -518,7 +574,7 @@ Name | Type | Description  | Notes
 
 <a name="getOrganizationByParentIdNote"></a>
 # **getOrganizationByParentIdNote**
-> Response getOrganizationByParentIdNote(parentId, opts)
+> Response getOrganizationByParentIdNote(parentId, filters)
 
 
 
@@ -535,13 +591,13 @@ const apiInstance = new DeskproApi.OrganizationsApi();
 
 const parentId = "parentId_example"; // String | 
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getOrganizationByParentIdNote(parentId, opts).then((response) => {
+apiInstance.getOrganizationByParentIdNote(parentId, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -551,13 +607,20 @@ apiInstance.getOrganizationByParentIdNote(parentId, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+ **parentId** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -603,10 +666,15 @@ apiInstance.getOrganizationByParentIdNoteById(id, parentId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **parentId** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -650,9 +718,14 @@ apiInstance.getOrganizationByParentIdNoteCount(parentId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -669,7 +742,7 @@ Name | Type | Description  | Notes
 
 <a name="getOrganizationCount"></a>
 # **getOrganizationCount**
-> Response getOrganizationCount(opts)
+> Response getOrganizationCount(filters)
 
 
 
@@ -684,14 +757,14 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.OrganizationsApi();
 
-const opts = { 
+const filters = { 
   'name': "name_example", // String | name filter
   'periodCreated': "periodCreated_example", // String | period created filter
   'userGroup': ["userGroup_example"], // [String] | usergroups filter
   'labels': ["labels_example"], // [String] | labels filter option
   'orgFieldId': "orgFieldId_example" // String |   *                  Custom organization field filter. To filter by a custom field with ID=1 you need to add  *                  ?org_field.1=value to the query string
 };
-apiInstance.getOrganizationCount(opts).then((response) => {
+apiInstance.getOrganizationCount(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -701,13 +774,20 @@ apiInstance.getOrganizationCount(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **String**| name filter | [optional] 
- **periodCreated** | **String**| period created filter | [optional] 
- **userGroup** | [**[String]**](String.md)| usergroups filter | [optional] 
- **labels** | [**[String]**](String.md)| labels filter option | [optional] 
- **orgFieldId** | **String**|   *                  Custom organization field filter. To filter by a custom field with ID&#x3D;1 you need to add  *                  ?org_field.1&#x3D;value to the query string | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **name** | **String**| name filter | [optional]
+ **periodCreated** | **String**| period created filter | [optional]
+ **userGroup** | [**[String]**](../Model/String.md)| usergroups filter | [optional]
+ **labels** | [**[String]**](../Model/String.md)| labels filter option | [optional]
+ **orgFieldId** | **String**|   *                  Custom organization field filter. To filter by a custom field with ID&#x3D;1 you need to add  *                  ?org_field.1&#x3D;value to the query string | [optional]
 
 ### Return type
 
@@ -751,9 +831,14 @@ apiInstance.getOrganizationCustomFieldById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -770,7 +855,7 @@ Name | Type | Description  | Notes
 
 <a name="getOrganizationCustomFields"></a>
 # **getOrganizationCustomFields**
-> Response getOrganizationCustomFields(opts)
+> Response getOrganizationCustomFields(filters)
 
 
 
@@ -785,13 +870,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.OrganizationsApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getOrganizationCustomFields(opts).then((response) => {
+apiInstance.getOrganizationCustomFields(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -801,12 +886,19 @@ apiInstance.getOrganizationCustomFields(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -823,7 +915,7 @@ Name | Type | Description  | Notes
 
 <a name="getOrganizations"></a>
 # **getOrganizations**
-> Response getOrganizations(opts)
+> Response getOrganizations(filters)
 
 
 
@@ -838,7 +930,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.OrganizationsApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
@@ -849,7 +941,7 @@ const opts = {
   'labels': ["labels_example"], // [String] | labels filter option
   'orgFieldId': "orgFieldId_example" // String |   *                  Custom organization field filter. To filter by a custom field with ID=1 you need to add  *                  ?org_field.1=value to the query string
 };
-apiInstance.getOrganizations(opts).then((response) => {
+apiInstance.getOrganizations(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -859,17 +951,24 @@ apiInstance.getOrganizations(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
- **name** | **String**| name filter | [optional] 
- **periodCreated** | **String**| period created filter | [optional] 
- **userGroup** | [**[String]**](String.md)| usergroups filter | [optional] 
- **labels** | [**[String]**](String.md)| labels filter option | [optional] 
- **orgFieldId** | **String**|   *                  Custom organization field filter. To filter by a custom field with ID&#x3D;1 you need to add  *                  ?org_field.1&#x3D;value to the query string | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
+ **name** | **String**| name filter | [optional]
+ **periodCreated** | **String**| period created filter | [optional]
+ **userGroup** | [**[String]**](../Model/String.md)| usergroups filter | [optional]
+ **labels** | [**[String]**](../Model/String.md)| labels filter option | [optional]
+ **orgFieldId** | **String**|   *                  Custom organization field filter. To filter by a custom field with ID&#x3D;1 you need to add  *                  ?org_field.1&#x3D;value to the query string | [optional]
 
 ### Return type
 

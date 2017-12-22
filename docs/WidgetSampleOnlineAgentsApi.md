@@ -33,7 +33,12 @@ apiInstance.getWidgetLiveDemoSampleState().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -79,10 +84,18 @@ apiInstance.setSettingBrandByBrandWidgetSendInstruction(brand, email).then((resp
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **brand** | **String**|  | 
- **email** | **String**| Email address | 
+ **brand** | **String**|  |
+ **email** | **String**| Email address |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **email** | **String**| Email address |
 
 ### Return type
 

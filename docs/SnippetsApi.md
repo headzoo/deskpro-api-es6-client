@@ -44,9 +44,14 @@ apiInstance.deleteSnippetById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -90,9 +95,14 @@ apiInstance.getSnippetById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -109,7 +119,7 @@ Name | Type | Description  | Notes
 
 <a name="getSnippetCount"></a>
 # **getSnippetCount**
-> Response getSnippetCount(opts)
+> Response getSnippetCount(filters)
 
 
 
@@ -124,7 +134,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.SnippetsApi();
 
-const opts = { 
+const filters = { 
   'inlineSideloads': "inlineSideloads_example", // String | sideload entities
   'include': "include_example", // String | entities to sideload (ex: snippet_translation)
   'type': "type_example", // String | type to limit result
@@ -133,7 +143,7 @@ const opts = {
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getSnippetCount(opts).then((response) => {
+apiInstance.getSnippetCount(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -143,15 +153,22 @@ apiInstance.getSnippetCount(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **inlineSideloads** | **String**| sideload entities | [optional] 
- **include** | **String**| entities to sideload (ex: snippet_translation) | [optional] 
- **type** | **String**| type to limit result | [optional] 
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **inlineSideloads** | **String**| sideload entities | [optional]
+ **include** | **String**| entities to sideload (ex: snippet_translation) | [optional]
+ **type** | **String**| type to limit result | [optional]
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -168,7 +185,7 @@ Name | Type | Description  | Notes
 
 <a name="getSnippetCsv"></a>
 # **getSnippetCsv**
-> Response getSnippetCsv(opts)
+> Response getSnippetCsv(filters)
 
 
 
@@ -183,13 +200,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.SnippetsApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getSnippetCsv(opts).then((response) => {
+apiInstance.getSnippetCsv(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -199,12 +216,19 @@ apiInstance.getSnippetCsv(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -221,7 +245,7 @@ Name | Type | Description  | Notes
 
 <a name="getSnippetLabel"></a>
 # **getSnippetLabel**
-> Response getSnippetLabel(opts)
+> Response getSnippetLabel(filters)
 
 
 
@@ -236,13 +260,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.SnippetsApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getSnippetLabel(opts).then((response) => {
+apiInstance.getSnippetLabel(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -252,12 +276,19 @@ apiInstance.getSnippetLabel(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -305,11 +336,16 @@ apiInstance.getSnippetRenderByIdByTypeByObjectId(id, type, objectId).then((respo
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the object | 
- **type** | **String**| The type of object to render the snippet for | 
- **objectId** | **String**|  | 
+ **id** | **Number**| The id of the object |
+ **type** | **String**| The type of object to render the snippet for |
+ **objectId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -326,7 +362,7 @@ Name | Type | Description  | Notes
 
 <a name="getSnippets"></a>
 # **getSnippets**
-> Response getSnippets(opts)
+> Response getSnippets(filters)
 
 
 
@@ -341,7 +377,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.SnippetsApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
@@ -350,7 +386,7 @@ const opts = {
   'include': "include_example", // String | entities to sideload (ex: snippet_translation)
   'type': "type_example" // String | type to limit result
 };
-apiInstance.getSnippets(opts).then((response) => {
+apiInstance.getSnippets(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -360,15 +396,22 @@ apiInstance.getSnippets(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
- **inlineSideloads** | **String**| sideload entities | [optional] 
- **include** | **String**| entities to sideload (ex: snippet_translation) | [optional] 
- **type** | **String**| type to limit result | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
+ **inlineSideloads** | **String**| sideload entities | [optional]
+ **include** | **String**| entities to sideload (ex: snippet_translation) | [optional]
+ **type** | **String**| type to limit result | [optional]
 
 ### Return type
 
@@ -385,7 +428,7 @@ Name | Type | Description  | Notes
 
 <a name="getSnippetsChangeLogs"></a>
 # **getSnippetsChangeLogs**
-> Response getSnippetsChangeLogs(opts)
+> Response getSnippetsChangeLogs(filters)
 
 
 
@@ -400,7 +443,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.SnippetsApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
@@ -411,7 +454,7 @@ const opts = {
   'languageId': "languageId_example", // String | Language Id
   'type': "type_example" // String | Type
 };
-apiInstance.getSnippetsChangeLogs(opts).then((response) => {
+apiInstance.getSnippetsChangeLogs(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -421,17 +464,24 @@ apiInstance.getSnippetsChangeLogs(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
- **inlineSideloads** | **String**| sideload entities | [optional] 
- **include** | **String**| entities to sideload (ex: ticket_message) | [optional] 
- **snippetId** | **String**| Snippet Id | [optional] 
- **languageId** | **String**| Language Id | [optional] 
- **type** | **String**| Type | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
+ **inlineSideloads** | **String**| sideload entities | [optional]
+ **include** | **String**| entities to sideload (ex: ticket_message) | [optional]
+ **snippetId** | **String**| Snippet Id | [optional]
+ **languageId** | **String**| Language Id | [optional]
+ **type** | **String**| Type | [optional]
 
 ### Return type
 
@@ -448,7 +498,7 @@ Name | Type | Description  | Notes
 
 <a name="getSnippetsUse"></a>
 # **getSnippetsUse**
-> Response getSnippetsUse(opts)
+> Response getSnippetsUse(filters)
 
 
 
@@ -463,7 +513,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.SnippetsApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
@@ -472,7 +522,7 @@ const opts = {
   'include': "include_example", // String | entities to sideload (ex: ticket_message)
   'snippetId': "snippetId_example" // String | Snippet Id
 };
-apiInstance.getSnippetsUse(opts).then((response) => {
+apiInstance.getSnippetsUse(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -482,15 +532,22 @@ apiInstance.getSnippetsUse(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
- **inlineSideloads** | **String**| sideload entities | [optional] 
- **include** | **String**| entities to sideload (ex: ticket_message) | [optional] 
- **snippetId** | **String**| Snippet Id | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
+ **inlineSideloads** | **String**| sideload entities | [optional]
+ **include** | **String**| entities to sideload (ex: ticket_message) | [optional]
+ **snippetId** | **String**| Snippet Id | [optional]
 
 ### Return type
 

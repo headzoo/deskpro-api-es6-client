@@ -60,9 +60,14 @@ apiInstance.deleteAgentChatById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -106,9 +111,14 @@ apiInstance.deleteAgentChatByIdDelete(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| a chat id | 
+ **id** | **Number**| a chat id |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -152,9 +162,14 @@ apiInstance.deleteAgentChatByIdLeave(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| a chat id | 
+ **id** | **Number**| a chat id |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -200,10 +215,15 @@ apiInstance.deleteAgentChatByParentIdMessageById(id, parentId).then((response) =
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **parentId** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -247,9 +267,14 @@ apiInstance.deleteUserChatById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -293,9 +318,14 @@ apiInstance.deleteUserChatCustomFieldById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -339,9 +369,14 @@ apiInstance.getAgentChatById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -358,7 +393,7 @@ Name | Type | Description  | Notes
 
 <a name="getAgentChatByParentIdMessage"></a>
 # **getAgentChatByParentIdMessage**
-> Response getAgentChatByParentIdMessage(parentId, opts)
+> Response getAgentChatByParentIdMessage(parentId, filters)
 
 
 
@@ -375,7 +410,7 @@ const apiInstance = new DeskproApi.ChatsApi();
 
 const parentId = "parentId_example"; // String | 
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
@@ -383,7 +418,7 @@ const opts = {
   'search': "search_example", // String | 
   'order': "order_example" // String | 
 };
-apiInstance.getAgentChatByParentIdMessage(parentId, opts).then((response) => {
+apiInstance.getAgentChatByParentIdMessage(parentId, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -393,15 +428,22 @@ apiInstance.getAgentChatByParentIdMessage(parentId, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
- **search** | **String**|  | [optional] 
- **order** | **String**|  | [optional] 
+ **parentId** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
+ **search** | **String**|  | [optional]
+ **order** | **String**|  | [optional]
 
 ### Return type
 
@@ -447,10 +489,15 @@ apiInstance.getAgentChatByParentIdMessageById(id, parentId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **parentId** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -496,10 +543,15 @@ apiInstance.getAgentChatByParentIdMessageByIdPage(parentId, id).then((response) 
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
- **id** | **String**|  | 
+ **parentId** | **String**|  |
+ **id** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -543,9 +595,14 @@ apiInstance.getAgentChatByParentIdMessageCount(parentId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -585,7 +642,12 @@ apiInstance.getAgentChatCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -625,7 +687,12 @@ apiInstance.getAgentChatGroup().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -665,7 +732,12 @@ apiInstance.getAgentChatMessageCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -682,7 +754,7 @@ This endpoint does not need any parameter.
 
 <a name="getAgentChats"></a>
 # **getAgentChats**
-> Response getAgentChats(opts)
+> Response getAgentChats(filters)
 
 
 
@@ -697,13 +769,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ChatsApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getAgentChats(opts).then((response) => {
+apiInstance.getAgentChats(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -713,12 +785,19 @@ apiInstance.getAgentChats(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -735,7 +814,7 @@ Name | Type | Description  | Notes
 
 <a name="getUserChatByConversationIdMessage"></a>
 # **getUserChatByConversationIdMessage**
-> Response getUserChatByConversationIdMessage(conversationId, opts)
+> Response getUserChatByConversationIdMessage(conversationId, filters)
 
 
 
@@ -752,7 +831,7 @@ const apiInstance = new DeskproApi.ChatsApi();
 
 const conversationId = "conversationId_example"; // String | 
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
@@ -760,7 +839,7 @@ const opts = {
   'lastMessageId': 56, // Number | 
   'agentOnly': 56 // Number | 
 };
-apiInstance.getUserChatByConversationIdMessage(conversationId, opts).then((response) => {
+apiInstance.getUserChatByConversationIdMessage(conversationId, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -770,15 +849,22 @@ apiInstance.getUserChatByConversationIdMessage(conversationId, opts).then((respo
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **conversationId** | **String**|  | 
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
- **lastMessageId** | **Number**|  | [optional] 
- **agentOnly** | **Number**|  | [optional] 
+ **conversationId** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
+ **lastMessageId** | **Number**|  | [optional]
+ **agentOnly** | **Number**|  | [optional]
 
 ### Return type
 
@@ -795,7 +881,7 @@ Name | Type | Description  | Notes
 
 <a name="getUserChatByConversationIdMessageCount"></a>
 # **getUserChatByConversationIdMessageCount**
-> Response getUserChatByConversationIdMessageCount(conversationId, opts)
+> Response getUserChatByConversationIdMessageCount(conversationId, filters)
 
 
 
@@ -812,11 +898,11 @@ const apiInstance = new DeskproApi.ChatsApi();
 
 const conversationId = "conversationId_example"; // String | 
 
-const opts = { 
+const filters = { 
   'lastMessageId': 56, // Number | 
   'agentOnly': 56 // Number | 
 };
-apiInstance.getUserChatByConversationIdMessageCount(conversationId, opts).then((response) => {
+apiInstance.getUserChatByConversationIdMessageCount(conversationId, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -826,11 +912,18 @@ apiInstance.getUserChatByConversationIdMessageCount(conversationId, opts).then((
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **conversationId** | **String**|  | 
- **lastMessageId** | **Number**|  | [optional] 
- **agentOnly** | **Number**|  | [optional] 
+ **conversationId** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **lastMessageId** | **Number**|  | [optional]
+ **agentOnly** | **Number**|  | [optional]
 
 ### Return type
 
@@ -874,9 +967,14 @@ apiInstance.getUserChatById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -893,7 +991,7 @@ Name | Type | Description  | Notes
 
 <a name="getUserChatCount"></a>
 # **getUserChatCount**
-> Response getUserChatCount(opts)
+> Response getUserChatCount(filters)
 
 
 
@@ -908,7 +1006,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ChatsApi();
 
-const opts = { 
+const filters = { 
   'dateCreated': "dateCreated_example", // String | 
   'datePeriod': "datePeriod_example", // String | 
   'agent': 56, // Number | 
@@ -916,7 +1014,7 @@ const opts = {
   'chatFieldId': "chatFieldId_example", // String |   *                  Custom chat field filter. To filter by a custom field with ID=1 you need to add  *                  ?chat_field.1=value to the query string
   'groupBy': true // Boolean | how to group counts
 };
-apiInstance.getUserChatCount(opts).then((response) => {
+apiInstance.getUserChatCount(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -926,14 +1024,21 @@ apiInstance.getUserChatCount(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **dateCreated** | **String**|  | [optional] 
- **datePeriod** | **String**|  | [optional] 
- **agent** | **Number**|  | [optional] 
- **department** | **Number**|  | [optional] 
- **chatFieldId** | **String**|   *                  Custom chat field filter. To filter by a custom field with ID&#x3D;1 you need to add  *                  ?chat_field.1&#x3D;value to the query string | [optional] 
- **groupBy** | **Boolean**| how to group counts | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **dateCreated** | **String**|  | [optional]
+ **datePeriod** | **String**|  | [optional]
+ **agent** | **Number**|  | [optional]
+ **department** | **Number**|  | [optional]
+ **chatFieldId** | **String**|   *                  Custom chat field filter. To filter by a custom field with ID&#x3D;1 you need to add  *                  ?chat_field.1&#x3D;value to the query string | [optional]
+ **groupBy** | **Boolean**| how to group counts | [optional]
 
 ### Return type
 
@@ -977,9 +1082,14 @@ apiInstance.getUserChatCustomFieldById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -996,7 +1106,7 @@ Name | Type | Description  | Notes
 
 <a name="getUserChatCustomFields"></a>
 # **getUserChatCustomFields**
-> Response getUserChatCustomFields(opts)
+> Response getUserChatCustomFields(filters)
 
 
 
@@ -1011,13 +1121,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ChatsApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getUserChatCustomFields(opts).then((response) => {
+apiInstance.getUserChatCustomFields(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -1027,12 +1137,19 @@ apiInstance.getUserChatCustomFields(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -1049,7 +1166,7 @@ Name | Type | Description  | Notes
 
 <a name="getUserChats"></a>
 # **getUserChats**
-> Response getUserChats(opts)
+> Response getUserChats(filters)
 
 
 
@@ -1064,7 +1181,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.ChatsApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
@@ -1075,7 +1192,7 @@ const opts = {
   'department': 56, // Number | 
   'chatFieldId': "chatFieldId_example" // String |   *                  Custom chat field filter. To filter by a custom field with ID=1 you need to add  *                  ?chat_field.1=value to the query string
 };
-apiInstance.getUserChats(opts).then((response) => {
+apiInstance.getUserChats(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -1085,17 +1202,24 @@ apiInstance.getUserChats(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
- **dateCreated** | **String**|  | [optional] 
- **datePeriod** | **String**|  | [optional] 
- **agent** | **Number**|  | [optional] 
- **department** | **Number**|  | [optional] 
- **chatFieldId** | **String**|   *                  Custom chat field filter. To filter by a custom field with ID&#x3D;1 you need to add  *                  ?chat_field.1&#x3D;value to the query string | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
+ **dateCreated** | **String**|  | [optional]
+ **datePeriod** | **String**|  | [optional]
+ **agent** | **Number**|  | [optional]
+ **department** | **Number**|  | [optional]
+ **chatFieldId** | **String**|   *                  Custom chat field filter. To filter by a custom field with ID&#x3D;1 you need to add  *                  ?chat_field.1&#x3D;value to the query string | [optional]
 
 ### Return type
 
@@ -1139,9 +1263,14 @@ apiInstance.updateAgentChatByParentIdMessageMarkAll(parentId).then((response) =>
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1187,10 +1316,15 @@ apiInstance.updateUserChatByIdAssignByAgentId(id, agentId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**|  | 
- **agentId** | **Number**|  | 
+ **id** | **Number**|  |
+ **agentId** | **Number**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1234,9 +1368,14 @@ apiInstance.updateUserChatByIdEnd(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**|  | 
+ **id** | **Number**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 

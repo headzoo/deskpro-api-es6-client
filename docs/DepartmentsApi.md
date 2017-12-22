@@ -45,9 +45,14 @@ apiInstance.deleteChatDepartmentById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -91,9 +96,14 @@ apiInstance.deleteTicketDepartmentById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -137,9 +147,14 @@ apiInstance.getChatDepartmentById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -183,9 +198,14 @@ apiInstance.getChatDepartmentByIdAgent(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| the id of the department | 
+ **id** | **Number**| the id of the department |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -225,7 +245,12 @@ apiInstance.getChatDepartmentCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -242,7 +267,7 @@ This endpoint does not need any parameter.
 
 <a name="getChatDepartments"></a>
 # **getChatDepartments**
-> Response getChatDepartments(opts)
+> Response getChatDepartments(filters)
 
 
 
@@ -257,13 +282,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.DepartmentsApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getChatDepartments(opts).then((response) => {
+apiInstance.getChatDepartments(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -273,12 +298,19 @@ apiInstance.getChatDepartments(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -322,9 +354,14 @@ apiInstance.getTicketDepartmentById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -368,9 +405,14 @@ apiInstance.getTicketDepartmentByIdAgent(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| the id of the department | 
+ **id** | **Number**| the id of the department |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -410,7 +452,12 @@ apiInstance.getTicketDepartmentCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -427,7 +474,7 @@ This endpoint does not need any parameter.
 
 <a name="getTicketDepartments"></a>
 # **getTicketDepartments**
-> Response getTicketDepartments(opts)
+> Response getTicketDepartments(filters)
 
 
 
@@ -442,13 +489,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.DepartmentsApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getTicketDepartments(opts).then((response) => {
+apiInstance.getTicketDepartments(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -458,12 +505,19 @@ apiInstance.getTicketDepartments(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 

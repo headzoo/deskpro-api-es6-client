@@ -53,9 +53,14 @@ apiInstance.deletePeopleById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -101,10 +106,15 @@ apiInstance.deletePeopleByParentIdNoteById(id, parentId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **parentId** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -148,9 +158,14 @@ apiInstance.deletePersonCustomFieldById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -167,7 +182,7 @@ Name | Type | Description  | Notes
 
 <a name="getPeople"></a>
 # **getPeople**
-> Response getPeople(opts)
+> Response getPeople(filters)
 
 
 
@@ -182,7 +197,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.PeopleApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
@@ -199,7 +214,7 @@ const opts = {
   'label': ["label_example"], // [String] | labels filter option
   'personFieldId': "personFieldId_example" // String |   *                  Custom person field filter. To filter by a custom field with ID=1 you need to add  *                  ?person_field.1=value to the query string
 };
-apiInstance.getPeople(opts).then((response) => {
+apiInstance.getPeople(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -209,23 +224,30 @@ apiInstance.getPeople(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
- **orderBy** | **String**| people list sort | [optional] 
- **orderDir** | **String**| list sort order | [optional] 
- **primaryEmail** | **String**| primary email filter | [optional] 
- **organization** | **String**| Comma separated list of IDs | [optional] 
- **isAgent** | **Boolean**| agents filter | [optional] 
- **isDeleted** | **Boolean**| deleted filter | [optional] 
- **notMe** | **Boolean**| exclude yourself filter | [optional] 
- **agentTeam** | [**[String]**](String.md)| agent teams filter | [optional] 
- **userGroup** | [**[String]**](String.md)| usergroups filter | [optional] 
- **label** | [**[String]**](String.md)| labels filter option | [optional] 
- **personFieldId** | **String**|   *                  Custom person field filter. To filter by a custom field with ID&#x3D;1 you need to add  *                  ?person_field.1&#x3D;value to the query string | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
+ **orderBy** | **String**| people list sort | [optional]
+ **orderDir** | **String**| list sort order | [optional]
+ **primaryEmail** | **String**| primary email filter | [optional]
+ **organization** | **String**| Comma separated list of IDs | [optional]
+ **isAgent** | **Boolean**| agents filter | [optional]
+ **isDeleted** | **Boolean**| deleted filter | [optional]
+ **notMe** | **Boolean**| exclude yourself filter | [optional]
+ **agentTeam** | [**[String]**](../Model/String.md)| agent teams filter | [optional]
+ **userGroup** | [**[String]**](../Model/String.md)| usergroups filter | [optional]
+ **label** | [**[String]**](../Model/String.md)| labels filter option | [optional]
+ **personFieldId** | **String**|   *                  Custom person field filter. To filter by a custom field with ID&#x3D;1 you need to add  *                  ?person_field.1&#x3D;value to the query string | [optional]
 
 ### Return type
 
@@ -269,9 +291,14 @@ apiInstance.getPeopleById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -315,9 +342,14 @@ apiInstance.getPeopleByIdTicket(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **String**| Person ID | 
+ **id** | **String**| Person ID |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -334,7 +366,7 @@ Name | Type | Description  | Notes
 
 <a name="getPeopleByParentIdContactData"></a>
 # **getPeopleByParentIdContactData**
-> Response getPeopleByParentIdContactData(parentId, opts)
+> Response getPeopleByParentIdContactData(parentId, filters)
 
 
 
@@ -351,13 +383,13 @@ const apiInstance = new DeskproApi.PeopleApi();
 
 const parentId = "parentId_example"; // String | 
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getPeopleByParentIdContactData(parentId, opts).then((response) => {
+apiInstance.getPeopleByParentIdContactData(parentId, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -367,13 +399,20 @@ apiInstance.getPeopleByParentIdContactData(parentId, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+ **parentId** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -419,10 +458,15 @@ apiInstance.getPeopleByParentIdContactDataById(id, parentId).then((response) => 
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **parentId** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -466,9 +510,14 @@ apiInstance.getPeopleByParentIdContactDataCount(parentId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -485,7 +534,7 @@ Name | Type | Description  | Notes
 
 <a name="getPeopleByParentIdNote"></a>
 # **getPeopleByParentIdNote**
-> Response getPeopleByParentIdNote(parentId, opts)
+> Response getPeopleByParentIdNote(parentId, filters)
 
 
 
@@ -502,13 +551,13 @@ const apiInstance = new DeskproApi.PeopleApi();
 
 const parentId = "parentId_example"; // String | 
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getPeopleByParentIdNote(parentId, opts).then((response) => {
+apiInstance.getPeopleByParentIdNote(parentId, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -518,13 +567,20 @@ apiInstance.getPeopleByParentIdNote(parentId, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+ **parentId** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -570,10 +626,15 @@ apiInstance.getPeopleByParentIdNoteById(id, parentId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **parentId** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -617,9 +678,14 @@ apiInstance.getPeopleByParentIdNoteCount(parentId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -636,7 +702,7 @@ Name | Type | Description  | Notes
 
 <a name="getPeopleCount"></a>
 # **getPeopleCount**
-> Response getPeopleCount(opts)
+> Response getPeopleCount(filters)
 
 
 
@@ -651,7 +717,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.PeopleApi();
 
-const opts = { 
+const filters = { 
   'orderBy': "orderBy_example", // String | people list sort
   'orderDir': "orderDir_example", // String | list sort order
   'primaryEmail': "primaryEmail_example", // String | primary email filter
@@ -664,7 +730,7 @@ const opts = {
   'label': ["label_example"], // [String] | labels filter option
   'personFieldId': "personFieldId_example" // String |   *                  Custom person field filter. To filter by a custom field with ID=1 you need to add  *                  ?person_field.1=value to the query string
 };
-apiInstance.getPeopleCount(opts).then((response) => {
+apiInstance.getPeopleCount(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -674,19 +740,26 @@ apiInstance.getPeopleCount(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **orderBy** | **String**| people list sort | [optional] 
- **orderDir** | **String**| list sort order | [optional] 
- **primaryEmail** | **String**| primary email filter | [optional] 
- **organization** | **String**| Comma separated list of IDs | [optional] 
- **isAgent** | **Boolean**| agents filter | [optional] 
- **isDeleted** | **Boolean**| deleted filter | [optional] 
- **notMe** | **Boolean**| exclude yourself filter | [optional] 
- **agentTeam** | [**[String]**](String.md)| agent teams filter | [optional] 
- **userGroup** | [**[String]**](String.md)| usergroups filter | [optional] 
- **label** | [**[String]**](String.md)| labels filter option | [optional] 
- **personFieldId** | **String**|   *                  Custom person field filter. To filter by a custom field with ID&#x3D;1 you need to add  *                  ?person_field.1&#x3D;value to the query string | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **orderBy** | **String**| people list sort | [optional]
+ **orderDir** | **String**| list sort order | [optional]
+ **primaryEmail** | **String**| primary email filter | [optional]
+ **organization** | **String**| Comma separated list of IDs | [optional]
+ **isAgent** | **Boolean**| agents filter | [optional]
+ **isDeleted** | **Boolean**| deleted filter | [optional]
+ **notMe** | **Boolean**| exclude yourself filter | [optional]
+ **agentTeam** | [**[String]**](../Model/String.md)| agent teams filter | [optional]
+ **userGroup** | [**[String]**](../Model/String.md)| usergroups filter | [optional]
+ **label** | [**[String]**](../Model/String.md)| labels filter option | [optional]
+ **personFieldId** | **String**|   *                  Custom person field filter. To filter by a custom field with ID&#x3D;1 you need to add  *                  ?person_field.1&#x3D;value to the query string | [optional]
 
 ### Return type
 
@@ -726,7 +799,12 @@ apiInstance.getPeopleOnboardingNew().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -766,7 +844,12 @@ apiInstance.getPeopleOnboardingPending().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -810,9 +893,14 @@ apiInstance.getPersonCustomFieldById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -829,7 +917,7 @@ Name | Type | Description  | Notes
 
 <a name="getPersonCustomFields"></a>
 # **getPersonCustomFields**
-> Response getPersonCustomFields(opts)
+> Response getPersonCustomFields(filters)
 
 
 
@@ -844,13 +932,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.PeopleApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getPersonCustomFields(opts).then((response) => {
+apiInstance.getPersonCustomFields(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -860,12 +948,19 @@ apiInstance.getPersonCustomFields(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -911,10 +1006,18 @@ apiInstance.updatePeopleByIdPermission(id, agent).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
- **agent** | **Boolean**| set as agent | 
+ **id** | **String**|  |
+ **agent** | **Boolean**| set as agent |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **agent** | **Boolean**| set as agent |
 
 ### Return type
 

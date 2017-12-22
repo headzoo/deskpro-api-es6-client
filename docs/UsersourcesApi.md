@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="getUserSourceByContext"></a>
 # **getUserSourceByContext**
-> Response getUserSourceByContext(context, opts)
+> Response getUserSourceByContext(context, filters)
 
 
 
@@ -28,13 +28,13 @@ const apiInstance = new DeskproApi.UsersourcesApi();
 
 const context = "context_example"; // String | 
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getUserSourceByContext(context, opts).then((response) => {
+apiInstance.getUserSourceByContext(context, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -44,13 +44,20 @@ apiInstance.getUserSourceByContext(context, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **context** | **String**|  | 
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+ **context** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -96,10 +103,15 @@ apiInstance.getUserSourceByContextById(id, context).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **context** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **context** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -143,9 +155,14 @@ apiInstance.getUserSourceByContextCount(context).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **context** | **String**|  | 
+ **context** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 

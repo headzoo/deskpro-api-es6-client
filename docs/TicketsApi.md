@@ -102,9 +102,14 @@ apiInstance.deleteTicketById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -150,10 +155,15 @@ apiInstance.deleteTicketByParentIdCcById(id, parentId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **parentId** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -199,10 +209,15 @@ apiInstance.deleteTicketByParentIdMessageById(id, parentId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **parentId** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -248,10 +263,15 @@ apiInstance.deleteTicketByParentIdTicketSlaById(id, parentId).then((response) =>
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **parentId** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -297,10 +317,15 @@ apiInstance.deleteTicketByParentIdTicketSlaBySlaBySlaId(parentId, slaId).then((r
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **Number**| the id of parent ticket | 
- **slaId** | **Number**| the id of parent SLA | 
+ **parentId** | **Number**| the id of parent ticket |
+ **slaId** | **Number**| the id of parent SLA |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -346,10 +371,15 @@ apiInstance.deleteTicketByTicketFollowUpById(id, ticket).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **ticket** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **ticket** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -366,7 +396,7 @@ No authorization required
 
 <a name="deleteTicketByTicketLink"></a>
 # **deleteTicketByTicketLink**
-> Response deleteTicketByTicketLink(ticket, opts)
+> Response deleteTicketByTicketLink(ticket, filters)
 
 
 
@@ -383,12 +413,12 @@ const apiInstance = new DeskproApi.TicketsApi();
 
 const ticket = "ticket_example"; // String | 
 
-const opts = { 
+const filters = { 
   'ticketId': 56, // Number | base ticket
   'unlinkTicketId': 56, // Number | ticket to unlink
   'linkType': "linkType_example" // String | you have to specify relation type to unlink tickets properly
 };
-apiInstance.deleteTicketByTicketLink(ticket, opts).then((response) => {
+apiInstance.deleteTicketByTicketLink(ticket, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -398,12 +428,19 @@ apiInstance.deleteTicketByTicketLink(ticket, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ticket** | **String**|  | 
- **ticketId** | **Number**| base ticket | [optional] 
- **unlinkTicketId** | **Number**| ticket to unlink | [optional] 
- **linkType** | **String**| you have to specify relation type to unlink tickets properly | [optional] 
+ **ticket** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ticketId** | **Number**| base ticket | [optional]
+ **unlinkTicketId** | **Number**| ticket to unlink | [optional]
+ **linkType** | **String**| you have to specify relation type to unlink tickets properly | [optional]
 
 ### Return type
 
@@ -447,9 +484,14 @@ apiInstance.deleteTicketCustomFieldById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -493,9 +535,14 @@ apiInstance.deleteTicketProblemById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -539,9 +586,14 @@ apiInstance.get20170401TicketLayoutByContext(context).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **context** | **String**| context for layout | 
+ **context** | **String**| context for layout |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -587,10 +639,15 @@ apiInstance.get20170401TicketLayoutByContextByDepartment(department, context).th
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **department** | **Number**| department id for which you want to get layout | 
- **context** | **String**| context of layout | 
+ **department** | **Number**| department id for which you want to get layout |
+ **context** | **String**| context of layout |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -636,10 +693,15 @@ apiInstance.get20170401TicketLayoutByContextDepartmentJ(department, context).the
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **department** | **Number**| department id for which you want to get layout | 
- **context** | **String**| context of layout | 
+ **department** | **Number**| department id for which you want to get layout |
+ **context** | **String**| context of layout |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -683,9 +745,14 @@ apiInstance.get20170401TicketLayoutContextJ(context).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **context** | **String**| context for layout | 
+ **context** | **String**| context for layout |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -729,9 +796,14 @@ apiInstance.getTicketById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -748,7 +820,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketByParentIdAttachment"></a>
 # **getTicketByParentIdAttachment**
-> Response getTicketByParentIdAttachment(parentId, opts)
+> Response getTicketByParentIdAttachment(parentId, filters)
 
 
 
@@ -765,13 +837,13 @@ const apiInstance = new DeskproApi.TicketsApi();
 
 const parentId = "parentId_example"; // String | 
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getTicketByParentIdAttachment(parentId, opts).then((response) => {
+apiInstance.getTicketByParentIdAttachment(parentId, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -781,13 +853,20 @@ apiInstance.getTicketByParentIdAttachment(parentId, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+ **parentId** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -804,7 +883,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketByParentIdCc"></a>
 # **getTicketByParentIdCc**
-> Response getTicketByParentIdCc(parentId, opts)
+> Response getTicketByParentIdCc(parentId, filters)
 
 
 
@@ -821,13 +900,13 @@ const apiInstance = new DeskproApi.TicketsApi();
 
 const parentId = "parentId_example"; // String | 
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getTicketByParentIdCc(parentId, opts).then((response) => {
+apiInstance.getTicketByParentIdCc(parentId, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -837,13 +916,20 @@ apiInstance.getTicketByParentIdCc(parentId, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+ **parentId** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -889,10 +975,15 @@ apiInstance.getTicketByParentIdCcById(id, parentId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **parentId** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -909,7 +1000,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketByParentIdLog"></a>
 # **getTicketByParentIdLog**
-> Response getTicketByParentIdLog(parentId, opts)
+> Response getTicketByParentIdLog(parentId, filters)
 
 
 
@@ -926,13 +1017,13 @@ const apiInstance = new DeskproApi.TicketsApi();
 
 const parentId = "parentId_example"; // String | 
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getTicketByParentIdLog(parentId, opts).then((response) => {
+apiInstance.getTicketByParentIdLog(parentId, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -942,13 +1033,20 @@ apiInstance.getTicketByParentIdLog(parentId, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+ **parentId** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -994,10 +1092,15 @@ apiInstance.getTicketByParentIdLogById(id, parentId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **parentId** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1041,9 +1144,14 @@ apiInstance.getTicketByParentIdLogCount(parentId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1060,7 +1168,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketByParentIdMessage"></a>
 # **getTicketByParentIdMessage**
-> Response getTicketByParentIdMessage(parentId, opts)
+> Response getTicketByParentIdMessage(parentId, filters)
 
 
 
@@ -1077,13 +1185,13 @@ const apiInstance = new DeskproApi.TicketsApi();
 
 const parentId = "parentId_example"; // String | 
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getTicketByParentIdMessage(parentId, opts).then((response) => {
+apiInstance.getTicketByParentIdMessage(parentId, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -1093,13 +1201,20 @@ apiInstance.getTicketByParentIdMessage(parentId, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+ **parentId** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -1145,10 +1260,15 @@ apiInstance.getTicketByParentIdMessageById(id, parentId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **parentId** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1165,7 +1285,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketByParentIdMessageByIdAttachment"></a>
 # **getTicketByParentIdMessageByIdAttachment**
-> Response getTicketByParentIdMessageByIdAttachment(parentId, id, opts)
+> Response getTicketByParentIdMessageByIdAttachment(parentId, id, filters)
 
 
 
@@ -1184,13 +1304,13 @@ const parentId = "parentId_example"; // String |
 
 const id = "id_example"; // String | 
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getTicketByParentIdMessageByIdAttachment(parentId, id, opts).then((response) => {
+apiInstance.getTicketByParentIdMessageByIdAttachment(parentId, id, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -1200,14 +1320,21 @@ apiInstance.getTicketByParentIdMessageByIdAttachment(parentId, id, opts).then((r
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
- **id** | **String**|  | 
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+ **parentId** | **String**|  |
+ **id** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -1251,9 +1378,14 @@ apiInstance.getTicketByParentIdMessageCount(parentId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1270,7 +1402,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketByParentIdTicketSla"></a>
 # **getTicketByParentIdTicketSla**
-> Response getTicketByParentIdTicketSla(parentId, opts)
+> Response getTicketByParentIdTicketSla(parentId, filters)
 
 
 
@@ -1287,13 +1419,13 @@ const apiInstance = new DeskproApi.TicketsApi();
 
 const parentId = "parentId_example"; // String | 
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getTicketByParentIdTicketSla(parentId, opts).then((response) => {
+apiInstance.getTicketByParentIdTicketSla(parentId, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -1303,13 +1435,20 @@ apiInstance.getTicketByParentIdTicketSla(parentId, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+ **parentId** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -1355,10 +1494,15 @@ apiInstance.getTicketByParentIdTicketSlaById(id, parentId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **parentId** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1404,10 +1548,15 @@ apiInstance.getTicketByParentIdTicketSlaBySlaBySlaId(parentId, slaId).then((resp
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **Number**| the id of parent ticket | 
- **slaId** | **Number**| the id of parent SLA | 
+ **parentId** | **Number**| the id of parent ticket |
+ **slaId** | **Number**| the id of parent SLA |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1451,9 +1600,14 @@ apiInstance.getTicketByParentIdTicketSlaCount(parentId).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **parentId** | **String**|  | 
+ **parentId** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1470,7 +1624,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketByTicketFollowUp"></a>
 # **getTicketByTicketFollowUp**
-> Response getTicketByTicketFollowUp(ticket, opts)
+> Response getTicketByTicketFollowUp(ticket, filters)
 
 
 
@@ -1487,13 +1641,13 @@ const apiInstance = new DeskproApi.TicketsApi();
 
 const ticket = "ticket_example"; // String | 
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getTicketByTicketFollowUp(ticket, opts).then((response) => {
+apiInstance.getTicketByTicketFollowUp(ticket, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -1503,13 +1657,20 @@ apiInstance.getTicketByTicketFollowUp(ticket, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ticket** | **String**|  | 
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+ **ticket** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -1555,10 +1716,15 @@ apiInstance.getTicketByTicketFollowUpById(id, ticket).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
- **ticket** | **String**|  | 
+ **id** | **Number**| The id of the resource |
+ **ticket** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1602,9 +1768,14 @@ apiInstance.getTicketByTicketFollowUpCount(ticket).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ticket** | **String**|  | 
+ **ticket** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1621,7 +1792,7 @@ No authorization required
 
 <a name="getTicketByTicketLink"></a>
 # **getTicketByTicketLink**
-> Response getTicketByTicketLink(ticket, opts)
+> Response getTicketByTicketLink(ticket, filters)
 
 
 
@@ -1638,10 +1809,10 @@ const apiInstance = new DeskproApi.TicketsApi();
 
 const ticket = "ticket_example"; // String | 
 
-const opts = { 
+const filters = { 
   'ticketId': 56 // Number | ticket to find id
 };
-apiInstance.getTicketByTicketLink(ticket, opts).then((response) => {
+apiInstance.getTicketByTicketLink(ticket, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -1651,10 +1822,17 @@ apiInstance.getTicketByTicketLink(ticket, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ticket** | **String**|  | 
- **ticketId** | **Number**| ticket to find id | [optional] 
+ **ticket** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ticketId** | **Number**| ticket to find id | [optional]
 
 ### Return type
 
@@ -1671,7 +1849,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketCategories"></a>
 # **getTicketCategories**
-> Response getTicketCategories(opts)
+> Response getTicketCategories(filters)
 
 
 
@@ -1686,13 +1864,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.TicketsApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getTicketCategories(opts).then((response) => {
+apiInstance.getTicketCategories(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -1702,12 +1880,19 @@ apiInstance.getTicketCategories(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -1751,9 +1936,14 @@ apiInstance.getTicketCategoryById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1793,7 +1983,12 @@ apiInstance.getTicketCategoryCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1833,7 +2028,12 @@ apiInstance.getTicketCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1877,9 +2077,14 @@ apiInstance.getTicketCustomFieldById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -1896,7 +2101,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketCustomFields"></a>
 # **getTicketCustomFields**
-> Response getTicketCustomFields(opts)
+> Response getTicketCustomFields(filters)
 
 
 
@@ -1911,13 +2116,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.TicketsApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getTicketCustomFields(opts).then((response) => {
+apiInstance.getTicketCustomFields(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -1927,12 +2132,19 @@ apiInstance.getTicketCustomFields(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -1976,9 +2188,14 @@ apiInstance.getTicketLabelByLabelTicket(label).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **label** | **String**| label to filter tickets | 
+ **label** | **String**| label to filter tickets |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2022,9 +2239,14 @@ apiInstance.getTicketLayoutByContext(context).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **context** | **String**| context for layout | 
+ **context** | **String**| context for layout |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2070,10 +2292,15 @@ apiInstance.getTicketLayoutByContextByDepartment(department, context).then((resp
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **department** | **Number**| department id for which you want to get layout | 
- **context** | **String**| context of layout | 
+ **department** | **Number**| department id for which you want to get layout |
+ **context** | **String**| context of layout |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2119,10 +2346,15 @@ apiInstance.getTicketLayoutByContextDepartmentJ(department, context).then((respo
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **department** | **Number**| department id for which you want to get layout | 
- **context** | **String**| context of layout | 
+ **department** | **Number**| department id for which you want to get layout |
+ **context** | **String**| context of layout |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2166,9 +2398,14 @@ apiInstance.getTicketLayoutContextJ(context).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **context** | **String**| context for layout | 
+ **context** | **String**| context for layout |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2212,9 +2449,14 @@ apiInstance.getTicketMacroById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2231,7 +2473,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketMacros"></a>
 # **getTicketMacros**
-> Response getTicketMacros(opts)
+> Response getTicketMacros(filters)
 
 
 
@@ -2246,13 +2488,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.TicketsApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getTicketMacros(opts).then((response) => {
+apiInstance.getTicketMacros(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -2262,12 +2504,19 @@ apiInstance.getTicketMacros(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -2284,7 +2533,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketPriorities"></a>
 # **getTicketPriorities**
-> Response getTicketPriorities(opts)
+> Response getTicketPriorities(filters)
 
 
 
@@ -2299,13 +2548,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.TicketsApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getTicketPriorities(opts).then((response) => {
+apiInstance.getTicketPriorities(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -2315,12 +2564,19 @@ apiInstance.getTicketPriorities(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -2364,9 +2620,14 @@ apiInstance.getTicketPriorityById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2406,7 +2667,12 @@ apiInstance.getTicketPriorityCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2450,9 +2716,14 @@ apiInstance.getTicketProblemById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2496,9 +2767,14 @@ apiInstance.getTicketProblemByIdTicket(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| problem id | 
+ **id** | **Number**| problem id |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2538,7 +2814,12 @@ apiInstance.getTicketProblemCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2555,7 +2836,7 @@ This endpoint does not need any parameter.
 
 <a name="getTicketProblems"></a>
 # **getTicketProblems**
-> Response getTicketProblems(opts)
+> Response getTicketProblems(filters)
 
 
 
@@ -2570,13 +2851,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.TicketsApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getTicketProblems(opts).then((response) => {
+apiInstance.getTicketProblems(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -2586,12 +2867,19 @@ apiInstance.getTicketProblems(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -2635,9 +2923,14 @@ apiInstance.getTicketProductById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2677,7 +2970,12 @@ apiInstance.getTicketProductCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2694,7 +2992,7 @@ This endpoint does not need any parameter.
 
 <a name="getTicketProducts"></a>
 # **getTicketProducts**
-> Response getTicketProducts(opts)
+> Response getTicketProducts(filters)
 
 
 
@@ -2709,13 +3007,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.TicketsApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getTicketProducts(opts).then((response) => {
+apiInstance.getTicketProducts(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -2725,12 +3023,19 @@ apiInstance.getTicketProducts(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -2774,9 +3079,14 @@ apiInstance.getTicketStarByStarTicket(star).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **star** | **Number**| the id of star to filter by | 
+ **star** | **Number**| the id of star to filter by |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2816,7 +3126,12 @@ apiInstance.getTicketStarCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2856,7 +3171,12 @@ apiInstance.getTicketStars().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2900,9 +3220,14 @@ apiInstance.getTicketStatuseByStatuTicket(status).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **status** | **String**| provide a status to filter | 
+ **status** | **String**| provide a status to filter |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2942,7 +3267,12 @@ apiInstance.getTicketStatuses().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -2986,9 +3316,14 @@ apiInstance.getTicketWorkflowById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -3028,7 +3363,12 @@ apiInstance.getTicketWorkflowCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -3045,7 +3385,7 @@ This endpoint does not need any parameter.
 
 <a name="getTicketWorkflows"></a>
 # **getTicketWorkflows**
-> Response getTicketWorkflows(opts)
+> Response getTicketWorkflows(filters)
 
 
 
@@ -3060,13 +3400,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.TicketsApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getTicketWorkflows(opts).then((response) => {
+apiInstance.getTicketWorkflows(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -3076,12 +3416,19 @@ apiInstance.getTicketWorkflows(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -3098,7 +3445,7 @@ Name | Type | Description  | Notes
 
 <a name="getTickets"></a>
 # **getTickets**
-> Response getTickets(opts)
+> Response getTickets(filters)
 
 
 
@@ -3113,7 +3460,7 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.TicketsApi();
 
-const opts = { 
+const filters = { 
   'orderBy': "orderBy_example", // String | tickets list sort
   'ids': "ids_example", // String | ticket list to fetch, comma separated list
   'orderDir': "orderDir_example", // String | tickets list sort order
@@ -3134,7 +3481,7 @@ const opts = {
   'slaStatus': 56, // Number | sla status filter
   'ticketFieldId': "ticketFieldId_example" // String |       *                  Custom ticket field filter. To filter by a custom field with ID=1 you need to add      *                  ?ticket_field.1=value to the query string
 };
-apiInstance.getTickets(opts).then((response) => {
+apiInstance.getTickets(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -3144,27 +3491,34 @@ apiInstance.getTickets(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **orderBy** | **String**| tickets list sort | [optional] 
- **ids** | **String**| ticket list to fetch, comma separated list | [optional] 
- **orderDir** | **String**| tickets list sort order | [optional] 
- **page** | **Number**| pagination page parameter | [optional] 
- **count** | **Number**| pagination results per page parameter. | [optional] 
- **filter** | **Number**| TicketFilter ID option | [optional] 
- **labels** | [**[String]**](String.md)| labels filter option | [optional] 
- **star** | **Number**| star filter | [optional] 
- **status** | **Number**| status filter | [optional] 
- **notStatus** | **Number**| not status filter | [optional] 
- **agent** | **Number**| agent filter | [optional] 
- **person** | **Number**| person filter | [optional] 
- **language** | **Number**| language filter | [optional] 
- **organization** | **Number**| organization filter | [optional] 
- **problem** | **Number**| problem filter | [optional] 
- **department** | **Number**| department filter | [optional] 
- **sla** | **Number**| sla id filter | [optional] 
- **slaStatus** | **Number**| sla status filter | [optional] 
- **ticketFieldId** | **String**|       *                  Custom ticket field filter. To filter by a custom field with ID&#x3D;1 you need to add      *                  ?ticket_field.1&#x3D;value to the query string | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **orderBy** | **String**| tickets list sort | [optional]
+ **ids** | **String**| ticket list to fetch, comma separated list | [optional]
+ **orderDir** | **String**| tickets list sort order | [optional]
+ **page** | **Number**| pagination page parameter | [optional]
+ **count** | **Number**| pagination results per page parameter. | [optional]
+ **filter** | **Number**| TicketFilter ID option | [optional]
+ **labels** | [**[String]**](../Model/String.md)| labels filter option | [optional]
+ **star** | **Number**| star filter | [optional]
+ **status** | **Number**| status filter | [optional]
+ **notStatus** | **Number**| not status filter | [optional]
+ **agent** | **Number**| agent filter | [optional]
+ **person** | **Number**| person filter | [optional]
+ **language** | **Number**| language filter | [optional]
+ **organization** | **Number**| organization filter | [optional]
+ **problem** | **Number**| problem filter | [optional]
+ **department** | **Number**| department filter | [optional]
+ **sla** | **Number**| sla id filter | [optional]
+ **slaStatus** | **Number**| sla status filter | [optional]
+ **ticketFieldId** | **String**|       *                  Custom ticket field filter. To filter by a custom field with ID&#x3D;1 you need to add      *                  ?ticket_field.1&#x3D;value to the query string | [optional]
 
 ### Return type
 
@@ -3181,7 +3535,7 @@ Name | Type | Description  | Notes
 
 <a name="setTicketMacroByIdApplyByTicket"></a>
 # **setTicketMacroByIdApplyByTicket**
-> Response setTicketMacroByIdApplyByTicket(id, ticket, opts)
+> Response setTicketMacroByIdApplyByTicket(id, ticket, filters)
 
 
 
@@ -3200,10 +3554,10 @@ const id = 56; // Number | the macro identity
 
 const ticket = "ticket_example"; // String | 
 
-const opts = { 
+const filters = { 
   'ticketId': 56 // Number | the ticket identity
 };
-apiInstance.setTicketMacroByIdApplyByTicket(id, ticket, opts).then((response) => {
+apiInstance.setTicketMacroByIdApplyByTicket(id, ticket, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -3213,11 +3567,18 @@ apiInstance.setTicketMacroByIdApplyByTicket(id, ticket, opts).then((response) =>
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| the macro identity | 
- **ticket** | **String**|  | 
- **ticketId** | **Number**| the ticket identity | [optional] 
+ **id** | **Number**| the macro identity |
+ **ticket** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ticketId** | **Number**| the ticket identity | [optional]
 
 ### Return type
 
@@ -3234,7 +3595,7 @@ Name | Type | Description  | Notes
 
 <a name="updateTicketByTicketActionLock"></a>
 # **updateTicketByTicketActionLock**
-> Response updateTicketByTicketActionLock(ticket, force, opts)
+> Response updateTicketByTicketActionLock(ticket, force, filters)
 
 
 
@@ -3253,10 +3614,10 @@ const ticket = "ticket_example"; // String |
 
 const force = true; // Boolean | force apply
 
-const opts = { 
+const filters = { 
   'id': 56 // Number | The id of the resource
 };
-apiInstance.updateTicketByTicketActionLock(ticket, force, opts).then((response) => {
+apiInstance.updateTicketByTicketActionLock(ticket, force, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -3266,11 +3627,19 @@ apiInstance.updateTicketByTicketActionLock(ticket, force, opts).then((response) 
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ticket** | **String**|  | 
- **force** | **Boolean**| force apply | 
- **id** | **Number**| The id of the resource | [optional] 
+ **ticket** | **String**|  |
+ **force** | **Boolean**| force apply |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Number**| The id of the resource | [optional]
+ **force** | **Boolean**| force apply |
 
 ### Return type
 
@@ -3287,7 +3656,7 @@ Name | Type | Description  | Notes
 
 <a name="updateTicketByTicketActionUnlock"></a>
 # **updateTicketByTicketActionUnlock**
-> Response updateTicketByTicketActionUnlock(ticket, force, opts)
+> Response updateTicketByTicketActionUnlock(ticket, force, filters)
 
 
 
@@ -3306,10 +3675,10 @@ const ticket = "ticket_example"; // String |
 
 const force = true; // Boolean | force apply
 
-const opts = { 
+const filters = { 
   'id': 56 // Number | The id of the resource
 };
-apiInstance.updateTicketByTicketActionUnlock(ticket, force, opts).then((response) => {
+apiInstance.updateTicketByTicketActionUnlock(ticket, force, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -3319,11 +3688,19 @@ apiInstance.updateTicketByTicketActionUnlock(ticket, force, opts).then((response
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ticket** | **String**|  | 
- **force** | **Boolean**| force apply | 
- **id** | **Number**| The id of the resource | [optional] 
+ **ticket** | **String**|  |
+ **force** | **Boolean**| force apply |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Number**| The id of the resource | [optional]
+ **force** | **Boolean**| force apply |
 
 ### Return type
 

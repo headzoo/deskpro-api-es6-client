@@ -38,9 +38,14 @@ apiInstance.deleteEmailAccountByIdCertificate(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the email account | 
+ **id** | **Number**| The id of the email account |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -84,9 +89,14 @@ apiInstance.deleteEmailAccountByIdKey(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the email account | 
+ **id** | **Number**| The id of the email account |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -130,9 +140,14 @@ apiInstance.setEmailAccountByIdEncryption(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the email account | 
+ **id** | **Number**| The id of the email account |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 

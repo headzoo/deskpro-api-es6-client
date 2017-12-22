@@ -39,9 +39,14 @@ apiInstance.deleteSettingBrandByBrandWidgetSetup(brand).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **brand** | **String**|  | 
+ **brand** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -85,9 +90,14 @@ apiInstance.getSettingBrandByBrandWidgetCode(brand).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **brand** | **String**|  | 
+ **brand** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -131,9 +141,14 @@ apiInstance.getSettingBrandByBrandWidgetLiveDemoCode(brand).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **brand** | **String**|  | 
+ **brand** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -177,9 +192,14 @@ apiInstance.getSettingBrandByBrandWidgetSetup(brand).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **brand** | **String**|  | 
+ **brand** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 

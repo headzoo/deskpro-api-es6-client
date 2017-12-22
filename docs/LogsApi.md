@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 <a name="getApiLogById"></a>
 # **getApiLogById**
-> Response getApiLogById(id, opts)
+> Response getApiLogById(id, filters)
 
 
 
@@ -30,10 +30,10 @@ const apiInstance = new DeskproApi.LogsApi();
 
 const id = "id_example"; // String | 
 
-const opts = { 
+const filters = { 
   'page': "page_example" // String | 
 };
-apiInstance.getApiLogById(id, opts).then((response) => {
+apiInstance.getApiLogById(id, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -43,10 +43,17 @@ apiInstance.getApiLogById(id, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **String**|  | 
- **page** | **String**|  | [optional] 
+ **id** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **String**|  | [optional]
 
 ### Return type
 
@@ -86,7 +93,12 @@ apiInstance.getApiLogs().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -126,7 +138,12 @@ apiInstance.getApiLogsOptions().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -143,7 +160,7 @@ This endpoint does not need any parameter.
 
 <a name="setApiLogByIdReplay"></a>
 # **setApiLogByIdReplay**
-> Response setApiLogByIdReplay(id, opts)
+> Response setApiLogByIdReplay(id, filters)
 
 
 
@@ -160,10 +177,10 @@ const apiInstance = new DeskproApi.LogsApi();
 
 const id = 56; // Number | id of entry to replay
 
-const opts = { 
+const filters = { 
   'mode': "mode_example" // String | how to replay
 };
-apiInstance.setApiLogByIdReplay(id, opts).then((response) => {
+apiInstance.setApiLogByIdReplay(id, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -173,10 +190,17 @@ apiInstance.setApiLogByIdReplay(id, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| id of entry to replay | 
- **mode** | **String**| how to replay | [optional] 
+ **id** | **Number**| id of entry to replay |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **mode** | **String**| how to replay | [optional]
 
 ### Return type
 
@@ -193,7 +217,7 @@ Name | Type | Description  | Notes
 
 <a name="updateApiLogsOptions"></a>
 # **updateApiLogsOptions**
-> Response updateApiLogsOptions(requestLength, responseLength, opts)
+> Response updateApiLogsOptions(requestLength, responseLength, filters)
 
 
 
@@ -212,11 +236,11 @@ const requestLength = 56; // Number |
 
 const responseLength = 56; // Number | 
 
-const opts = { 
+const filters = { 
   'enabled': true, // Boolean | provide 1 if you want to enable logging
   'modes': ["modes_example"] // [String] | strings array, values are session, key, token
 };
-apiInstance.updateApiLogsOptions(requestLength, responseLength, opts).then((response) => {
+apiInstance.updateApiLogsOptions(requestLength, responseLength, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -226,12 +250,21 @@ apiInstance.updateApiLogsOptions(requestLength, responseLength, opts).then((resp
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **requestLength** | **Number**|  | 
- **responseLength** | **Number**|  | 
- **enabled** | **Boolean**| provide 1 if you want to enable logging | [optional] 
- **modes** | [**[String]**](String.md)| strings array, values are session, key, token | [optional] 
+ **requestLength** | **Number**|  |
+ **responseLength** | **Number**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **enabled** | **Boolean**| provide 1 if you want to enable logging | [optional]
+ **modes** | [**[String]**](../Model/String.md)| strings array, values are session, key, token | [optional]
+ **requestLength** | **Number**|  |
+ **responseLength** | **Number**|  |
 
 ### Return type
 

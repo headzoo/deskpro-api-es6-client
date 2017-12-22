@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="getTypeLabels"></a>
 # **getTypeLabels**
-> Response getTypeLabels(type, opts)
+> Response getTypeLabels(type, filters)
 
 
 
@@ -26,10 +26,10 @@ const apiInstance = new DeskproApi.LabelsApi();
 
 const type = "type_example"; // String | Which entity type labels we are searching?
 
-const opts = { 
+const filters = { 
   'term': "term_example" // String | Filter label by given word
 };
-apiInstance.getTypeLabels(type, opts).then((response) => {
+apiInstance.getTypeLabels(type, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -39,10 +39,17 @@ apiInstance.getTypeLabels(type, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **type** | **String**| Which entity type labels we are searching? | 
- **term** | **String**| Filter label by given word | [optional] 
+ **type** | **String**| Which entity type labels we are searching? |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **term** | **String**| Filter label by given word | [optional]
 
 ### Return type
 

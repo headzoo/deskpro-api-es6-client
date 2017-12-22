@@ -49,9 +49,14 @@ apiInstance.deleteNewTicketFilterById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -95,9 +100,14 @@ apiInstance.deleteNewTicketFilterSetById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -114,7 +124,7 @@ Name | Type | Description  | Notes
 
 <a name="getNewTicketFilter"></a>
 # **getNewTicketFilter**
-> Response getNewTicketFilter(opts)
+> Response getNewTicketFilter(filters)
 
 
 
@@ -129,13 +139,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.TicketFiltersApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getNewTicketFilter(opts).then((response) => {
+apiInstance.getNewTicketFilter(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -145,12 +155,19 @@ apiInstance.getNewTicketFilter(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -167,7 +184,7 @@ Name | Type | Description  | Notes
 
 <a name="getNewTicketFilterByFilterCount"></a>
 # **getNewTicketFilterByFilterCount**
-> Response getNewTicketFilterByFilterCount(filter, opts)
+> Response getNewTicketFilterByFilterCount(filter, filters)
 
 
 
@@ -184,10 +201,10 @@ const apiInstance = new DeskproApi.TicketFiltersApi();
 
 const filter = 56; // Number | the id of the filter
 
-const opts = { 
+const filters = { 
   'groupBy': "groupBy_example" // String | the grouping order you want
 };
-apiInstance.getNewTicketFilterByFilterCount(filter, opts).then((response) => {
+apiInstance.getNewTicketFilterByFilterCount(filter, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -197,10 +214,17 @@ apiInstance.getNewTicketFilterByFilterCount(filter, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **filter** | **Number**| the id of the filter | 
- **groupBy** | **String**| the grouping order you want | [optional] 
+ **filter** | **Number**| the id of the filter |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **groupBy** | **String**| the grouping order you want | [optional]
 
 ### Return type
 
@@ -244,9 +268,14 @@ apiInstance.getNewTicketFilterByFilterTicket(filter).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **filter** | **String**|  | 
+ **filter** | **String**|  |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -290,9 +319,14 @@ apiInstance.getNewTicketFilterById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -332,7 +366,12 @@ apiInstance.getNewTicketFilterCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -349,7 +388,7 @@ This endpoint does not need any parameter.
 
 <a name="getNewTicketFilterSet"></a>
 # **getNewTicketFilterSet**
-> Response getNewTicketFilterSet(opts)
+> Response getNewTicketFilterSet(filters)
 
 
 
@@ -364,13 +403,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.TicketFiltersApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getNewTicketFilterSet(opts).then((response) => {
+apiInstance.getNewTicketFilterSet(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -380,12 +419,19 @@ apiInstance.getNewTicketFilterSet(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -402,7 +448,7 @@ Name | Type | Description  | Notes
 
 <a name="getNewTicketFilterSetAllCount"></a>
 # **getNewTicketFilterSetAllCount**
-> Response getNewTicketFilterSetAllCount(opts)
+> Response getNewTicketFilterSetAllCount(filters)
 
 
 
@@ -417,10 +463,10 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.TicketFiltersApi();
 
-const opts = { 
+const filters = { 
   'groupBy': ["groupBy_example"] // [String] | [Ticket filter ID => group_by] map
 };
-apiInstance.getNewTicketFilterSetAllCount(opts).then((response) => {
+apiInstance.getNewTicketFilterSetAllCount(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -430,9 +476,16 @@ apiInstance.getNewTicketFilterSetAllCount(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **groupBy** | [**[String]**](String.md)| [Ticket filter ID &#x3D;&gt; group_by] map | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **groupBy** | [**[String]**](../Model/String.md)| [Ticket filter ID &#x3D;&gt; group_by] map | [optional]
 
 ### Return type
 
@@ -476,9 +529,14 @@ apiInstance.getNewTicketFilterSetById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -495,7 +553,7 @@ Name | Type | Description  | Notes
 
 <a name="getNewTicketFilterSetBySetCount"></a>
 # **getNewTicketFilterSetBySetCount**
-> Response getNewTicketFilterSetBySetCount(set, opts)
+> Response getNewTicketFilterSetBySetCount(set, filters)
 
 
 
@@ -512,10 +570,10 @@ const apiInstance = new DeskproApi.TicketFiltersApi();
 
 const set = 56; // Number | the id of the filter
 
-const opts = { 
+const filters = { 
   'groupBy': ["groupBy_example"] // [String] | [Ticket filter ID => group_by] map
 };
-apiInstance.getNewTicketFilterSetBySetCount(set, opts).then((response) => {
+apiInstance.getNewTicketFilterSetBySetCount(set, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -525,10 +583,17 @@ apiInstance.getNewTicketFilterSetBySetCount(set, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **set** | **Number**| the id of the filter | 
- **groupBy** | [**[String]**](String.md)| [Ticket filter ID &#x3D;&gt; group_by] map | [optional] 
+ **set** | **Number**| the id of the filter |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **groupBy** | [**[String]**](../Model/String.md)| [Ticket filter ID &#x3D;&gt; group_by] map | [optional]
 
 ### Return type
 
@@ -545,7 +610,7 @@ Name | Type | Description  | Notes
 
 <a name="getNewTicketFilterSetBySetFilter"></a>
 # **getNewTicketFilterSetBySetFilter**
-> Response getNewTicketFilterSetBySetFilter(set, opts)
+> Response getNewTicketFilterSetBySetFilter(set, filters)
 
 
 
@@ -562,10 +627,10 @@ const apiInstance = new DeskproApi.TicketFiltersApi();
 
 const set = "set_example"; // String | 
 
-const opts = { 
+const filters = { 
   'id': 56 // Number | the id of the filter set
 };
-apiInstance.getNewTicketFilterSetBySetFilter(set, opts).then((response) => {
+apiInstance.getNewTicketFilterSetBySetFilter(set, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -575,10 +640,17 @@ apiInstance.getNewTicketFilterSetBySetFilter(set, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **set** | **String**|  | 
- **id** | **Number**| the id of the filter set | [optional] 
+ **set** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **Number**| the id of the filter set | [optional]
 
 ### Return type
 
@@ -618,7 +690,12 @@ apiInstance.getNewTicketFilterSetCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -635,7 +712,7 @@ This endpoint does not need any parameter.
 
 <a name="getNewTicketFiltersCount"></a>
 # **getNewTicketFiltersCount**
-> Response getNewTicketFiltersCount(opts)
+> Response getNewTicketFiltersCount(filters)
 
 
 
@@ -650,10 +727,10 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.TicketFiltersApi();
 
-const opts = { 
+const filters = { 
   'groupBy': "groupBy_example" // String | [Ticket filter ID => group_by] map
 };
-apiInstance.getNewTicketFiltersCount(opts).then((response) => {
+apiInstance.getNewTicketFiltersCount(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -663,9 +740,16 @@ apiInstance.getNewTicketFiltersCount(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **groupBy** | **String**| [Ticket filter ID &#x3D;&gt; group_by] map | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **groupBy** | **String**| [Ticket filter ID &#x3D;&gt; group_by] map | [optional]
 
 ### Return type
 

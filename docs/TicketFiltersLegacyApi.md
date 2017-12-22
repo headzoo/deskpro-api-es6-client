@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 <a name="getTicketFilterByFilterTicket"></a>
 # **getTicketFilterByFilterTicket**
-> Response getTicketFilterByFilterTicket(filter, opts)
+> Response getTicketFilterByFilterTicket(filter, filters)
 
 
 
@@ -36,7 +36,7 @@ const apiInstance = new DeskproApi.TicketFiltersLegacyApi();
 
 const filter = "filter_example"; // String | 
 
-const opts = { 
+const filters = { 
   'sort': "sort_example", // String | tickets list sort
   'order': "order_example", // String | tickets list sort order
   'page': 56, // Number | pagination page parameter
@@ -53,7 +53,7 @@ const opts = {
   'dateCreated': 56, // Number | date created filter
   'ticketFieldId': "ticketFieldId_example" // String |       *                 Custom ticket field filter. To filter by a custom field with ID=1 you need to add      *                 ?ticket_field.1=value to the query string
 };
-apiInstance.getTicketFilterByFilterTicket(filter, opts).then((response) => {
+apiInstance.getTicketFilterByFilterTicket(filter, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -63,24 +63,31 @@ apiInstance.getTicketFilterByFilterTicket(filter, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **filter** | **String**|  | 
- **sort** | **String**| tickets list sort | [optional] 
- **order** | **String**| tickets list sort order | [optional] 
- **page** | **Number**| pagination page parameter | [optional] 
- **count** | **Number**| pagination results per page parameter. | [optional] 
- **department** | **Number**| department filter | [optional] 
- **organization** | **Number**| organization filter | [optional] 
- **person** | **Number**| person filter | [optional] 
- **language** | **Number**| language filter | [optional] 
- **urgency** | **Number**| urgency filter | [optional] 
- **agent** | **Number**| agent filter | [optional] 
- **agentTeam** | **Number**| agent team filter | [optional] 
- **waitingTime** | **Number**| user waiting time filter | [optional] 
- **allWaitingTime** | **Number**| total user waiting time filter | [optional] 
- **dateCreated** | **Number**| date created filter | [optional] 
- **ticketFieldId** | **String**|       *                 Custom ticket field filter. To filter by a custom field with ID&#x3D;1 you need to add      *                 ?ticket_field.1&#x3D;value to the query string | [optional] 
+ **filter** | **String**|  |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **sort** | **String**| tickets list sort | [optional]
+ **order** | **String**| tickets list sort order | [optional]
+ **page** | **Number**| pagination page parameter | [optional]
+ **count** | **Number**| pagination results per page parameter. | [optional]
+ **department** | **Number**| department filter | [optional]
+ **organization** | **Number**| organization filter | [optional]
+ **person** | **Number**| person filter | [optional]
+ **language** | **Number**| language filter | [optional]
+ **urgency** | **Number**| urgency filter | [optional]
+ **agent** | **Number**| agent filter | [optional]
+ **agentTeam** | **Number**| agent team filter | [optional]
+ **waitingTime** | **Number**| user waiting time filter | [optional]
+ **allWaitingTime** | **Number**| total user waiting time filter | [optional]
+ **dateCreated** | **Number**| date created filter | [optional]
+ **ticketFieldId** | **String**|       *                 Custom ticket field filter. To filter by a custom field with ID&#x3D;1 you need to add      *                 ?ticket_field.1&#x3D;value to the query string | [optional]
 
 ### Return type
 
@@ -124,9 +131,14 @@ apiInstance.getTicketFilterById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| The id of the resource | 
+ **id** | **Number**| The id of the resource |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -143,7 +155,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketFilterByIdCount"></a>
 # **getTicketFilterByIdCount**
-> Response getTicketFilterByIdCount(id, opts)
+> Response getTicketFilterByIdCount(id, filters)
 
 
 
@@ -160,10 +172,10 @@ const apiInstance = new DeskproApi.TicketFiltersLegacyApi();
 
 const id = 56; // Number | the id of the filter
 
-const opts = { 
+const filters = { 
   'groupBy': "groupBy_example" // String | the grouping order you want
 };
-apiInstance.getTicketFilterByIdCount(id, opts).then((response) => {
+apiInstance.getTicketFilterByIdCount(id, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -173,10 +185,17 @@ apiInstance.getTicketFilterByIdCount(id, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| the id of the filter | 
- **groupBy** | **String**| the grouping order you want | [optional] 
+ **id** | **Number**| the id of the filter |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **groupBy** | **String**| the grouping order you want | [optional]
 
 ### Return type
 
@@ -216,7 +235,12 @@ apiInstance.getTicketFilterCount().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -233,7 +257,7 @@ This endpoint does not need any parameter.
 
 <a name="getTicketFilterSetAllCount"></a>
 # **getTicketFilterSetAllCount**
-> Response getTicketFilterSetAllCount(opts)
+> Response getTicketFilterSetAllCount(filters)
 
 
 
@@ -248,10 +272,10 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.TicketFiltersLegacyApi();
 
-const opts = { 
+const filters = { 
   'groupBy': ["groupBy_example"] // [String] | [Ticket filter ID => group_by] map
 };
-apiInstance.getTicketFilterSetAllCount(opts).then((response) => {
+apiInstance.getTicketFilterSetAllCount(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -261,9 +285,16 @@ apiInstance.getTicketFilterSetAllCount(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **groupBy** | [**[String]**](String.md)| [Ticket filter ID &#x3D;&gt; group_by] map | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **groupBy** | [**[String]**](../Model/String.md)| [Ticket filter ID &#x3D;&gt; group_by] map | [optional]
 
 ### Return type
 
@@ -307,9 +338,14 @@ apiInstance.getTicketFilterSetById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| the id of the filter set | 
+ **id** | **Number**| the id of the filter set |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -326,7 +362,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketFilterSetByIdCount"></a>
 # **getTicketFilterSetByIdCount**
-> Response getTicketFilterSetByIdCount(id, opts)
+> Response getTicketFilterSetByIdCount(id, filters)
 
 
 
@@ -343,10 +379,10 @@ const apiInstance = new DeskproApi.TicketFiltersLegacyApi();
 
 const id = 56; // Number | the id of the filter
 
-const opts = { 
+const filters = { 
   'groupBy': ["groupBy_example"] // [String] | [Ticket filter ID => group_by] map
 };
-apiInstance.getTicketFilterSetByIdCount(id, opts).then((response) => {
+apiInstance.getTicketFilterSetByIdCount(id, filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -356,10 +392,17 @@ apiInstance.getTicketFilterSetByIdCount(id, opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| the id of the filter | 
- **groupBy** | [**[String]**](String.md)| [Ticket filter ID &#x3D;&gt; group_by] map | [optional] 
+ **id** | **Number**| the id of the filter |
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **groupBy** | [**[String]**](../Model/String.md)| [Ticket filter ID &#x3D;&gt; group_by] map | [optional]
 
 ### Return type
 
@@ -403,9 +446,14 @@ apiInstance.getTicketFilterSetByIdFilter(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| the id of the filter set | 
+ **id** | **Number**| the id of the filter set |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -445,7 +493,12 @@ apiInstance.getTicketFilterSets().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -462,7 +515,7 @@ This endpoint does not need any parameter.
 
 <a name="getTicketFilters"></a>
 # **getTicketFilters**
-> Response getTicketFilters(opts)
+> Response getTicketFilters(filters)
 
 
 
@@ -477,13 +530,13 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.TicketFiltersLegacyApi();
 
-const opts = { 
+const filters = { 
   'page': 56, // Number | Which page to display
   'count': 56, // Number | Resource per page count
   'limit': 56, // Number | Max number of resources to return
   'ids': "ids_example" // String | Comma separated list of IDs
 };
-apiInstance.getTicketFilters(opts).then((response) => {
+apiInstance.getTicketFilters(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -493,12 +546,19 @@ apiInstance.getTicketFilters(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **page** | **Number**| Which page to display | [optional] 
- **count** | **Number**| Resource per page count | [optional] 
- **limit** | **Number**| Max number of resources to return | [optional] 
- **ids** | **String**| Comma separated list of IDs | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **page** | **Number**| Which page to display | [optional]
+ **count** | **Number**| Resource per page count | [optional]
+ **limit** | **Number**| Max number of resources to return | [optional]
+ **ids** | **String**| Comma separated list of IDs | [optional]
 
 ### Return type
 
@@ -515,7 +575,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketFiltersCounts"></a>
 # **getTicketFiltersCounts**
-> Response getTicketFiltersCounts(opts)
+> Response getTicketFiltersCounts(filters)
 
 
 
@@ -530,10 +590,10 @@ defaultClient.setApiKey('YOUR_API_KEY');
 
 const apiInstance = new DeskproApi.TicketFiltersLegacyApi();
 
-const opts = { 
+const filters = { 
   'groupBy': "groupBy_example" // String | [Ticket filter ID => group_by] map
 };
-apiInstance.getTicketFiltersCounts(opts).then((response) => {
+apiInstance.getTicketFiltersCounts(filters).then((response) => {
   console.log(response.data);
 }, (error) => {
   console.error(error);
@@ -543,9 +603,16 @@ apiInstance.getTicketFiltersCounts(opts).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **groupBy** | **String**| [Ticket filter ID &#x3D;&gt; group_by] map | [optional] 
+
+### Filters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **groupBy** | **String**| [Ticket filter ID &#x3D;&gt; group_by] map | [optional]
 
 ### Return type
 

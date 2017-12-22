@@ -37,9 +37,14 @@ apiInstance.getSlaById(id).then((response) => {
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **Number**| the id of SLA | 
+ **id** | **Number**| the id of SLA |
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
@@ -79,7 +84,12 @@ apiInstance.getSlas().then((response) => {
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+This endpoint does not need any parameters.
+
+
+### Filters
+This endpoint does not need any filters.
+
 
 ### Return type
 
