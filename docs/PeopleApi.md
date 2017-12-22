@@ -26,7 +26,7 @@ Method | HTTP request | Description
 
 <a name="deletePeopleById"></a>
 # **deletePeopleById**
-> Response deletePeopleById(id)
+> Response deletePeopleById(Number id)
 
 
 
@@ -77,7 +77,7 @@ This endpoint does not need any filters.
 
 <a name="deletePeopleByParentIdNoteById"></a>
 # **deletePeopleByParentIdNoteById**
-> Response deletePeopleByParentIdNoteById(id, parentId)
+> Response deletePeopleByParentIdNoteById(Number id, String parentId)
 
 
 
@@ -131,7 +131,7 @@ This endpoint does not need any filters.
 
 <a name="deletePersonCustomFieldById"></a>
 # **deletePersonCustomFieldById**
-> Response deletePersonCustomFieldById(id)
+> Response deletePersonCustomFieldById(Number id)
 
 
 
@@ -182,7 +182,7 @@ This endpoint does not need any filters.
 
 <a name="getPeople"></a>
 # **getPeople**
-> Response getPeople(filters)
+> Response getPeople(object filters)
 
 
 
@@ -264,7 +264,7 @@ Name | Type | Description  | Notes
 
 <a name="getPeopleById"></a>
 # **getPeopleById**
-> Response getPeopleById(id)
+> Response getPeopleById(Number id)
 
 
 
@@ -315,7 +315,7 @@ This endpoint does not need any filters.
 
 <a name="getPeopleByIdTicket"></a>
 # **getPeopleByIdTicket**
-> Response getPeopleByIdTicket(id)
+> Response getPeopleByIdTicket(String id)
 
 
 
@@ -366,7 +366,7 @@ This endpoint does not need any filters.
 
 <a name="getPeopleByParentIdContactData"></a>
 # **getPeopleByParentIdContactData**
-> Response getPeopleByParentIdContactData(parentId, filters)
+> Response getPeopleByParentIdContactData(String parentId, object filters)
 
 
 
@@ -429,7 +429,7 @@ Name | Type | Description  | Notes
 
 <a name="getPeopleByParentIdContactDataById"></a>
 # **getPeopleByParentIdContactDataById**
-> Response getPeopleByParentIdContactDataById(id, parentId)
+> Response getPeopleByParentIdContactDataById(Number id, String parentId)
 
 
 
@@ -483,7 +483,7 @@ This endpoint does not need any filters.
 
 <a name="getPeopleByParentIdContactDataCount"></a>
 # **getPeopleByParentIdContactDataCount**
-> Response getPeopleByParentIdContactDataCount(parentId)
+> Response getPeopleByParentIdContactDataCount(String parentId)
 
 
 
@@ -534,7 +534,7 @@ This endpoint does not need any filters.
 
 <a name="getPeopleByParentIdNote"></a>
 # **getPeopleByParentIdNote**
-> Response getPeopleByParentIdNote(parentId, filters)
+> Response getPeopleByParentIdNote(String parentId, object filters)
 
 
 
@@ -597,7 +597,7 @@ Name | Type | Description  | Notes
 
 <a name="getPeopleByParentIdNoteById"></a>
 # **getPeopleByParentIdNoteById**
-> Response getPeopleByParentIdNoteById(id, parentId)
+> Response getPeopleByParentIdNoteById(Number id, String parentId)
 
 
 
@@ -651,7 +651,7 @@ This endpoint does not need any filters.
 
 <a name="getPeopleByParentIdNoteCount"></a>
 # **getPeopleByParentIdNoteCount**
-> Response getPeopleByParentIdNoteCount(parentId)
+> Response getPeopleByParentIdNoteCount(String parentId)
 
 
 
@@ -702,7 +702,7 @@ This endpoint does not need any filters.
 
 <a name="getPeopleCount"></a>
 # **getPeopleCount**
-> Response getPeopleCount(filters)
+> Response getPeopleCount(object filters)
 
 
 
@@ -866,7 +866,7 @@ This endpoint does not need any filters.
 
 <a name="getPersonCustomFieldById"></a>
 # **getPersonCustomFieldById**
-> Response getPersonCustomFieldById(id)
+> Response getPersonCustomFieldById(Number id)
 
 
 
@@ -917,7 +917,7 @@ This endpoint does not need any filters.
 
 <a name="getPersonCustomFields"></a>
 # **getPersonCustomFields**
-> Response getPersonCustomFields(filters)
+> Response getPersonCustomFields(object filters)
 
 
 
@@ -977,7 +977,7 @@ Name | Type | Description  | Notes
 
 <a name="updatePeopleByIdPermission"></a>
 # **updatePeopleByIdPermission**
-> Response updatePeopleByIdPermission(id, agent)
+> Response updatePeopleByIdPermission(String id, Boolean agent)
 
 
 

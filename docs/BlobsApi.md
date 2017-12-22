@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 <a name="deleteBlobByAuthId"></a>
 # **deleteBlobByAuthId**
-> Response deleteBlobByAuthId(authId)
+> Response deleteBlobByAuthId(Number authId)
 
 
 
@@ -65,7 +65,7 @@ This endpoint does not need any filters.
 
 <a name="getBlobByAuthId"></a>
 # **getBlobByAuthId**
-> Response getBlobByAuthId(authId)
+> Response getBlobByAuthId(Number authId)
 
 
 
@@ -116,7 +116,7 @@ This endpoint does not need any filters.
 
 <a name="getBlobByAuthIdArchive"></a>
 # **getBlobByAuthIdArchive**
-> Response getBlobByAuthIdArchive(authId)
+> Response getBlobByAuthIdArchive(Number authId)
 
 
 
@@ -167,7 +167,7 @@ This endpoint does not need any filters.
 
 <a name="getBlobByAuthIdDownloadByPath"></a>
 # **getBlobByAuthIdDownloadByPath**
-> Response getBlobByAuthIdDownloadByPath(authId, path)
+> Response getBlobByAuthIdDownloadByPath(Number authId, String path)
 
 
 
@@ -221,7 +221,7 @@ This endpoint does not need any filters.
 
 <a name="getBlobByAuthIdFile"></a>
 # **getBlobByAuthIdFile**
-> Response getBlobByAuthIdFile(authId)
+> Response getBlobByAuthIdFile(Number authId)
 
 
 
@@ -272,7 +272,7 @@ This endpoint does not need any filters.
 
 <a name="getBlobs"></a>
 # **getBlobs**
-> Response getBlobs(filters)
+> Response getBlobs(object filters)
 
 
 

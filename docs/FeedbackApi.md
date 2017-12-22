@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 <a name="deleteFeedbackById"></a>
 # **deleteFeedbackById**
-> Response deleteFeedbackById(id)
+> Response deleteFeedbackById(Number id)
 
 
 
@@ -71,7 +71,7 @@ This endpoint does not need any filters.
 
 <a name="deleteFeedbackCommentById"></a>
 # **deleteFeedbackCommentById**
-> Response deleteFeedbackCommentById(id)
+> Response deleteFeedbackCommentById(Number id)
 
 
 
@@ -122,7 +122,7 @@ This endpoint does not need any filters.
 
 <a name="getFeedback"></a>
 # **getFeedback**
-> Response getFeedback(filters)
+> Response getFeedback(object filters)
 
 
 
@@ -210,7 +210,7 @@ Name | Type | Description  | Notes
 
 <a name="getFeedbackById"></a>
 # **getFeedbackById**
-> Response getFeedbackById(id)
+> Response getFeedbackById(Number id)
 
 
 
@@ -306,7 +306,7 @@ This endpoint does not need any filters.
 
 <a name="getFeedbackCommentById"></a>
 # **getFeedbackCommentById**
-> Response getFeedbackCommentById(id)
+> Response getFeedbackCommentById(Number id)
 
 
 
@@ -402,7 +402,7 @@ This endpoint does not need any filters.
 
 <a name="getFeedbackComments"></a>
 # **getFeedbackComments**
-> Response getFeedbackComments(filters)
+> Response getFeedbackComments(object filters)
 
 
 
@@ -484,7 +484,7 @@ Name | Type | Description  | Notes
 
 <a name="getFeedbackCount"></a>
 # **getFeedbackCount**
-> Response getFeedbackCount(filters)
+> Response getFeedbackCount(object filters)
 
 
 
@@ -564,7 +564,7 @@ Name | Type | Description  | Notes
 
 <a name="getFeedbackTypeById"></a>
 # **getFeedbackTypeById**
-> Response getFeedbackTypeById(id)
+> Response getFeedbackTypeById(Number id)
 
 
 
@@ -660,7 +660,7 @@ This endpoint does not need any filters.
 
 <a name="getFeedbackTypes"></a>
 # **getFeedbackTypes**
-> Response getFeedbackTypes(filters)
+> Response getFeedbackTypes(object filters)
 
 
 

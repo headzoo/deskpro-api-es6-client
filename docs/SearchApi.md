@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="getSearch"></a>
 # **getSearch**
-> Response getSearch(filters)
+> Response getSearch(object filters)
 
 
 
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 
 <a name="getSearchByType"></a>
 # **getSearchByType**
-> Response getSearchByType(type, filters)
+> Response getSearchByType(String type, object filters)
 
 
 
@@ -128,7 +128,7 @@ Name | Type | Description  | Notes
 
 <a name="getSearchPeopleAndOrg"></a>
 # **getSearchPeopleAndOrg**
-> Response getSearchPeopleAndOrg(filters)
+> Response getSearchPeopleAndOrg(object filters)
 
 
 

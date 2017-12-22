@@ -23,7 +23,7 @@ Method | HTTP request | Description
 
 <a name="deleteAgentById"></a>
 # **deleteAgentById**
-> Response deleteAgentById(id)
+> Response deleteAgentById(Number id)
 
 
 
@@ -74,7 +74,7 @@ This endpoint does not need any filters.
 
 <a name="deleteAgentByIdAgentPermission"></a>
 # **deleteAgentByIdAgentPermission**
-> Response deleteAgentByIdAgentPermission(id)
+> Response deleteAgentByIdAgentPermission(String id)
 
 
 
@@ -125,7 +125,7 @@ This endpoint does not need any filters.
 
 <a name="deleteAgentTeamById"></a>
 # **deleteAgentTeamById**
-> Response deleteAgentTeamById(id)
+> Response deleteAgentTeamById(Number id)
 
 
 
@@ -221,7 +221,7 @@ This endpoint does not need any filters.
 
 <a name="getAgentById"></a>
 # **getAgentById**
-> Response getAgentById(id)
+> Response getAgentById(Number id)
 
 
 
@@ -317,7 +317,7 @@ This endpoint does not need any filters.
 
 <a name="getAgentGroupById"></a>
 # **getAgentGroupById**
-> Response getAgentGroupById(id)
+> Response getAgentGroupById(Number id)
 
 
 
@@ -413,7 +413,7 @@ This endpoint does not need any filters.
 
 <a name="getAgentGroups"></a>
 # **getAgentGroups**
-> Response getAgentGroups(filters)
+> Response getAgentGroups(object filters)
 
 
 
@@ -518,7 +518,7 @@ This endpoint does not need any filters.
 
 <a name="getAgentTeamById"></a>
 # **getAgentTeamById**
-> Response getAgentTeamById(id)
+> Response getAgentTeamById(Number id)
 
 
 
@@ -569,7 +569,7 @@ This endpoint does not need any filters.
 
 <a name="getAgentTeamByIdAgent"></a>
 # **getAgentTeamByIdAgent**
-> Response getAgentTeamByIdAgent(id)
+> Response getAgentTeamByIdAgent(Number id)
 
 
 
@@ -665,7 +665,7 @@ This endpoint does not need any filters.
 
 <a name="getAgentTeams"></a>
 # **getAgentTeams**
-> Response getAgentTeams(filters)
+> Response getAgentTeams(object filters)
 
 
 
@@ -725,7 +725,7 @@ Name | Type | Description  | Notes
 
 <a name="getAgents"></a>
 # **getAgents**
-> Response getAgents(filters)
+> Response getAgents(object filters)
 
 
 

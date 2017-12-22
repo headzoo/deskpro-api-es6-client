@@ -22,7 +22,7 @@ Method | HTTP request | Description
 
 <a name="deleteNewTicketFilterById"></a>
 # **deleteNewTicketFilterById**
-> Response deleteNewTicketFilterById(id)
+> Response deleteNewTicketFilterById(Number id)
 
 
 
@@ -73,7 +73,7 @@ This endpoint does not need any filters.
 
 <a name="deleteNewTicketFilterSetById"></a>
 # **deleteNewTicketFilterSetById**
-> Response deleteNewTicketFilterSetById(id)
+> Response deleteNewTicketFilterSetById(Number id)
 
 
 
@@ -124,7 +124,7 @@ This endpoint does not need any filters.
 
 <a name="getNewTicketFilter"></a>
 # **getNewTicketFilter**
-> Response getNewTicketFilter(filters)
+> Response getNewTicketFilter(object filters)
 
 
 
@@ -184,7 +184,7 @@ Name | Type | Description  | Notes
 
 <a name="getNewTicketFilterByFilterCount"></a>
 # **getNewTicketFilterByFilterCount**
-> Response getNewTicketFilterByFilterCount(filter, filters)
+> Response getNewTicketFilterByFilterCount(Number filter, object filters)
 
 
 
@@ -241,7 +241,7 @@ Name | Type | Description  | Notes
 
 <a name="getNewTicketFilterByFilterTicket"></a>
 # **getNewTicketFilterByFilterTicket**
-> Response getNewTicketFilterByFilterTicket(filter)
+> Response getNewTicketFilterByFilterTicket(String filter)
 
 
 
@@ -292,7 +292,7 @@ This endpoint does not need any filters.
 
 <a name="getNewTicketFilterById"></a>
 # **getNewTicketFilterById**
-> Response getNewTicketFilterById(id)
+> Response getNewTicketFilterById(Number id)
 
 
 
@@ -388,7 +388,7 @@ This endpoint does not need any filters.
 
 <a name="getNewTicketFilterSet"></a>
 # **getNewTicketFilterSet**
-> Response getNewTicketFilterSet(filters)
+> Response getNewTicketFilterSet(object filters)
 
 
 
@@ -448,7 +448,7 @@ Name | Type | Description  | Notes
 
 <a name="getNewTicketFilterSetAllCount"></a>
 # **getNewTicketFilterSetAllCount**
-> Response getNewTicketFilterSetAllCount(filters)
+> Response getNewTicketFilterSetAllCount(object filters)
 
 
 
@@ -502,7 +502,7 @@ Name | Type | Description  | Notes
 
 <a name="getNewTicketFilterSetById"></a>
 # **getNewTicketFilterSetById**
-> Response getNewTicketFilterSetById(id)
+> Response getNewTicketFilterSetById(Number id)
 
 
 
@@ -553,7 +553,7 @@ This endpoint does not need any filters.
 
 <a name="getNewTicketFilterSetBySetCount"></a>
 # **getNewTicketFilterSetBySetCount**
-> Response getNewTicketFilterSetBySetCount(set, filters)
+> Response getNewTicketFilterSetBySetCount(Number set, object filters)
 
 
 
@@ -610,7 +610,7 @@ Name | Type | Description  | Notes
 
 <a name="getNewTicketFilterSetBySetFilter"></a>
 # **getNewTicketFilterSetBySetFilter**
-> Response getNewTicketFilterSetBySetFilter(set, filters)
+> Response getNewTicketFilterSetBySetFilter(String set, object filters)
 
 
 
@@ -712,7 +712,7 @@ This endpoint does not need any filters.
 
 <a name="getNewTicketFiltersCount"></a>
 # **getNewTicketFiltersCount**
-> Response getNewTicketFiltersCount(filters)
+> Response getNewTicketFiltersCount(object filters)
 
 
 

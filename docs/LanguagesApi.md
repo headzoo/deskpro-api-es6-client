@@ -103,7 +103,7 @@ This endpoint does not need any filters.
 
 <a name="getLanguageById"></a>
 # **getLanguageById**
-> Response getLanguageById(id)
+> Response getLanguageById(Number id)
 
 
 
@@ -199,7 +199,7 @@ This endpoint does not need any filters.
 
 <a name="getLanguages"></a>
 # **getLanguages**
-> Response getLanguages(filters)
+> Response getLanguages(object filters)
 
 
 

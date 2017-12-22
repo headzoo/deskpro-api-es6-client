@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="deleteWebhookTicketById"></a>
 # **deleteWebhookTicketById**
-> Response deleteWebhookTicketById(id)
+> Response deleteWebhookTicketById(Number id)
 
 
 
@@ -62,7 +62,7 @@ This endpoint does not need any filters.
 
 <a name="getWebhookTicket"></a>
 # **getWebhookTicket**
-> Response getWebhookTicket(filters)
+> Response getWebhookTicket(object filters)
 
 
 
@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 
 <a name="getWebhookTicketById"></a>
 # **getWebhookTicketById**
-> Response getWebhookTicketById(id)
+> Response getWebhookTicketById(Number id)
 
 
 

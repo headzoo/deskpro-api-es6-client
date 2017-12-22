@@ -57,7 +57,7 @@ This endpoint does not need any filters.
 
 <a name="getPersonSettingByName"></a>
 # **getPersonSettingByName**
-> Response getPersonSettingByName(name)
+> Response getPersonSettingByName(String name)
 
 
 
@@ -108,7 +108,7 @@ This endpoint does not need any filters.
 
 <a name="setPersonSetting"></a>
 # **setPersonSetting**
-> Response setPersonSetting(name, value)
+> Response setPersonSetting(String name, String value)
 
 
 
@@ -166,7 +166,7 @@ Name | Type | Description  | Notes
 
 <a name="updatePersonSetting"></a>
 # **updatePersonSetting**
-> Response updatePersonSetting(name, value)
+> Response updatePersonSetting(String name, String value)
 
 
 

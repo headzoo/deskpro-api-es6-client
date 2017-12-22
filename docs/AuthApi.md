@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 <a name="deleteOauthClientById"></a>
 # **deleteOauthClientById**
-> Response deleteOauthClientById(id)
+> Response deleteOauthClientById(Number id)
 
 
 
@@ -72,7 +72,7 @@ This endpoint does not need any filters.
 
 <a name="getApiTokenDeviceSetupByAuth"></a>
 # **getApiTokenDeviceSetupByAuth**
-> Response getApiTokenDeviceSetupByAuth(auth)
+> Response getApiTokenDeviceSetupByAuth(String auth)
 
 
 
@@ -168,7 +168,7 @@ This endpoint does not need any filters.
 
 <a name="getApiTokenUserSourceByUsersourceCallbackByFormat"></a>
 # **getApiTokenUserSourceByUsersourceCallbackByFormat**
-> Response getApiTokenUserSourceByUsersourceCallbackByFormat(format, usersource)
+> Response getApiTokenUserSourceByUsersourceCallbackByFormat(String format, String usersource)
 
 
 
@@ -222,7 +222,7 @@ This endpoint does not need any filters.
 
 <a name="getApiTokenUserSourceByUsersourceLogin"></a>
 # **getApiTokenUserSourceByUsersourceLogin**
-> getApiTokenUserSourceByUsersourceLogin(usersource)
+> getApiTokenUserSourceByUsersourceLogin(String usersource)
 
 
 
@@ -273,7 +273,7 @@ null (empty response body)
 
 <a name="getApiTokenUserSourceContextFormat"></a>
 # **getApiTokenUserSourceContextFormat**
-> getApiTokenUserSourceContextFormat(context, format)
+> getApiTokenUserSourceContextFormat(String context, String format)
 
 
 
@@ -462,7 +462,7 @@ This endpoint does not need any filters.
 
 <a name="getOauthClientById"></a>
 # **getOauthClientById**
-> Response getOauthClientById(id)
+> Response getOauthClientById(Number id)
 
 
 
@@ -558,7 +558,7 @@ This endpoint does not need any filters.
 
 <a name="getOauthClients"></a>
 # **getOauthClients**
-> Response getOauthClients(filters)
+> Response getOauthClients(object filters)
 
 
 
@@ -618,7 +618,7 @@ Name | Type | Description  | Notes
 
 <a name="setApiTokenUserSourceByUsersourceCallbackByFormat"></a>
 # **setApiTokenUserSourceByUsersourceCallbackByFormat**
-> Response setApiTokenUserSourceByUsersourceCallbackByFormat(format, usersource)
+> Response setApiTokenUserSourceByUsersourceCallbackByFormat(String format, String usersource)
 
 
 

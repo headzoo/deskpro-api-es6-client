@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 <a name="getFeatureByFeature"></a>
 # **getFeatureByFeature**
-> Response getFeatureByFeature(feature, filters)
+> Response getFeatureByFeature(String feature, object filters)
 
 
 
@@ -114,7 +114,7 @@ This endpoint does not need any filters.
 
 <a name="updateFeatureByFeatureDisable"></a>
 # **updateFeatureByFeatureDisable**
-> Response updateFeatureByFeatureDisable(feature, filters)
+> Response updateFeatureByFeatureDisable(String feature, object filters)
 
 
 
@@ -171,7 +171,7 @@ Name | Type | Description  | Notes
 
 <a name="updateFeatureByFeatureEnable"></a>
 # **updateFeatureByFeatureEnable**
-> Response updateFeatureByFeatureEnable(feature, filters)
+> Response updateFeatureByFeatureEnable(String feature, object filters)
 
 
 

@@ -25,7 +25,7 @@ Method | HTTP request | Description
 
 <a name="deleteOrganizationById"></a>
 # **deleteOrganizationById**
-> Response deleteOrganizationById(id)
+> Response deleteOrganizationById(Number id)
 
 
 
@@ -76,7 +76,7 @@ This endpoint does not need any filters.
 
 <a name="deleteOrganizationByParentIdMemberByPerson"></a>
 # **deleteOrganizationByParentIdMemberByPerson**
-> Response deleteOrganizationByParentIdMemberByPerson(parentId, person, filters)
+> Response deleteOrganizationByParentIdMemberByPerson(String parentId, String person, object filters)
 
 
 
@@ -136,7 +136,7 @@ Name | Type | Description  | Notes
 
 <a name="deleteOrganizationByParentIdNoteById"></a>
 # **deleteOrganizationByParentIdNoteById**
-> Response deleteOrganizationByParentIdNoteById(id, parentId)
+> Response deleteOrganizationByParentIdNoteById(Number id, String parentId)
 
 
 
@@ -190,7 +190,7 @@ This endpoint does not need any filters.
 
 <a name="deleteOrganizationCustomFieldById"></a>
 # **deleteOrganizationCustomFieldById**
-> Response deleteOrganizationCustomFieldById(id)
+> Response deleteOrganizationCustomFieldById(Number id)
 
 
 
@@ -241,7 +241,7 @@ This endpoint does not need any filters.
 
 <a name="getOrganizationById"></a>
 # **getOrganizationById**
-> Response getOrganizationById(id)
+> Response getOrganizationById(Number id)
 
 
 
@@ -292,7 +292,7 @@ This endpoint does not need any filters.
 
 <a name="getOrganizationByIdTicket"></a>
 # **getOrganizationByIdTicket**
-> Response getOrganizationByIdTicket(id)
+> Response getOrganizationByIdTicket(String id)
 
 
 
@@ -343,7 +343,7 @@ This endpoint does not need any filters.
 
 <a name="getOrganizationByParentIdContactData"></a>
 # **getOrganizationByParentIdContactData**
-> Response getOrganizationByParentIdContactData(parentId, filters)
+> Response getOrganizationByParentIdContactData(String parentId, object filters)
 
 
 
@@ -406,7 +406,7 @@ Name | Type | Description  | Notes
 
 <a name="getOrganizationByParentIdContactDataById"></a>
 # **getOrganizationByParentIdContactDataById**
-> Response getOrganizationByParentIdContactDataById(id, parentId)
+> Response getOrganizationByParentIdContactDataById(Number id, String parentId)
 
 
 
@@ -460,7 +460,7 @@ This endpoint does not need any filters.
 
 <a name="getOrganizationByParentIdContactDataCount"></a>
 # **getOrganizationByParentIdContactDataCount**
-> Response getOrganizationByParentIdContactDataCount(parentId)
+> Response getOrganizationByParentIdContactDataCount(String parentId)
 
 
 
@@ -511,7 +511,7 @@ This endpoint does not need any filters.
 
 <a name="getOrganizationByParentIdMember"></a>
 # **getOrganizationByParentIdMember**
-> Response getOrganizationByParentIdMember(parentId, filters)
+> Response getOrganizationByParentIdMember(String parentId, object filters)
 
 
 
@@ -574,7 +574,7 @@ Name | Type | Description  | Notes
 
 <a name="getOrganizationByParentIdNote"></a>
 # **getOrganizationByParentIdNote**
-> Response getOrganizationByParentIdNote(parentId, filters)
+> Response getOrganizationByParentIdNote(String parentId, object filters)
 
 
 
@@ -637,7 +637,7 @@ Name | Type | Description  | Notes
 
 <a name="getOrganizationByParentIdNoteById"></a>
 # **getOrganizationByParentIdNoteById**
-> Response getOrganizationByParentIdNoteById(id, parentId)
+> Response getOrganizationByParentIdNoteById(Number id, String parentId)
 
 
 
@@ -691,7 +691,7 @@ This endpoint does not need any filters.
 
 <a name="getOrganizationByParentIdNoteCount"></a>
 # **getOrganizationByParentIdNoteCount**
-> Response getOrganizationByParentIdNoteCount(parentId)
+> Response getOrganizationByParentIdNoteCount(String parentId)
 
 
 
@@ -742,7 +742,7 @@ This endpoint does not need any filters.
 
 <a name="getOrganizationCount"></a>
 # **getOrganizationCount**
-> Response getOrganizationCount(filters)
+> Response getOrganizationCount(object filters)
 
 
 
@@ -804,7 +804,7 @@ Name | Type | Description  | Notes
 
 <a name="getOrganizationCustomFieldById"></a>
 # **getOrganizationCustomFieldById**
-> Response getOrganizationCustomFieldById(id)
+> Response getOrganizationCustomFieldById(Number id)
 
 
 
@@ -855,7 +855,7 @@ This endpoint does not need any filters.
 
 <a name="getOrganizationCustomFields"></a>
 # **getOrganizationCustomFields**
-> Response getOrganizationCustomFields(filters)
+> Response getOrganizationCustomFields(object filters)
 
 
 
@@ -915,7 +915,7 @@ Name | Type | Description  | Notes
 
 <a name="getOrganizations"></a>
 # **getOrganizations**
-> Response getOrganizations(filters)
+> Response getOrganizations(object filters)
 
 
 

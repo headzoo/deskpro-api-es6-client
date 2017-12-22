@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 <a name="deleteAppProxyHttpByInstance"></a>
 # **deleteAppProxyHttpByInstance**
-> Response deleteAppProxyHttpByInstance(instance)
+> Response deleteAppProxyHttpByInstance(String instance)
 
 
 
@@ -72,7 +72,7 @@ This endpoint does not need any filters.
 
 <a name="deleteAppZapierHookById"></a>
 # **deleteAppZapierHookById**
-> Response deleteAppZapierHookById(id)
+> Response deleteAppZapierHookById(Number id)
 
 
 
@@ -123,7 +123,7 @@ This endpoint does not need any filters.
 
 <a name="getAppPackageById"></a>
 # **getAppPackageById**
-> Response getAppPackageById(id)
+> Response getAppPackageById(Number id)
 
 
 
@@ -219,7 +219,7 @@ No authorization required
 
 <a name="getAppPackages"></a>
 # **getAppPackages**
-> Response getAppPackages(filters)
+> Response getAppPackages(object filters)
 
 
 
@@ -279,7 +279,7 @@ No authorization required
 
 <a name="getAppProxyHttpByInstance"></a>
 # **getAppProxyHttpByInstance**
-> Response getAppProxyHttpByInstance(instance)
+> Response getAppProxyHttpByInstance(String instance)
 
 
 
@@ -420,7 +420,7 @@ This endpoint does not need any filters.
 
 <a name="headAppProxyHttpByInstance"></a>
 # **headAppProxyHttpByInstance**
-> Response headAppProxyHttpByInstance(instance)
+> Response headAppProxyHttpByInstance(String instance)
 
 
 
@@ -471,7 +471,7 @@ This endpoint does not need any filters.
 
 <a name="optionsAppProxyHttpByInstance"></a>
 # **optionsAppProxyHttpByInstance**
-> Response optionsAppProxyHttpByInstance(instance)
+> Response optionsAppProxyHttpByInstance(String instance)
 
 
 
@@ -522,7 +522,7 @@ This endpoint does not need any filters.
 
 <a name="patchAppProxyHttpByInstance"></a>
 # **patchAppProxyHttpByInstance**
-> Response patchAppProxyHttpByInstance(instance)
+> Response patchAppProxyHttpByInstance(String instance)
 
 
 
@@ -573,7 +573,7 @@ This endpoint does not need any filters.
 
 <a name="setAppProxyHttpByInstance"></a>
 # **setAppProxyHttpByInstance**
-> Response setAppProxyHttpByInstance(instance)
+> Response setAppProxyHttpByInstance(String instance)
 
 
 
@@ -624,7 +624,7 @@ This endpoint does not need any filters.
 
 <a name="updateAppProxyHttpByInstance"></a>
 # **updateAppProxyHttpByInstance**
-> Response updateAppProxyHttpByInstance(instance)
+> Response updateAppProxyHttpByInstance(String instance)
 
 
 

@@ -59,7 +59,7 @@ This endpoint does not need any filters.
 
 <a name="deleteSystemIncidentById"></a>
 # **deleteSystemIncidentById**
-> Response deleteSystemIncidentById(id)
+> Response deleteSystemIncidentById(Number id)
 
 
 
@@ -110,7 +110,7 @@ This endpoint does not need any filters.
 
 <a name="getSystemEventById"></a>
 # **getSystemEventById**
-> Response getSystemEventById(id)
+> Response getSystemEventById(Number id)
 
 
 
@@ -161,7 +161,7 @@ This endpoint does not need any filters.
 
 <a name="getSystemIncident"></a>
 # **getSystemIncident**
-> Response getSystemIncident(filters)
+> Response getSystemIncident(object filters)
 
 
 
@@ -221,7 +221,7 @@ Name | Type | Description  | Notes
 
 <a name="getSystemIncidentById"></a>
 # **getSystemIncidentById**
-> Response getSystemIncidentById(id)
+> Response getSystemIncidentById(Number id)
 
 
 

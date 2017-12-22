@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 <a name="deleteTaskByParentIdCommentById"></a>
 # **deleteTaskByParentIdCommentById**
-> Response deleteTaskByParentIdCommentById(id, parentId)
+> Response deleteTaskByParentIdCommentById(Number id, String parentId)
 
 
 
@@ -66,7 +66,7 @@ This endpoint does not need any filters.
 
 <a name="getTaskByParentIdComment"></a>
 # **getTaskByParentIdComment**
-> Response getTaskByParentIdComment(parentId, filters)
+> Response getTaskByParentIdComment(String parentId, object filters)
 
 
 
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 
 <a name="getTaskByParentIdCommentById"></a>
 # **getTaskByParentIdCommentById**
-> Response getTaskByParentIdCommentById(id, parentId)
+> Response getTaskByParentIdCommentById(Number id, String parentId)
 
 
 
@@ -183,7 +183,7 @@ This endpoint does not need any filters.
 
 <a name="getTaskByParentIdCommentCount"></a>
 # **getTaskByParentIdCommentCount**
-> Response getTaskByParentIdCommentCount(parentId)
+> Response getTaskByParentIdCommentCount(String parentId)
 
 
 

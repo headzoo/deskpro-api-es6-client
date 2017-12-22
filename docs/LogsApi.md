@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 <a name="getApiLogById"></a>
 # **getApiLogById**
-> Response getApiLogById(id, filters)
+> Response getApiLogById(String id, object filters)
 
 
 
@@ -160,7 +160,7 @@ This endpoint does not need any filters.
 
 <a name="setApiLogByIdReplay"></a>
 # **setApiLogByIdReplay**
-> Response setApiLogByIdReplay(id, filters)
+> Response setApiLogByIdReplay(Number id, object filters)
 
 
 
@@ -217,7 +217,7 @@ Name | Type | Description  | Notes
 
 <a name="updateApiLogsOptions"></a>
 # **updateApiLogsOptions**
-> Response updateApiLogsOptions(requestLength, responseLength, filters)
+> Response updateApiLogsOptions(Number requestLength, Number responseLength, object filters)
 
 
 

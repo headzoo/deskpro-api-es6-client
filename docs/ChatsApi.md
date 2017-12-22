@@ -33,7 +33,7 @@ Method | HTTP request | Description
 
 <a name="deleteAgentChatById"></a>
 # **deleteAgentChatById**
-> Response deleteAgentChatById(id)
+> Response deleteAgentChatById(Number id)
 
 
 
@@ -84,7 +84,7 @@ This endpoint does not need any filters.
 
 <a name="deleteAgentChatByIdDelete"></a>
 # **deleteAgentChatByIdDelete**
-> Response deleteAgentChatByIdDelete(id)
+> Response deleteAgentChatByIdDelete(Number id)
 
 
 
@@ -135,7 +135,7 @@ This endpoint does not need any filters.
 
 <a name="deleteAgentChatByIdLeave"></a>
 # **deleteAgentChatByIdLeave**
-> Response deleteAgentChatByIdLeave(id)
+> Response deleteAgentChatByIdLeave(Number id)
 
 
 
@@ -186,7 +186,7 @@ This endpoint does not need any filters.
 
 <a name="deleteAgentChatByParentIdMessageById"></a>
 # **deleteAgentChatByParentIdMessageById**
-> Response deleteAgentChatByParentIdMessageById(id, parentId)
+> Response deleteAgentChatByParentIdMessageById(Number id, String parentId)
 
 
 
@@ -240,7 +240,7 @@ This endpoint does not need any filters.
 
 <a name="deleteUserChatById"></a>
 # **deleteUserChatById**
-> Response deleteUserChatById(id)
+> Response deleteUserChatById(Number id)
 
 
 
@@ -291,7 +291,7 @@ This endpoint does not need any filters.
 
 <a name="deleteUserChatCustomFieldById"></a>
 # **deleteUserChatCustomFieldById**
-> Response deleteUserChatCustomFieldById(id)
+> Response deleteUserChatCustomFieldById(Number id)
 
 
 
@@ -342,7 +342,7 @@ This endpoint does not need any filters.
 
 <a name="getAgentChatById"></a>
 # **getAgentChatById**
-> Response getAgentChatById(id)
+> Response getAgentChatById(Number id)
 
 
 
@@ -393,7 +393,7 @@ This endpoint does not need any filters.
 
 <a name="getAgentChatByParentIdMessage"></a>
 # **getAgentChatByParentIdMessage**
-> Response getAgentChatByParentIdMessage(parentId, filters)
+> Response getAgentChatByParentIdMessage(String parentId, object filters)
 
 
 
@@ -460,7 +460,7 @@ Name | Type | Description  | Notes
 
 <a name="getAgentChatByParentIdMessageById"></a>
 # **getAgentChatByParentIdMessageById**
-> Response getAgentChatByParentIdMessageById(id, parentId)
+> Response getAgentChatByParentIdMessageById(Number id, String parentId)
 
 
 
@@ -514,7 +514,7 @@ This endpoint does not need any filters.
 
 <a name="getAgentChatByParentIdMessageByIdPage"></a>
 # **getAgentChatByParentIdMessageByIdPage**
-> Response getAgentChatByParentIdMessageByIdPage(parentId, id)
+> Response getAgentChatByParentIdMessageByIdPage(String parentId, String id)
 
 
 
@@ -568,7 +568,7 @@ This endpoint does not need any filters.
 
 <a name="getAgentChatByParentIdMessageCount"></a>
 # **getAgentChatByParentIdMessageCount**
-> Response getAgentChatByParentIdMessageCount(parentId)
+> Response getAgentChatByParentIdMessageCount(String parentId)
 
 
 
@@ -754,7 +754,7 @@ This endpoint does not need any filters.
 
 <a name="getAgentChats"></a>
 # **getAgentChats**
-> Response getAgentChats(filters)
+> Response getAgentChats(object filters)
 
 
 
@@ -814,7 +814,7 @@ Name | Type | Description  | Notes
 
 <a name="getUserChatByConversationIdMessage"></a>
 # **getUserChatByConversationIdMessage**
-> Response getUserChatByConversationIdMessage(conversationId, filters)
+> Response getUserChatByConversationIdMessage(String conversationId, object filters)
 
 
 
@@ -881,7 +881,7 @@ Name | Type | Description  | Notes
 
 <a name="getUserChatByConversationIdMessageCount"></a>
 # **getUserChatByConversationIdMessageCount**
-> Response getUserChatByConversationIdMessageCount(conversationId, filters)
+> Response getUserChatByConversationIdMessageCount(String conversationId, object filters)
 
 
 
@@ -940,7 +940,7 @@ Name | Type | Description  | Notes
 
 <a name="getUserChatById"></a>
 # **getUserChatById**
-> Response getUserChatById(id)
+> Response getUserChatById(Number id)
 
 
 
@@ -991,7 +991,7 @@ This endpoint does not need any filters.
 
 <a name="getUserChatCount"></a>
 # **getUserChatCount**
-> Response getUserChatCount(filters)
+> Response getUserChatCount(object filters)
 
 
 
@@ -1055,7 +1055,7 @@ Name | Type | Description  | Notes
 
 <a name="getUserChatCustomFieldById"></a>
 # **getUserChatCustomFieldById**
-> Response getUserChatCustomFieldById(id)
+> Response getUserChatCustomFieldById(Number id)
 
 
 
@@ -1106,7 +1106,7 @@ This endpoint does not need any filters.
 
 <a name="getUserChatCustomFields"></a>
 # **getUserChatCustomFields**
-> Response getUserChatCustomFields(filters)
+> Response getUserChatCustomFields(object filters)
 
 
 
@@ -1166,7 +1166,7 @@ Name | Type | Description  | Notes
 
 <a name="getUserChats"></a>
 # **getUserChats**
-> Response getUserChats(filters)
+> Response getUserChats(object filters)
 
 
 
@@ -1236,7 +1236,7 @@ Name | Type | Description  | Notes
 
 <a name="updateAgentChatByParentIdMessageMarkAll"></a>
 # **updateAgentChatByParentIdMessageMarkAll**
-> Response updateAgentChatByParentIdMessageMarkAll(parentId)
+> Response updateAgentChatByParentIdMessageMarkAll(String parentId)
 
 
 
@@ -1287,7 +1287,7 @@ This endpoint does not need any filters.
 
 <a name="updateUserChatByIdAssignByAgentId"></a>
 # **updateUserChatByIdAssignByAgentId**
-> Response updateUserChatByIdAssignByAgentId(id, agentId)
+> Response updateUserChatByIdAssignByAgentId(Number id, Number agentId)
 
 
 
@@ -1341,7 +1341,7 @@ This endpoint does not need any filters.
 
 <a name="updateUserChatByIdEnd"></a>
 # **updateUserChatByIdEnd**
-> Response updateUserChatByIdEnd(id)
+> Response updateUserChatByIdEnd(Number id)
 
 
 

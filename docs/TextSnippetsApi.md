@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 <a name="deleteContextSnippetById"></a>
 # **deleteContextSnippetById**
-> Response deleteContextSnippetById(id, context)
+> Response deleteContextSnippetById(Number id, String context)
 
 
 
@@ -72,7 +72,7 @@ This endpoint does not need any filters.
 
 <a name="deleteContextSnippetCategoryById"></a>
 # **deleteContextSnippetCategoryById**
-> Response deleteContextSnippetCategoryById(id, context)
+> Response deleteContextSnippetCategoryById(Number id, String context)
 
 
 
@@ -126,7 +126,7 @@ This endpoint does not need any filters.
 
 <a name="getContextSnippetById"></a>
 # **getContextSnippetById**
-> Response getContextSnippetById(id, context)
+> Response getContextSnippetById(Number id, String context)
 
 
 
@@ -180,7 +180,7 @@ This endpoint does not need any filters.
 
 <a name="getContextSnippetByIdContent"></a>
 # **getContextSnippetByIdContent**
-> Response getContextSnippetByIdContent(id, context, filters)
+> Response getContextSnippetByIdContent(Number id, String context, object filters)
 
 
 
@@ -240,7 +240,7 @@ Name | Type | Description  | Notes
 
 <a name="getContextSnippetCategories"></a>
 # **getContextSnippetCategories**
-> Response getContextSnippetCategories(context, filters)
+> Response getContextSnippetCategories(String context, object filters)
 
 
 
@@ -303,7 +303,7 @@ Name | Type | Description  | Notes
 
 <a name="getContextSnippetCategoryById"></a>
 # **getContextSnippetCategoryById**
-> Response getContextSnippetCategoryById(id, context)
+> Response getContextSnippetCategoryById(Number id, String context)
 
 
 
@@ -357,7 +357,7 @@ This endpoint does not need any filters.
 
 <a name="getContextSnippetCategoryByIdSnippet"></a>
 # **getContextSnippetCategoryByIdSnippet**
-> Response getContextSnippetCategoryByIdSnippet(id, context, filters)
+> Response getContextSnippetCategoryByIdSnippet(Number id, String context, object filters)
 
 
 
@@ -417,7 +417,7 @@ Name | Type | Description  | Notes
 
 <a name="getContextSnippetCategoryCount"></a>
 # **getContextSnippetCategoryCount**
-> Response getContextSnippetCategoryCount(context)
+> Response getContextSnippetCategoryCount(String context)
 
 
 
@@ -468,7 +468,7 @@ This endpoint does not need any filters.
 
 <a name="getContextSnippetCount"></a>
 # **getContextSnippetCount**
-> Response getContextSnippetCount(context)
+> Response getContextSnippetCount(String context)
 
 
 
@@ -519,7 +519,7 @@ This endpoint does not need any filters.
 
 <a name="getContextSnippets"></a>
 # **getContextSnippets**
-> Response getContextSnippets(context, filters)
+> Response getContextSnippets(String context, object filters)
 
 
 

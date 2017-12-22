@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="getApiTagById"></a>
 # **getApiTagById**
-> Response getApiTagById(id)
+> Response getApiTagById(Number id)
 
 
 
@@ -62,7 +62,7 @@ This endpoint does not need any filters.
 
 <a name="getApiTagByIdFlatten"></a>
 # **getApiTagByIdFlatten**
-> Response getApiTagByIdFlatten(id)
+> Response getApiTagByIdFlatten(Number id)
 
 
 
@@ -113,7 +113,7 @@ This endpoint does not need any filters.
 
 <a name="updateApiTagById"></a>
 # **updateApiTagById**
-> Response updateApiTagById(id, filters)
+> Response updateApiTagById(Number id, object filters)
 
 
 

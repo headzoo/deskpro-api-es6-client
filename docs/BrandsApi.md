@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="deleteBrandById"></a>
 # **deleteBrandById**
-> Response deleteBrandById(id)
+> Response deleteBrandById(Number id)
 
 
 
@@ -62,7 +62,7 @@ This endpoint does not need any filters.
 
 <a name="getBrandById"></a>
 # **getBrandById**
-> Response getBrandById(id)
+> Response getBrandById(Number id)
 
 
 
@@ -113,7 +113,7 @@ This endpoint does not need any filters.
 
 <a name="getBrands"></a>
 # **getBrands**
-> Response getBrands(filters)
+> Response getBrands(object filters)
 
 
 

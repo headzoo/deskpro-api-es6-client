@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="getUserGroupById"></a>
 # **getUserGroupById**
-> Response getUserGroupById(id)
+> Response getUserGroupById(Number id)
 
 
 
@@ -107,7 +107,7 @@ This endpoint does not need any filters.
 
 <a name="getUserGroups"></a>
 # **getUserGroups**
-> Response getUserGroups(filters)
+> Response getUserGroups(object filters)
 
 
 

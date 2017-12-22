@@ -55,7 +55,7 @@ This endpoint does not need any filters.
 
 <a name="setSettingBrandByBrandWidgetSendInstruction"></a>
 # **setSettingBrandByBrandWidgetSendInstruction**
-> Response setSettingBrandByBrandWidgetSendInstruction(brand, email)
+> Response setSettingBrandByBrandWidgetSendInstruction(String brand, String email)
 
 
 

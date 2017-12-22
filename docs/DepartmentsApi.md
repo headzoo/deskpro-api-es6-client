@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 <a name="deleteChatDepartmentById"></a>
 # **deleteChatDepartmentById**
-> Response deleteChatDepartmentById(id)
+> Response deleteChatDepartmentById(Number id)
 
 
 
@@ -69,7 +69,7 @@ This endpoint does not need any filters.
 
 <a name="deleteTicketDepartmentById"></a>
 # **deleteTicketDepartmentById**
-> Response deleteTicketDepartmentById(id)
+> Response deleteTicketDepartmentById(Number id)
 
 
 
@@ -120,7 +120,7 @@ This endpoint does not need any filters.
 
 <a name="getChatDepartmentById"></a>
 # **getChatDepartmentById**
-> Response getChatDepartmentById(id)
+> Response getChatDepartmentById(Number id)
 
 
 
@@ -171,7 +171,7 @@ This endpoint does not need any filters.
 
 <a name="getChatDepartmentByIdAgent"></a>
 # **getChatDepartmentByIdAgent**
-> Response getChatDepartmentByIdAgent(id)
+> Response getChatDepartmentByIdAgent(Number id)
 
 
 
@@ -267,7 +267,7 @@ This endpoint does not need any filters.
 
 <a name="getChatDepartments"></a>
 # **getChatDepartments**
-> Response getChatDepartments(filters)
+> Response getChatDepartments(object filters)
 
 
 
@@ -327,7 +327,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketDepartmentById"></a>
 # **getTicketDepartmentById**
-> Response getTicketDepartmentById(id)
+> Response getTicketDepartmentById(Number id)
 
 
 
@@ -378,7 +378,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketDepartmentByIdAgent"></a>
 # **getTicketDepartmentByIdAgent**
-> Response getTicketDepartmentByIdAgent(id)
+> Response getTicketDepartmentByIdAgent(Number id)
 
 
 
@@ -474,7 +474,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketDepartments"></a>
 # **getTicketDepartments**
-> Response getTicketDepartments(filters)
+> Response getTicketDepartments(object filters)
 
 
 

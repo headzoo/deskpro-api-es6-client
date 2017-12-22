@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 <a name="deleteNewTicketFilterByParentIdPrefById"></a>
 # **deleteNewTicketFilterByParentIdPrefById**
-> Response deleteNewTicketFilterByParentIdPrefById(id, parentId)
+> Response deleteNewTicketFilterByParentIdPrefById(Number id, String parentId)
 
 
 
@@ -66,7 +66,7 @@ This endpoint does not need any filters.
 
 <a name="getNewTicketFilterByParentIdPref"></a>
 # **getNewTicketFilterByParentIdPref**
-> Response getNewTicketFilterByParentIdPref(parentId, filters)
+> Response getNewTicketFilterByParentIdPref(String parentId, object filters)
 
 
 
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 
 <a name="getNewTicketFilterByParentIdPrefById"></a>
 # **getNewTicketFilterByParentIdPrefById**
-> Response getNewTicketFilterByParentIdPrefById(id, parentId)
+> Response getNewTicketFilterByParentIdPrefById(Number id, String parentId)
 
 
 
@@ -183,7 +183,7 @@ This endpoint does not need any filters.
 
 <a name="getNewTicketFilterByParentIdPrefCount"></a>
 # **getNewTicketFilterByParentIdPrefCount**
-> Response getNewTicketFilterByParentIdPrefCount(parentId)
+> Response getNewTicketFilterByParentIdPrefCount(String parentId)
 
 
 

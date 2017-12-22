@@ -60,7 +60,7 @@ Method | HTTP request | Description
 
 <a name="deleteArticleById"></a>
 # **deleteArticleById**
-> Response deleteArticleById(id)
+> Response deleteArticleById(Number id)
 
 
 
@@ -111,7 +111,7 @@ This endpoint does not need any filters.
 
 <a name="deleteArticleCategoryById"></a>
 # **deleteArticleCategoryById**
-> Response deleteArticleCategoryById(id)
+> Response deleteArticleCategoryById(Number id)
 
 
 
@@ -162,7 +162,7 @@ This endpoint does not need any filters.
 
 <a name="deleteArticleCommentById"></a>
 # **deleteArticleCommentById**
-> Response deleteArticleCommentById(id)
+> Response deleteArticleCommentById(Number id)
 
 
 
@@ -213,7 +213,7 @@ This endpoint does not need any filters.
 
 <a name="deleteArticlePendingCreateById"></a>
 # **deleteArticlePendingCreateById**
-> Response deleteArticlePendingCreateById(id)
+> Response deleteArticlePendingCreateById(Number id)
 
 
 
@@ -264,7 +264,7 @@ This endpoint does not need any filters.
 
 <a name="deleteDownloadById"></a>
 # **deleteDownloadById**
-> Response deleteDownloadById(id)
+> Response deleteDownloadById(Number id)
 
 
 
@@ -315,7 +315,7 @@ This endpoint does not need any filters.
 
 <a name="deleteDownloadCategoryById"></a>
 # **deleteDownloadCategoryById**
-> Response deleteDownloadCategoryById(id)
+> Response deleteDownloadCategoryById(Number id)
 
 
 
@@ -366,7 +366,7 @@ This endpoint does not need any filters.
 
 <a name="deleteDownloadCommentById"></a>
 # **deleteDownloadCommentById**
-> Response deleteDownloadCommentById(id)
+> Response deleteDownloadCommentById(Number id)
 
 
 
@@ -417,7 +417,7 @@ This endpoint does not need any filters.
 
 <a name="deleteGuideById"></a>
 # **deleteGuideById**
-> Response deleteGuideById(id)
+> Response deleteGuideById(Number id)
 
 
 
@@ -468,7 +468,7 @@ This endpoint does not need any filters.
 
 <a name="deleteNewsById"></a>
 # **deleteNewsById**
-> Response deleteNewsById(id)
+> Response deleteNewsById(Number id)
 
 
 
@@ -519,7 +519,7 @@ This endpoint does not need any filters.
 
 <a name="deleteNewsCategoryById"></a>
 # **deleteNewsCategoryById**
-> Response deleteNewsCategoryById(id)
+> Response deleteNewsCategoryById(Number id)
 
 
 
@@ -570,7 +570,7 @@ This endpoint does not need any filters.
 
 <a name="deleteNewsCommentById"></a>
 # **deleteNewsCommentById**
-> Response deleteNewsCommentById(id)
+> Response deleteNewsCommentById(Number id)
 
 
 
@@ -621,7 +621,7 @@ This endpoint does not need any filters.
 
 <a name="deleteTopicById"></a>
 # **deleteTopicById**
-> Response deleteTopicById(id)
+> Response deleteTopicById(Number id)
 
 
 
@@ -672,7 +672,7 @@ This endpoint does not need any filters.
 
 <a name="getArticleById"></a>
 # **getArticleById**
-> Response getArticleById(id)
+> Response getArticleById(Number id)
 
 
 
@@ -723,7 +723,7 @@ This endpoint does not need any filters.
 
 <a name="getArticleCategories"></a>
 # **getArticleCategories**
-> Response getArticleCategories(filters)
+> Response getArticleCategories(object filters)
 
 
 
@@ -783,7 +783,7 @@ Name | Type | Description  | Notes
 
 <a name="getArticleCategoryById"></a>
 # **getArticleCategoryById**
-> Response getArticleCategoryById(id)
+> Response getArticleCategoryById(Number id)
 
 
 
@@ -879,7 +879,7 @@ This endpoint does not need any filters.
 
 <a name="getArticleCommentById"></a>
 # **getArticleCommentById**
-> Response getArticleCommentById(id)
+> Response getArticleCommentById(Number id)
 
 
 
@@ -930,7 +930,7 @@ This endpoint does not need any filters.
 
 <a name="getArticleCommentCount"></a>
 # **getArticleCommentCount**
-> Response getArticleCommentCount(filters)
+> Response getArticleCommentCount(object filters)
 
 
 
@@ -996,7 +996,7 @@ Name | Type | Description  | Notes
 
 <a name="getArticleComments"></a>
 # **getArticleComments**
-> Response getArticleComments(filters)
+> Response getArticleComments(object filters)
 
 
 
@@ -1070,7 +1070,7 @@ Name | Type | Description  | Notes
 
 <a name="getArticleCount"></a>
 # **getArticleCount**
-> Response getArticleCount(filters)
+> Response getArticleCount(object filters)
 
 
 
@@ -1140,7 +1140,7 @@ Name | Type | Description  | Notes
 
 <a name="getArticlePendingCreateById"></a>
 # **getArticlePendingCreateById**
-> Response getArticlePendingCreateById(id)
+> Response getArticlePendingCreateById(Number id)
 
 
 
@@ -1191,7 +1191,7 @@ This endpoint does not need any filters.
 
 <a name="getArticlePendingCreateCount"></a>
 # **getArticlePendingCreateCount**
-> Response getArticlePendingCreateCount(filters)
+> Response getArticlePendingCreateCount(object filters)
 
 
 
@@ -1245,7 +1245,7 @@ Name | Type | Description  | Notes
 
 <a name="getArticlePendingCreates"></a>
 # **getArticlePendingCreates**
-> Response getArticlePendingCreates(filters)
+> Response getArticlePendingCreates(object filters)
 
 
 
@@ -1311,7 +1311,7 @@ Name | Type | Description  | Notes
 
 <a name="getArticles"></a>
 # **getArticles**
-> Response getArticles(filters)
+> Response getArticles(object filters)
 
 
 
@@ -1436,7 +1436,7 @@ This endpoint does not need any filters.
 
 <a name="getDownloadById"></a>
 # **getDownloadById**
-> Response getDownloadById(id)
+> Response getDownloadById(Number id)
 
 
 
@@ -1487,7 +1487,7 @@ This endpoint does not need any filters.
 
 <a name="getDownloadCategories"></a>
 # **getDownloadCategories**
-> Response getDownloadCategories(filters)
+> Response getDownloadCategories(object filters)
 
 
 
@@ -1547,7 +1547,7 @@ Name | Type | Description  | Notes
 
 <a name="getDownloadCategoryById"></a>
 # **getDownloadCategoryById**
-> Response getDownloadCategoryById(id)
+> Response getDownloadCategoryById(Number id)
 
 
 
@@ -1643,7 +1643,7 @@ This endpoint does not need any filters.
 
 <a name="getDownloadCommentById"></a>
 # **getDownloadCommentById**
-> Response getDownloadCommentById(id)
+> Response getDownloadCommentById(Number id)
 
 
 
@@ -1694,7 +1694,7 @@ This endpoint does not need any filters.
 
 <a name="getDownloadCommentCount"></a>
 # **getDownloadCommentCount**
-> Response getDownloadCommentCount(filters)
+> Response getDownloadCommentCount(object filters)
 
 
 
@@ -1760,7 +1760,7 @@ Name | Type | Description  | Notes
 
 <a name="getDownloadComments"></a>
 # **getDownloadComments**
-> Response getDownloadComments(filters)
+> Response getDownloadComments(object filters)
 
 
 
@@ -1834,7 +1834,7 @@ Name | Type | Description  | Notes
 
 <a name="getDownloadCount"></a>
 # **getDownloadCount**
-> Response getDownloadCount(filters)
+> Response getDownloadCount(object filters)
 
 
 
@@ -1904,7 +1904,7 @@ Name | Type | Description  | Notes
 
 <a name="getDownloads"></a>
 # **getDownloads**
-> Response getDownloads(filters)
+> Response getDownloads(object filters)
 
 
 
@@ -1984,7 +1984,7 @@ Name | Type | Description  | Notes
 
 <a name="getGuideByGuideIdExport"></a>
 # **getGuideByGuideIdExport**
-> Response getGuideByGuideIdExport(guideId)
+> Response getGuideByGuideIdExport(String guideId)
 
 
 
@@ -2035,7 +2035,7 @@ This endpoint does not need any filters.
 
 <a name="getGuideByGuideIdTree"></a>
 # **getGuideByGuideIdTree**
-> Response getGuideByGuideIdTree(guideId)
+> Response getGuideByGuideIdTree(String guideId)
 
 
 
@@ -2086,7 +2086,7 @@ This endpoint does not need any filters.
 
 <a name="getGuideById"></a>
 # **getGuideById**
-> Response getGuideById(id)
+> Response getGuideById(Number id)
 
 
 
@@ -2182,7 +2182,7 @@ This endpoint does not need any filters.
 
 <a name="getGuides"></a>
 # **getGuides**
-> Response getGuides(filters)
+> Response getGuides(object filters)
 
 
 
@@ -2242,7 +2242,7 @@ Name | Type | Description  | Notes
 
 <a name="getNews"></a>
 # **getNews**
-> Response getNews(filters)
+> Response getNews(object filters)
 
 
 
@@ -2322,7 +2322,7 @@ Name | Type | Description  | Notes
 
 <a name="getNewsById"></a>
 # **getNewsById**
-> Response getNewsById(id)
+> Response getNewsById(Number id)
 
 
 
@@ -2373,7 +2373,7 @@ This endpoint does not need any filters.
 
 <a name="getNewsCategories"></a>
 # **getNewsCategories**
-> Response getNewsCategories(filters)
+> Response getNewsCategories(object filters)
 
 
 
@@ -2433,7 +2433,7 @@ Name | Type | Description  | Notes
 
 <a name="getNewsCategoryById"></a>
 # **getNewsCategoryById**
-> Response getNewsCategoryById(id)
+> Response getNewsCategoryById(Number id)
 
 
 
@@ -2529,7 +2529,7 @@ This endpoint does not need any filters.
 
 <a name="getNewsCommentById"></a>
 # **getNewsCommentById**
-> Response getNewsCommentById(id)
+> Response getNewsCommentById(Number id)
 
 
 
@@ -2580,7 +2580,7 @@ This endpoint does not need any filters.
 
 <a name="getNewsCommentCount"></a>
 # **getNewsCommentCount**
-> Response getNewsCommentCount(filters)
+> Response getNewsCommentCount(object filters)
 
 
 
@@ -2646,7 +2646,7 @@ Name | Type | Description  | Notes
 
 <a name="getNewsComments"></a>
 # **getNewsComments**
-> Response getNewsComments(filters)
+> Response getNewsComments(object filters)
 
 
 
@@ -2720,7 +2720,7 @@ Name | Type | Description  | Notes
 
 <a name="getNewsCount"></a>
 # **getNewsCount**
-> Response getNewsCount(filters)
+> Response getNewsCount(object filters)
 
 
 
@@ -2790,7 +2790,7 @@ Name | Type | Description  | Notes
 
 <a name="getTopicById"></a>
 # **getTopicById**
-> Response getTopicById(id)
+> Response getTopicById(Number id)
 
 
 
@@ -2841,7 +2841,7 @@ This endpoint does not need any filters.
 
 <a name="getTopicCount"></a>
 # **getTopicCount**
-> Response getTopicCount(filters)
+> Response getTopicCount(object filters)
 
 
 
@@ -2911,7 +2911,7 @@ Name | Type | Description  | Notes
 
 <a name="getTopics"></a>
 # **getTopics**
-> Response getTopics(filters)
+> Response getTopics(object filters)
 
 
 
@@ -2991,7 +2991,7 @@ Name | Type | Description  | Notes
 
 <a name="updateGuideByGuideIdTree"></a>
 # **updateGuideByGuideIdTree**
-> Response updateGuideByGuideIdTree(guideId, tree)
+> Response updateGuideByGuideIdTree(String guideId, [String] tree)
 
 
 

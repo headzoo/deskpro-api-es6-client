@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="deleteEmailAccountByIdCertificate"></a>
 # **deleteEmailAccountByIdCertificate**
-> Response deleteEmailAccountByIdCertificate(id)
+> Response deleteEmailAccountByIdCertificate(Number id)
 
 
 
@@ -62,7 +62,7 @@ This endpoint does not need any filters.
 
 <a name="deleteEmailAccountByIdKey"></a>
 # **deleteEmailAccountByIdKey**
-> Response deleteEmailAccountByIdKey(id)
+> Response deleteEmailAccountByIdKey(Number id)
 
 
 
@@ -113,7 +113,7 @@ This endpoint does not need any filters.
 
 <a name="setEmailAccountByIdEncryption"></a>
 # **setEmailAccountByIdEncryption**
-> Response setEmailAccountByIdEncryption(id)
+> Response setEmailAccountByIdEncryption(Number id)
 
 
 

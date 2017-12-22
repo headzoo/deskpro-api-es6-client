@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="getUserSourceByContext"></a>
 # **getUserSourceByContext**
-> Response getUserSourceByContext(context, filters)
+> Response getUserSourceByContext(String context, object filters)
 
 
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 
 <a name="getUserSourceByContextById"></a>
 # **getUserSourceByContextById**
-> Response getUserSourceByContextById(id, context)
+> Response getUserSourceByContextById(Number id, String context)
 
 
 
@@ -128,7 +128,7 @@ This endpoint does not need any filters.
 
 <a name="getUserSourceByContextCount"></a>
 # **getUserSourceByContextCount**
-> Response getUserSourceByContextCount(context)
+> Response getUserSourceByContextCount(String context)
 
 
 

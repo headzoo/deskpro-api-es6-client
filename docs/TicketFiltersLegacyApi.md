@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 <a name="getTicketFilterByFilterTicket"></a>
 # **getTicketFilterByFilterTicket**
-> Response getTicketFilterByFilterTicket(filter, filters)
+> Response getTicketFilterByFilterTicket(String filter, object filters)
 
 
 
@@ -104,7 +104,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketFilterById"></a>
 # **getTicketFilterById**
-> Response getTicketFilterById(id)
+> Response getTicketFilterById(Number id)
 
 
 
@@ -155,7 +155,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketFilterByIdCount"></a>
 # **getTicketFilterByIdCount**
-> Response getTicketFilterByIdCount(id, filters)
+> Response getTicketFilterByIdCount(Number id, object filters)
 
 
 
@@ -257,7 +257,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketFilterSetAllCount"></a>
 # **getTicketFilterSetAllCount**
-> Response getTicketFilterSetAllCount(filters)
+> Response getTicketFilterSetAllCount(object filters)
 
 
 
@@ -311,7 +311,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketFilterSetById"></a>
 # **getTicketFilterSetById**
-> Response getTicketFilterSetById(id)
+> Response getTicketFilterSetById(Number id)
 
 
 
@@ -362,7 +362,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketFilterSetByIdCount"></a>
 # **getTicketFilterSetByIdCount**
-> Response getTicketFilterSetByIdCount(id, filters)
+> Response getTicketFilterSetByIdCount(Number id, object filters)
 
 
 
@@ -419,7 +419,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketFilterSetByIdFilter"></a>
 # **getTicketFilterSetByIdFilter**
-> Response getTicketFilterSetByIdFilter(id)
+> Response getTicketFilterSetByIdFilter(Number id)
 
 
 
@@ -515,7 +515,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketFilters"></a>
 # **getTicketFilters**
-> Response getTicketFilters(filters)
+> Response getTicketFilters(object filters)
 
 
 
@@ -575,7 +575,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketFiltersCounts"></a>
 # **getTicketFiltersCounts**
-> Response getTicketFiltersCounts(filters)
+> Response getTicketFiltersCounts(object filters)
 
 
 

@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="getJobById"></a>
 # **getJobById**
-> Response getJobById(id)
+> Response getJobById(Number id)
 
 
 

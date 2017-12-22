@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 <a name="deleteSnippetById"></a>
 # **deleteSnippetById**
-> Response deleteSnippetById(id)
+> Response deleteSnippetById(Number id)
 
 
 
@@ -68,7 +68,7 @@ This endpoint does not need any filters.
 
 <a name="getSnippetById"></a>
 # **getSnippetById**
-> Response getSnippetById(id)
+> Response getSnippetById(Number id)
 
 
 
@@ -119,7 +119,7 @@ This endpoint does not need any filters.
 
 <a name="getSnippetCount"></a>
 # **getSnippetCount**
-> Response getSnippetCount(filters)
+> Response getSnippetCount(object filters)
 
 
 
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 
 <a name="getSnippetCsv"></a>
 # **getSnippetCsv**
-> Response getSnippetCsv(filters)
+> Response getSnippetCsv(object filters)
 
 
 
@@ -245,7 +245,7 @@ Name | Type | Description  | Notes
 
 <a name="getSnippetLabel"></a>
 # **getSnippetLabel**
-> Response getSnippetLabel(filters)
+> Response getSnippetLabel(object filters)
 
 
 
@@ -305,7 +305,7 @@ Name | Type | Description  | Notes
 
 <a name="getSnippetRenderByIdByTypeByObjectId"></a>
 # **getSnippetRenderByIdByTypeByObjectId**
-> Response getSnippetRenderByIdByTypeByObjectId(id, type, objectId)
+> Response getSnippetRenderByIdByTypeByObjectId(Number id, String type, String objectId)
 
 
 
@@ -362,7 +362,7 @@ This endpoint does not need any filters.
 
 <a name="getSnippets"></a>
 # **getSnippets**
-> Response getSnippets(filters)
+> Response getSnippets(object filters)
 
 
 
@@ -428,7 +428,7 @@ Name | Type | Description  | Notes
 
 <a name="getSnippetsChangeLogs"></a>
 # **getSnippetsChangeLogs**
-> Response getSnippetsChangeLogs(filters)
+> Response getSnippetsChangeLogs(object filters)
 
 
 
@@ -498,7 +498,7 @@ Name | Type | Description  | Notes
 
 <a name="getSnippetsUse"></a>
 # **getSnippetsUse**
-> Response getSnippetsUse(filters)
+> Response getSnippetsUse(object filters)
 
 
 

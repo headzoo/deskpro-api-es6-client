@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 <a name="getSettingBrandByBrandPortalDownload"></a>
 # **getSettingBrandByBrandPortalDownload**
-> Response getSettingBrandByBrandPortalDownload(brand)
+> Response getSettingBrandByBrandPortalDownload(String brand)
 
 
 
@@ -65,7 +65,7 @@ This endpoint does not need any filters.
 
 <a name="getSettingBrandByBrandPortalFeedback"></a>
 # **getSettingBrandByBrandPortalFeedback**
-> Response getSettingBrandByBrandPortalFeedback(brand)
+> Response getSettingBrandByBrandPortalFeedback(String brand)
 
 
 
@@ -116,7 +116,7 @@ This endpoint does not need any filters.
 
 <a name="getSettingBrandByBrandPortalGeneral"></a>
 # **getSettingBrandByBrandPortalGeneral**
-> Response getSettingBrandByBrandPortalGeneral(brand)
+> Response getSettingBrandByBrandPortalGeneral(String brand)
 
 
 
@@ -167,7 +167,7 @@ This endpoint does not need any filters.
 
 <a name="getSettingBrandByBrandPortalGuide"></a>
 # **getSettingBrandByBrandPortalGuide**
-> Response getSettingBrandByBrandPortalGuide(brand)
+> Response getSettingBrandByBrandPortalGuide(String brand)
 
 
 
@@ -218,7 +218,7 @@ This endpoint does not need any filters.
 
 <a name="getSettingBrandByBrandPortalKb"></a>
 # **getSettingBrandByBrandPortalKb**
-> Response getSettingBrandByBrandPortalKb(brand)
+> Response getSettingBrandByBrandPortalKb(String brand)
 
 
 
@@ -269,7 +269,7 @@ This endpoint does not need any filters.
 
 <a name="getSettingBrandByBrandPortalNews"></a>
 # **getSettingBrandByBrandPortalNews**
-> Response getSettingBrandByBrandPortalNews(brand)
+> Response getSettingBrandByBrandPortalNews(String brand)
 
 
 

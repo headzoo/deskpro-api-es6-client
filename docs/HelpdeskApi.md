@@ -239,7 +239,7 @@ This endpoint does not need any filters.
 
 <a name="setHelpdeskUpdaterManualSchedule"></a>
 # **setHelpdeskUpdaterManualSchedule**
-> Response setHelpdeskUpdaterManualSchedule(delay)
+> Response setHelpdeskUpdaterManualSchedule(Number delay)
 
 
 

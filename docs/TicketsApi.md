@@ -75,7 +75,7 @@ Method | HTTP request | Description
 
 <a name="deleteTicketById"></a>
 # **deleteTicketById**
-> Response deleteTicketById(id)
+> Response deleteTicketById(Number id)
 
 
 
@@ -126,7 +126,7 @@ This endpoint does not need any filters.
 
 <a name="deleteTicketByParentIdCcById"></a>
 # **deleteTicketByParentIdCcById**
-> Response deleteTicketByParentIdCcById(id, parentId)
+> Response deleteTicketByParentIdCcById(Number id, String parentId)
 
 
 
@@ -180,7 +180,7 @@ This endpoint does not need any filters.
 
 <a name="deleteTicketByParentIdMessageById"></a>
 # **deleteTicketByParentIdMessageById**
-> Response deleteTicketByParentIdMessageById(id, parentId)
+> Response deleteTicketByParentIdMessageById(Number id, String parentId)
 
 
 
@@ -234,7 +234,7 @@ This endpoint does not need any filters.
 
 <a name="deleteTicketByParentIdTicketSlaById"></a>
 # **deleteTicketByParentIdTicketSlaById**
-> Response deleteTicketByParentIdTicketSlaById(id, parentId)
+> Response deleteTicketByParentIdTicketSlaById(Number id, String parentId)
 
 
 
@@ -288,7 +288,7 @@ This endpoint does not need any filters.
 
 <a name="deleteTicketByParentIdTicketSlaBySlaBySlaId"></a>
 # **deleteTicketByParentIdTicketSlaBySlaBySlaId**
-> Response deleteTicketByParentIdTicketSlaBySlaBySlaId(parentId, slaId)
+> Response deleteTicketByParentIdTicketSlaBySlaBySlaId(Number parentId, Number slaId)
 
 
 
@@ -342,7 +342,7 @@ This endpoint does not need any filters.
 
 <a name="deleteTicketByTicketFollowUpById"></a>
 # **deleteTicketByTicketFollowUpById**
-> Response deleteTicketByTicketFollowUpById(id, ticket)
+> Response deleteTicketByTicketFollowUpById(Number id, String ticket)
 
 
 
@@ -396,7 +396,7 @@ No authorization required
 
 <a name="deleteTicketByTicketLink"></a>
 # **deleteTicketByTicketLink**
-> Response deleteTicketByTicketLink(ticket, filters)
+> Response deleteTicketByTicketLink(String ticket, object filters)
 
 
 
@@ -457,7 +457,7 @@ Name | Type | Description  | Notes
 
 <a name="deleteTicketCustomFieldById"></a>
 # **deleteTicketCustomFieldById**
-> Response deleteTicketCustomFieldById(id)
+> Response deleteTicketCustomFieldById(Number id)
 
 
 
@@ -508,7 +508,7 @@ This endpoint does not need any filters.
 
 <a name="deleteTicketProblemById"></a>
 # **deleteTicketProblemById**
-> Response deleteTicketProblemById(id)
+> Response deleteTicketProblemById(Number id)
 
 
 
@@ -559,7 +559,7 @@ This endpoint does not need any filters.
 
 <a name="get20170401TicketLayoutByContext"></a>
 # **get20170401TicketLayoutByContext**
-> Response get20170401TicketLayoutByContext(context)
+> Response get20170401TicketLayoutByContext(String context)
 
 
 
@@ -610,7 +610,7 @@ This endpoint does not need any filters.
 
 <a name="get20170401TicketLayoutByContextByDepartment"></a>
 # **get20170401TicketLayoutByContextByDepartment**
-> Response get20170401TicketLayoutByContextByDepartment(department, context)
+> Response get20170401TicketLayoutByContextByDepartment(Number department, String context)
 
 
 
@@ -664,7 +664,7 @@ This endpoint does not need any filters.
 
 <a name="get20170401TicketLayoutByContextDepartmentJ"></a>
 # **get20170401TicketLayoutByContextDepartmentJ**
-> Response get20170401TicketLayoutByContextDepartmentJ(department, context)
+> Response get20170401TicketLayoutByContextDepartmentJ(Number department, String context)
 
 
 
@@ -718,7 +718,7 @@ This endpoint does not need any filters.
 
 <a name="get20170401TicketLayoutContextJ"></a>
 # **get20170401TicketLayoutContextJ**
-> Response get20170401TicketLayoutContextJ(context)
+> Response get20170401TicketLayoutContextJ(String context)
 
 
 
@@ -769,7 +769,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketById"></a>
 # **getTicketById**
-> Response getTicketById(id)
+> Response getTicketById(Number id)
 
 
 
@@ -820,7 +820,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketByParentIdAttachment"></a>
 # **getTicketByParentIdAttachment**
-> Response getTicketByParentIdAttachment(parentId, filters)
+> Response getTicketByParentIdAttachment(String parentId, object filters)
 
 
 
@@ -883,7 +883,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketByParentIdCc"></a>
 # **getTicketByParentIdCc**
-> Response getTicketByParentIdCc(parentId, filters)
+> Response getTicketByParentIdCc(String parentId, object filters)
 
 
 
@@ -946,7 +946,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketByParentIdCcById"></a>
 # **getTicketByParentIdCcById**
-> Response getTicketByParentIdCcById(id, parentId)
+> Response getTicketByParentIdCcById(Number id, String parentId)
 
 
 
@@ -1000,7 +1000,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketByParentIdLog"></a>
 # **getTicketByParentIdLog**
-> Response getTicketByParentIdLog(parentId, filters)
+> Response getTicketByParentIdLog(String parentId, object filters)
 
 
 
@@ -1063,7 +1063,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketByParentIdLogById"></a>
 # **getTicketByParentIdLogById**
-> Response getTicketByParentIdLogById(id, parentId)
+> Response getTicketByParentIdLogById(Number id, String parentId)
 
 
 
@@ -1117,7 +1117,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketByParentIdLogCount"></a>
 # **getTicketByParentIdLogCount**
-> Response getTicketByParentIdLogCount(parentId)
+> Response getTicketByParentIdLogCount(String parentId)
 
 
 
@@ -1168,7 +1168,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketByParentIdMessage"></a>
 # **getTicketByParentIdMessage**
-> Response getTicketByParentIdMessage(parentId, filters)
+> Response getTicketByParentIdMessage(String parentId, object filters)
 
 
 
@@ -1231,7 +1231,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketByParentIdMessageById"></a>
 # **getTicketByParentIdMessageById**
-> Response getTicketByParentIdMessageById(id, parentId)
+> Response getTicketByParentIdMessageById(Number id, String parentId)
 
 
 
@@ -1285,7 +1285,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketByParentIdMessageByIdAttachment"></a>
 # **getTicketByParentIdMessageByIdAttachment**
-> Response getTicketByParentIdMessageByIdAttachment(parentId, id, filters)
+> Response getTicketByParentIdMessageByIdAttachment(String parentId, String id, object filters)
 
 
 
@@ -1351,7 +1351,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketByParentIdMessageCount"></a>
 # **getTicketByParentIdMessageCount**
-> Response getTicketByParentIdMessageCount(parentId)
+> Response getTicketByParentIdMessageCount(String parentId)
 
 
 
@@ -1402,7 +1402,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketByParentIdTicketSla"></a>
 # **getTicketByParentIdTicketSla**
-> Response getTicketByParentIdTicketSla(parentId, filters)
+> Response getTicketByParentIdTicketSla(String parentId, object filters)
 
 
 
@@ -1465,7 +1465,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketByParentIdTicketSlaById"></a>
 # **getTicketByParentIdTicketSlaById**
-> Response getTicketByParentIdTicketSlaById(id, parentId)
+> Response getTicketByParentIdTicketSlaById(Number id, String parentId)
 
 
 
@@ -1519,7 +1519,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketByParentIdTicketSlaBySlaBySlaId"></a>
 # **getTicketByParentIdTicketSlaBySlaBySlaId**
-> Response getTicketByParentIdTicketSlaBySlaBySlaId(parentId, slaId)
+> Response getTicketByParentIdTicketSlaBySlaBySlaId(Number parentId, Number slaId)
 
 
 
@@ -1573,7 +1573,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketByParentIdTicketSlaCount"></a>
 # **getTicketByParentIdTicketSlaCount**
-> Response getTicketByParentIdTicketSlaCount(parentId)
+> Response getTicketByParentIdTicketSlaCount(String parentId)
 
 
 
@@ -1624,7 +1624,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketByTicketFollowUp"></a>
 # **getTicketByTicketFollowUp**
-> Response getTicketByTicketFollowUp(ticket, filters)
+> Response getTicketByTicketFollowUp(String ticket, object filters)
 
 
 
@@ -1687,7 +1687,7 @@ No authorization required
 
 <a name="getTicketByTicketFollowUpById"></a>
 # **getTicketByTicketFollowUpById**
-> Response getTicketByTicketFollowUpById(id, ticket)
+> Response getTicketByTicketFollowUpById(Number id, String ticket)
 
 
 
@@ -1741,7 +1741,7 @@ No authorization required
 
 <a name="getTicketByTicketFollowUpCount"></a>
 # **getTicketByTicketFollowUpCount**
-> Response getTicketByTicketFollowUpCount(ticket)
+> Response getTicketByTicketFollowUpCount(String ticket)
 
 
 
@@ -1792,7 +1792,7 @@ No authorization required
 
 <a name="getTicketByTicketLink"></a>
 # **getTicketByTicketLink**
-> Response getTicketByTicketLink(ticket, filters)
+> Response getTicketByTicketLink(String ticket, object filters)
 
 
 
@@ -1849,7 +1849,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketCategories"></a>
 # **getTicketCategories**
-> Response getTicketCategories(filters)
+> Response getTicketCategories(object filters)
 
 
 
@@ -1909,7 +1909,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketCategoryById"></a>
 # **getTicketCategoryById**
-> Response getTicketCategoryById(id)
+> Response getTicketCategoryById(Number id)
 
 
 
@@ -2050,7 +2050,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketCustomFieldById"></a>
 # **getTicketCustomFieldById**
-> Response getTicketCustomFieldById(id)
+> Response getTicketCustomFieldById(Number id)
 
 
 
@@ -2101,7 +2101,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketCustomFields"></a>
 # **getTicketCustomFields**
-> Response getTicketCustomFields(filters)
+> Response getTicketCustomFields(object filters)
 
 
 
@@ -2161,7 +2161,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketLabelByLabelTicket"></a>
 # **getTicketLabelByLabelTicket**
-> Response getTicketLabelByLabelTicket(label)
+> Response getTicketLabelByLabelTicket(String label)
 
 
 
@@ -2212,7 +2212,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketLayoutByContext"></a>
 # **getTicketLayoutByContext**
-> Response getTicketLayoutByContext(context)
+> Response getTicketLayoutByContext(String context)
 
 
 
@@ -2263,7 +2263,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketLayoutByContextByDepartment"></a>
 # **getTicketLayoutByContextByDepartment**
-> Response getTicketLayoutByContextByDepartment(department, context)
+> Response getTicketLayoutByContextByDepartment(Number department, String context)
 
 
 
@@ -2317,7 +2317,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketLayoutByContextDepartmentJ"></a>
 # **getTicketLayoutByContextDepartmentJ**
-> Response getTicketLayoutByContextDepartmentJ(department, context)
+> Response getTicketLayoutByContextDepartmentJ(Number department, String context)
 
 
 
@@ -2371,7 +2371,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketLayoutContextJ"></a>
 # **getTicketLayoutContextJ**
-> Response getTicketLayoutContextJ(context)
+> Response getTicketLayoutContextJ(String context)
 
 
 
@@ -2422,7 +2422,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketMacroById"></a>
 # **getTicketMacroById**
-> Response getTicketMacroById(id)
+> Response getTicketMacroById(Number id)
 
 
 
@@ -2473,7 +2473,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketMacros"></a>
 # **getTicketMacros**
-> Response getTicketMacros(filters)
+> Response getTicketMacros(object filters)
 
 
 
@@ -2533,7 +2533,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketPriorities"></a>
 # **getTicketPriorities**
-> Response getTicketPriorities(filters)
+> Response getTicketPriorities(object filters)
 
 
 
@@ -2593,7 +2593,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketPriorityById"></a>
 # **getTicketPriorityById**
-> Response getTicketPriorityById(id)
+> Response getTicketPriorityById(Number id)
 
 
 
@@ -2689,7 +2689,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketProblemById"></a>
 # **getTicketProblemById**
-> Response getTicketProblemById(id)
+> Response getTicketProblemById(Number id)
 
 
 
@@ -2740,7 +2740,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketProblemByIdTicket"></a>
 # **getTicketProblemByIdTicket**
-> Response getTicketProblemByIdTicket(id)
+> Response getTicketProblemByIdTicket(Number id)
 
 
 
@@ -2836,7 +2836,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketProblems"></a>
 # **getTicketProblems**
-> Response getTicketProblems(filters)
+> Response getTicketProblems(object filters)
 
 
 
@@ -2896,7 +2896,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketProductById"></a>
 # **getTicketProductById**
-> Response getTicketProductById(id)
+> Response getTicketProductById(Number id)
 
 
 
@@ -2992,7 +2992,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketProducts"></a>
 # **getTicketProducts**
-> Response getTicketProducts(filters)
+> Response getTicketProducts(object filters)
 
 
 
@@ -3052,7 +3052,7 @@ Name | Type | Description  | Notes
 
 <a name="getTicketStarByStarTicket"></a>
 # **getTicketStarByStarTicket**
-> Response getTicketStarByStarTicket(star)
+> Response getTicketStarByStarTicket(Number star)
 
 
 
@@ -3193,7 +3193,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketStatuseByStatuTicket"></a>
 # **getTicketStatuseByStatuTicket**
-> Response getTicketStatuseByStatuTicket(status)
+> Response getTicketStatuseByStatuTicket(String status)
 
 
 
@@ -3289,7 +3289,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketWorkflowById"></a>
 # **getTicketWorkflowById**
-> Response getTicketWorkflowById(id)
+> Response getTicketWorkflowById(Number id)
 
 
 
@@ -3385,7 +3385,7 @@ This endpoint does not need any filters.
 
 <a name="getTicketWorkflows"></a>
 # **getTicketWorkflows**
-> Response getTicketWorkflows(filters)
+> Response getTicketWorkflows(object filters)
 
 
 
@@ -3445,7 +3445,7 @@ Name | Type | Description  | Notes
 
 <a name="getTickets"></a>
 # **getTickets**
-> Response getTickets(filters)
+> Response getTickets(object filters)
 
 
 
@@ -3535,7 +3535,7 @@ Name | Type | Description  | Notes
 
 <a name="setTicketMacroByIdApplyByTicket"></a>
 # **setTicketMacroByIdApplyByTicket**
-> Response setTicketMacroByIdApplyByTicket(id, ticket, filters)
+> Response setTicketMacroByIdApplyByTicket(Number id, String ticket, object filters)
 
 
 
@@ -3595,7 +3595,7 @@ Name | Type | Description  | Notes
 
 <a name="updateTicketByTicketActionLock"></a>
 # **updateTicketByTicketActionLock**
-> Response updateTicketByTicketActionLock(ticket, force, filters)
+> Response updateTicketByTicketActionLock(String ticket, Boolean force, object filters)
 
 
 
@@ -3656,7 +3656,7 @@ Name | Type | Description  | Notes
 
 <a name="updateTicketByTicketActionUnlock"></a>
 # **updateTicketByTicketActionUnlock**
-> Response updateTicketByTicketActionUnlock(ticket, force, filters)
+> Response updateTicketByTicketActionUnlock(String ticket, Boolean force, object filters)
 
 
 

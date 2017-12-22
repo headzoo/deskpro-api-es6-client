@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 <a name="deleteSettingBrandByBrandWidgetSetup"></a>
 # **deleteSettingBrandByBrandWidgetSetup**
-> Response deleteSettingBrandByBrandWidgetSetup(brand)
+> Response deleteSettingBrandByBrandWidgetSetup(String brand)
 
 
 
@@ -63,7 +63,7 @@ This endpoint does not need any filters.
 
 <a name="getSettingBrandByBrandWidgetCode"></a>
 # **getSettingBrandByBrandWidgetCode**
-> Response getSettingBrandByBrandWidgetCode(brand)
+> Response getSettingBrandByBrandWidgetCode(String brand)
 
 
 
@@ -114,7 +114,7 @@ This endpoint does not need any filters.
 
 <a name="getSettingBrandByBrandWidgetLiveDemoCode"></a>
 # **getSettingBrandByBrandWidgetLiveDemoCode**
-> Response getSettingBrandByBrandWidgetLiveDemoCode(brand)
+> Response getSettingBrandByBrandWidgetLiveDemoCode(String brand)
 
 
 
@@ -165,7 +165,7 @@ This endpoint does not need any filters.
 
 <a name="getSettingBrandByBrandWidgetSetup"></a>
 # **getSettingBrandByBrandWidgetSetup**
-> Response getSettingBrandByBrandWidgetSetup(brand)
+> Response getSettingBrandByBrandWidgetSetup(String brand)
 
 
 

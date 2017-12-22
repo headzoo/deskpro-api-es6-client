@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 <a name="deleteClientDeviceByAppTypeById"></a>
 # **deleteClientDeviceByAppTypeById**
-> Response deleteClientDeviceByAppTypeById(id, appType)
+> Response deleteClientDeviceByAppTypeById(Number id, String appType)
 
 
 
@@ -66,7 +66,7 @@ This endpoint does not need any filters.
 
 <a name="getClientDeviceByAppType"></a>
 # **getClientDeviceByAppType**
-> Response getClientDeviceByAppType(appType, filters)
+> Response getClientDeviceByAppType(String appType, object filters)
 
 
 
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 
 <a name="getClientDeviceByAppTypeById"></a>
 # **getClientDeviceByAppTypeById**
-> Response getClientDeviceByAppTypeById(id, appType)
+> Response getClientDeviceByAppTypeById(Number id, String appType)
 
 
 
@@ -183,7 +183,7 @@ This endpoint does not need any filters.
 
 <a name="getClientDeviceByAppTypeCount"></a>
 # **getClientDeviceByAppTypeCount**
-> Response getClientDeviceByAppTypeCount(appType)
+> Response getClientDeviceByAppTypeCount(String appType)
 
 
 

@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="getSlaById"></a>
 # **getSlaById**
-> Response getSlaById(id)
+> Response getSlaById(Number id)
 
 
 

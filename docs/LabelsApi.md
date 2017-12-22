@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="getTypeLabels"></a>
 # **getTypeLabels**
-> Response getTypeLabels(type, filters)
+> Response getTypeLabels(String type, object filters)
 
 
 

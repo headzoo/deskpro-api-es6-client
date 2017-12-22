@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 <a name="deleteGlossaryById"></a>
 # **deleteGlossaryById**
-> Response deleteGlossaryById(id)
+> Response deleteGlossaryById(Number id)
 
 
 
@@ -65,7 +65,7 @@ This endpoint does not need any filters.
 
 <a name="getGlossary"></a>
 # **getGlossary**
-> Response getGlossary(filters)
+> Response getGlossary(object filters)
 
 
 
@@ -125,7 +125,7 @@ Name | Type | Description  | Notes
 
 <a name="getGlossaryById"></a>
 # **getGlossaryById**
-> Response getGlossaryById(id)
+> Response getGlossaryById(Number id)
 
 
 
@@ -221,7 +221,7 @@ This endpoint does not need any filters.
 
 <a name="getGlossaryWord"></a>
 # **getGlossaryWord**
-> Response getGlossaryWord(filters)
+> Response getGlossaryWord(object filters)
 
 
 
@@ -281,7 +281,7 @@ Name | Type | Description  | Notes
 
 <a name="getGlossaryWordByWord"></a>
 # **getGlossaryWordByWord**
-> Response getGlossaryWordByWord(word)
+> Response getGlossaryWordByWord(String word)
 
 
 

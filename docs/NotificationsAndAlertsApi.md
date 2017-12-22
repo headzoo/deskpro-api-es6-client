@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 <a name="deleteMeNotificationById"></a>
 # **deleteMeNotificationById**
-> Response deleteMeNotificationById(id)
+> Response deleteMeNotificationById(Number id)
 
 
 
@@ -69,7 +69,7 @@ This endpoint does not need any filters.
 
 <a name="getMeNotification"></a>
 # **getMeNotification**
-> Response getMeNotification(filters)
+> Response getMeNotification(object filters)
 
 
 
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 
 <a name="getMeNotificationById"></a>
 # **getMeNotificationById**
-> Response getMeNotificationById(id)
+> Response getMeNotificationById(Number id)
 
 
 
@@ -270,7 +270,7 @@ This endpoint does not need any filters.
 
 <a name="getNotifySetupActionAlertClient"></a>
 # **getNotifySetupActionAlertClient**
-> Response getNotifySetupActionAlertClient(userId, channelName, socketId)
+> Response getNotifySetupActionAlertClient(Number userId, String channelName, String socketId)
 
 
 
@@ -332,7 +332,7 @@ Name | Type | Description  | Notes
 
 <a name="setMeNotificationDismi"></a>
 # **setMeNotificationDismi**
-> Response setMeNotificationDismi(alertIds)
+> Response setMeNotificationDismi([String] alertIds)
 
 
 
@@ -431,7 +431,7 @@ This endpoint does not need any filters.
 
 <a name="setPusherAuth"></a>
 # **setPusherAuth**
-> Response setPusherAuth(userId, channelName, socketId)
+> Response setPusherAuth(Number userId, String channelName, String socketId)
 
 
 
@@ -493,7 +493,7 @@ Name | Type | Description  | Notes
 
 <a name="updateNotifySetupActionAlertClient"></a>
 # **updateNotifySetupActionAlertClient**
-> Response updateNotifySetupActionAlertClient(id, key, secret, host, port, mode)
+> Response updateNotifySetupActionAlertClient(String id, String key, String secret, String host, String port, String mode)
 
 
 
